@@ -1,4 +1,4 @@
-<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/" version="2.0"><channel><title>Hexoul</title><description>Creative needs multi-points of view and insight as if intersection needs multiple lines.</description><link>http://localhost:2368/</link><image><url>http://localhost:2368/favicon.png</url><title>Hexoul</title><link>http://localhost:2368/</link></image><generator>Ghost 2.1</generator><lastBuildDate>Fri, 21 Sep 2018 07:12:44 GMT</lastBuildDate><atom:link href="http://localhost:2368/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title>CV</title><description>&lt;h2 id="projects"&gt;Projects&lt;/h2&gt;
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/" version="2.0"><channel><title>Hexoul</title><description>Creative needs multi-points of view and insight as if intersection needs multiple lines.</description><link>http://localhost:2368/</link><image><url>http://localhost:2368/favicon.png</url><title>Hexoul</title><link>http://localhost:2368/</link></image><generator>Ghost 2.1</generator><lastBuildDate>Wed, 26 Sep 2018 11:17:57 GMT</lastBuildDate><atom:link href="http://localhost:2368/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title>CV</title><description>&lt;h2 id="projects"&gt;Projects&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;A&lt;/li&gt;
 &lt;li&gt;B&lt;/li&gt;
@@ -45,7 +45,7 @@
 &lt;li&gt;AWS EC2, RDS, Lambda&lt;/li&gt;
 &lt;li&gt;GAE(Google App Engine)&lt;/li&gt;
 &lt;li&gt;RabbitMQ, Websocket, RTC&lt;/li&gt;
-&lt;li&gt;Anaconda, Docker&lt;/li&gt;
+&lt;li&gt;Jupyter, Anaconda, Docker&lt;/li&gt;
 &lt;li&gt;Tensorflow, Keras&lt;/li&gt;
 &lt;li&gt;OpenGL, OpenCV&lt;/li&gt;
 &lt;li&gt;MSSQL, MySQL, PostgreSQL, DynamoDB, LevelDB&lt;/li&gt;
@@ -56,7 +56,7 @@
 &lt;/li&gt;
 &lt;li&gt;Tool
 &lt;ul&gt;
-&lt;li&gt;Sourcetree, Trello, JIRA, Confluence&lt;/li&gt;
+&lt;li&gt;SourceTree, Trello, JIRA, Confluence&lt;/li&gt;
 &lt;li&gt;Doxygen&lt;/li&gt;
 &lt;li&gt;Dr.Memory, Valgrind&lt;/li&gt;
 &lt;li&gt;TASKING, GreenHills, CodeWarrior, Trace32&lt;/li&gt;
@@ -69,11 +69,14 @@
 &lt;/ul&gt;
 &lt;h2 id="award"&gt;Award&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;/li&gt;
+&lt;li&gt;2nd Prize, OSS Grand Developers Challenge, National IT Industry Promotion Agency(NIPA), 2016&lt;/li&gt;
+&lt;li&gt;Best Paper Award, Korea Computer Congress(KCC), 2017&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id="publications"&gt;Publications&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;/li&gt;
+&lt;li&gt;Kyoung-Soo We, Seunggon Kim, Wonseok Lee, and Chang-Gun Lee, &lt;strong&gt;Functionally and Temporally Correct Simulation of Cyber-Systems for Automotive Systems&lt;/strong&gt;, in IEEE Real-Time Systems Symposium (RTSS), Dec. 2017&lt;/li&gt;
+&lt;li&gt;Wonseok Lee, Kyoung-Soo We, Seunggon Kim, Sangyoun Paik, Jonathon Soulis, and and Chang-Gun Lee, &lt;strong&gt;An ECU-Close Design/Verification Tool for Automotive Systems&lt;/strong&gt;, in IEEE Real-Time Systems Symposium, Paris, France, Dec. 2017&lt;/li&gt;
+&lt;li&gt;Hyejin Joo, Kyoung-Soo We, Seunggon Kim, and Chang-Gun Lee, &lt;strong&gt;An End-to-End Tool for Developing CPSs from Design to Implementation&lt;/strong&gt;, in The First International Workshop on Verification and Validation of Cyber-Physical Systems, Reykjavik University, Iceland, June 2016&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id="languages"&gt;Languages&lt;/h2&gt;
 &lt;ul&gt;
@@ -85,8 +88,8 @@
 &lt;li&gt;B.S., Computer Science, Kwangwoon University, Korea, 2012&lt;/li&gt;
 &lt;li&gt;&lt;em&gt;Extra&lt;/em&gt;
 &lt;ul&gt;
-&lt;li&gt;Software Maestro, Ministry of Science, Korea, 2013-2014&lt;/li&gt;
 &lt;li&gt;Self-Driving Car Nanodegree Term1 and Term2, Udacity, 2017&lt;/li&gt;
+&lt;li&gt;Software Maestro, Ministry of Science, Korea, 2013-2014&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
