@@ -1,15 +1,81 @@
-<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/" version="2.0"><channel><title>Hexoul</title><description>Creative needs multi-points of view and insight as if intersection needs multiple lines.</description><link>http://localhost:2368/</link><image><url>http://localhost:2368/favicon.png</url><title>Hexoul</title><link>http://localhost:2368/</link></image><generator>Ghost 2.1</generator><lastBuildDate>Wed, 03 Oct 2018 14:27:35 GMT</lastBuildDate><atom:link href="http://localhost:2368/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title>CV</title><description>&lt;h2 id="projects"&gt;Projects&lt;/h2&gt;
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/" version="2.0"><channel><title>Hexoul</title><description>Creative needs multi-points of view and insight as if intersection needs multiple lines.</description><link>http://localhost:2368/</link><image><url>http://localhost:2368/favicon.png</url><title>Hexoul</title><link>http://localhost:2368/</link></image><generator>Ghost 2.1</generator><lastBuildDate>Wed, 03 Oct 2018 15:36:22 GMT</lastBuildDate><atom:link href="http://localhost:2368/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title>CV</title><description>&lt;h1 id="contents"&gt;Contents&lt;/h1&gt;
 &lt;ul&gt;
-&lt;li&gt;A&lt;/li&gt;
-&lt;li&gt;B&lt;/li&gt;
+&lt;li&gt;&lt;a href="#projects"&gt;Projects&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#skills"&gt;Skills&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#awards"&gt;Awards&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#publications"&gt;Publications&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#languages"&gt;Languages&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#education"&gt;Education&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="projects"&gt;Projects&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Industry
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href="https://cpdax.com"&gt;CPDAX&lt;/a&gt;&lt;/strong&gt;: Cryptocurrency Exchange, 2017 ~ 2018&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Games&lt;/strong&gt;: 2013 ~&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Research
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;CPS-Sim&lt;/strong&gt;, 2016 ~ 2017
+&lt;ul&gt;
+&lt;li&gt;End-to-end tool for developing CPSs (Cyber Physical System)&lt;/li&gt;
+&lt;li&gt;Demonstration: &lt;a href="https://www.youtube.com/watch?v=Fex2G_o1kzo"&gt;Tool&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;ECU-Level Real-Time Simulator&lt;/strong&gt;, 2013 ~ 2017
+&lt;ul&gt;
+&lt;li&gt;w/ Hyundai Motors&lt;/li&gt;
+&lt;li&gt;Support verification of application logic on vehicle&lt;/li&gt;
+&lt;li&gt;Support ECU implementation by auto-code&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;</description><link>http://localhost:2368/cv/</link><guid isPermaLink="false">5ba20e46fffa6c0fbbf71678</guid><dc:creator>Esji Kim</dc:creator><pubDate>Wed, 19 Sep 2018 08:52:41 GMT</pubDate><content:encoded>&lt;h1 id="contents"&gt;Contents&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#projects"&gt;Projects&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#skills"&gt;Skills&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#awards"&gt;Awards&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#publications"&gt;Publications&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#languages"&gt;Languages&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#education"&gt;Education&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="projects"&gt;Projects&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Industry
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href="https://cpdax.com"&gt;CPDAX&lt;/a&gt;&lt;/strong&gt;: Cryptocurrency Exchange, 2017 ~ 2018&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Games&lt;/strong&gt;: 2013 ~&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Research
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;CPS-Sim&lt;/strong&gt;, 2016 ~ 2017
+&lt;ul&gt;
+&lt;li&gt;End-to-end tool for developing CPSs (Cyber Physical System)&lt;/li&gt;
+&lt;li&gt;Demonstration: &lt;a href="https://www.youtube.com/watch?v=Fex2G_o1kzo"&gt;Tool&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;ECU-Level Real-Time Simulator&lt;/strong&gt;, 2013 ~ 2017
+&lt;ul&gt;
+&lt;li&gt;w/ Hyundai Motors&lt;/li&gt;
+&lt;li&gt;Support verification of application logic on vehicle&lt;/li&gt;
+&lt;li&gt;Support ECU implementation by auto-code generator from given logic&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Component based Design Theory and &lt;strong&gt;Control Kernel for CPS&lt;/strong&gt;, 2013 ~ 2015
+&lt;ul&gt;
+&lt;li&gt;Demonstration: &lt;a href="https://www.youtube.com/watch?v=jOabWQ9EY3U"&gt;Unity&lt;/a&gt;, &lt;a href="https://www.youtube.com/watch?v=tD4z7mAAjBg"&gt;Drone&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Real-Time System SW on &lt;strong&gt;Multicore and GPGPU&lt;/strong&gt; for Unmanned Vehicles, 2016 ~ 2017&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Drone simulation&lt;/strong&gt; delivering Automatic External Defibrillator (AED), 2017&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id="skills"&gt;Skills&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;Programming language
 &lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Go, Python, Javascript&lt;/strong&gt;(Node, React, Meteor), Solidity&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Go, Python, Javascript&lt;/strong&gt; (Node, React, Meteor), Solidity&lt;/li&gt;
 &lt;li&gt;Assembly, C, C++, C#, Java, Objective-C&lt;/li&gt;
-&lt;li&gt;ML, MATLAB, PHP, JSP, SQL, Ocaml, Tcl/Tk&lt;/li&gt;
+&lt;li&gt;ML, MATLAB, HTML, PHP, JSP, SQL, Ocaml, Tcl/Tk&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;Platform
@@ -18,38 +84,17 @@
 &lt;li&gt;&lt;strong&gt;Spring, Django&lt;/strong&gt;&lt;/li&gt;
 &lt;li&gt;Android, iOS, Tizen, Firebase&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Cocos, Unity&lt;/strong&gt;, UDK&lt;/li&gt;
-&lt;li&gt;Vehicle Simulator(CarSim, Torcs)&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;AUTOSAR&lt;/strong&gt;, Odin, EB Tresos, AutoBox&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;</description><link>http://localhost:2368/cv/</link><guid isPermaLink="false">5ba20e46fffa6c0fbbf71678</guid><dc:creator>Esji Kim</dc:creator><pubDate>Wed, 19 Sep 2018 08:52:41 GMT</pubDate><content:encoded>&lt;h2 id="projects"&gt;Projects&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;A&lt;/li&gt;
-&lt;li&gt;B&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id="skills"&gt;Skills&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;Programming language
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Go, Python, Javascript&lt;/strong&gt;(Node, React, Meteor), Solidity&lt;/li&gt;
-&lt;li&gt;Assembly, C, C++, C#, Java, Objective-C&lt;/li&gt;
-&lt;li&gt;ML, MATLAB, PHP, JSP, SQL, Ocaml, Tcl/Tk&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Platform
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Ethereum&lt;/strong&gt;, IPFS, Loom network&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Spring, Django&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;Android, iOS, Tizen, Firebase&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Cocos, Unity&lt;/strong&gt;, UDK&lt;/li&gt;
-&lt;li&gt;Vehicle Simulator(CarSim, Torcs)&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;AUTOSAR&lt;/strong&gt;, Odin, EB Tresos, AutoBox&lt;/li&gt;
+&lt;li&gt;Vehicle Simulator (CarSim, Torcs)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;AUTOSAR&lt;/strong&gt;, Odin, EB Tresos, Simulink, AutoBox&lt;/li&gt;
 &lt;li&gt;FlexRay, CAN(Controller Area Network), CAN-FD&lt;/li&gt;
 &lt;li&gt;AWS EC2, RDS, ALB, Lambda&lt;/li&gt;
-&lt;li&gt;GAE(Google App Engine)&lt;/li&gt;
+&lt;li&gt;GAE (Google App Engine)&lt;/li&gt;
 &lt;li&gt;RabbitMQ, Websocket, RPC, RTC&lt;/li&gt;
 &lt;li&gt;Jupyter, Anaconda, Docker&lt;/li&gt;
 &lt;li&gt;Tensorflow, Keras&lt;/li&gt;
 &lt;li&gt;OpenGL, OpenCV&lt;/li&gt;
 &lt;li&gt;MSSQL, MySQL, PostgreSQL, DynamoDB, LevelDB&lt;/li&gt;
-&lt;li&gt;ELK(Elastic search &amp;amp; Logstash &amp;amp; Kibana)&lt;/li&gt;
+&lt;li&gt;ELK (Elastic search &amp;amp; Logstash &amp;amp; Kibana)&lt;/li&gt;
 &lt;li&gt;Eclipse plugin, Qt, MFC&lt;/li&gt;
 &lt;li&gt;NS2&lt;/li&gt;
 &lt;li&gt;Jekyll, Ghost&lt;/li&gt;
@@ -62,9 +107,9 @@
 &lt;li&gt;Doxygen&lt;/li&gt;
 &lt;li&gt;Dr.Memory, Valgrind&lt;/li&gt;
 &lt;li&gt;TASKING, GreenHills, CodeWarrior, Trace32&lt;/li&gt;
-&lt;li&gt;Infineon(TC1797, TC275), STMicro(SPC56EL70), Freescale(MPC5606B), RaspberryPi, Arduino&lt;/li&gt;
+&lt;li&gt;Infineon (TC1797, TC275), STMicro (SPC56EL70), Freescale (MPC5606B), RaspberryPi, Arduino&lt;/li&gt;
 &lt;li&gt;CANalyzer, CANDB&lt;/li&gt;
-&lt;li&gt;Vector(VN7600, VN1640), PCAN&lt;/li&gt;
+&lt;li&gt;Vector (VN7600, VN1640), PCAN-USB&lt;/li&gt;
 &lt;li&gt;LaTex, Gnuplot, Nam&lt;/li&gt;
 &lt;li&gt;Photoshop and Illustrator&lt;/li&gt;
 &lt;/ul&gt;
@@ -72,8 +117,8 @@
 &lt;/ul&gt;
 &lt;h2 id="awards"&gt;Awards&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;2nd Prize, OSS Grand Developers Challenge, National IT Industry Promotion Agency(NIPA), 2016&lt;/li&gt;
-&lt;li&gt;Best Paper Award, Korea Computer Congress(KCC), 2017&lt;/li&gt;
+&lt;li&gt;2nd Prize, OSS Grand Developers Challenge, National IT Industry Promotion Agency (NIPA), 2016&lt;/li&gt;
+&lt;li&gt;Best Paper Award, Korea Computer Congress (KCC), 2017&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id="publications"&gt;Publications&lt;/h2&gt;
 &lt;ul&gt;
@@ -94,7 +139,7 @@
 &lt;li&gt;&lt;em&gt;Extra&lt;/em&gt;
 &lt;ul&gt;
 &lt;li&gt;Self-Driving Car Nanodegree Term1 and Term2, Udacity, 2017&lt;/li&gt;
-&lt;li&gt;Software Maestro, Ministry of Science, Korea, 2013-2014&lt;/li&gt;
+&lt;li&gt;Software Maestro, Ministry of Science, Korea, 2013 ~ 2014&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
