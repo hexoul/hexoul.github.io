@@ -1,4 +1,5 @@
-<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/" version="2.0"><channel><title>Hexoul</title><description>Creative needs multi-points of view and insight as if intersection needs multiple lines.</description><link>http://localhost:2368/</link><image><url>http://localhost:2368/favicon.png</url><title>Hexoul</title><link>http://localhost:2368/</link></image><generator>Ghost 2.1</generator><lastBuildDate>Thu, 21 Mar 2019 06:51:42 GMT</lastBuildDate><atom:link href="http://localhost:2368/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title>CV (Curriculum Vitae)</title><description>&lt;p&gt;Seunggon Kim&lt;/p&gt;
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/" version="2.0"><channel><title>Hexoul</title><description>Creative needs multi-points of view and insight as if intersection needs multiple lines.</description><link>http://localhost:2368/</link><image><url>http://localhost:2368/favicon.png</url><title>Hexoul</title><link>http://localhost:2368/</link></image><generator>Ghost 2.1</generator><lastBuildDate>Tue, 09 Apr 2019 05:39:17 GMT</lastBuildDate><atom:link href="http://localhost:2368/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title>CV (Curriculum Vitae)</title><description>&lt;p&gt;Seunggon Kim&lt;br&gt;
+Email: &lt;a href="mailto:crosien@gmail.com"&gt;crosien@gmail.com&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
 &lt;h3 id="contents"&gt;Contents&lt;/h3&gt;
 &lt;ul&gt;
@@ -18,8 +19,8 @@
 &lt;ul&gt;
 &lt;li&gt;Develop a cryptocurrency exchange back-end to improve performance and security&lt;/li&gt;
 &lt;li&gt;Develop ethereum proxy server as delegator of transactions&lt;/li&gt;
-&lt;li&gt;Develop DApps front-end interacting smart contract through web3&lt;/li&gt;
-&lt;li&gt;Research&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;</description><link>http://localhost:2368/cv/</link><guid isPermaLink="false">5ba20e46fffa6c0fbbf71678</guid><dc:creator>Esji Kim</dc:creator><pubDate>Wed, 19 Sep 2018 08:52:41 GMT</pubDate><content:encoded>&lt;p&gt;Seunggon Kim&lt;/p&gt;
+&lt;li&gt;Develop DApps front-end interacting smart&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;</description><link>http://localhost:2368/cv/</link><guid isPermaLink="false">5ba20e46fffa6c0fbbf71678</guid><dc:creator>Esji Kim</dc:creator><pubDate>Wed, 19 Sep 2018 08:52:41 GMT</pubDate><content:encoded>&lt;p&gt;Seunggon Kim&lt;br&gt;
+Email: &lt;a href="mailto:crosien@gmail.com"&gt;crosien@gmail.com&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
 &lt;h3 id="contents"&gt;Contents&lt;/h3&gt;
 &lt;ul&gt;
@@ -61,35 +62,52 @@
 &lt;ul&gt;
 &lt;li&gt;Industry
 &lt;ul&gt;
-&lt;li&gt;Governance Smart Contract&lt;/li&gt;
-&lt;li&gt;Ethereum Proxy Server&lt;/li&gt;
-&lt;li&gt;DApp&lt;/li&gt;
-&lt;li&gt;Market Tracker&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;&lt;a href="https://cpdax.com"&gt;CPDAX&lt;/a&gt;&lt;/strong&gt;: Cryptocurrency Exchange, 2017 - 2018&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/metadium"&gt;Metadium&lt;/a&gt;: ID Blockchain Platform, 2018 -
+&lt;ul&gt;
+&lt;li&gt;Smart Contract
+&lt;ol&gt;
+&lt;li&gt;&lt;a href="https://github.com/hexoul/governance-contract"&gt;Governance&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/hexoul/metabolics"&gt;ERC725/735 based ID&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/hexoul/aws-lambda-eth-proxy"&gt;Ethereum Proxy Server&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;DApp
+&lt;ol&gt;
+&lt;li&gt;&lt;a href="https://governance.metadium.com"&gt;Governance&lt;/a&gt;, &lt;a href="https://github.com/hexoul/meta-governance-dapp"&gt;source&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://gate.metadium.com"&gt;Gate&lt;/a&gt;, &lt;a href="https://github.com/hexoul/metagate"&gt;source&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://stellar.metadium.com"&gt;Stellar&lt;/a&gt;, &lt;a href="https://github.com/hexoul/metastellar"&gt;source&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://galaga.metadium.com"&gt;Galaga&lt;/a&gt;, &lt;a href="https://github.com/METADIUM/metagalaga"&gt;source&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/hexoul/meta-attestation"&gt;Attestation&lt;/a&gt;, &lt;a href="https://github.com/hexoul/meta-attestation"&gt;source&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://analysis.metadium.com"&gt;Market Tracker&lt;/a&gt;, &lt;a href="https://github.com/hexoul/coinmarketcap-react-chart"&gt;source&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://cpdax.com"&gt;CPDAX&lt;/a&gt;: Cryptocurrency Exchange, 2017 - 2018&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;Research
 &lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;CPS-Sim&lt;/strong&gt;, 2016 - 2017
+&lt;li&gt;CPS-Sim, 2016 - 2017
 &lt;ul&gt;
 &lt;li&gt;End-to-end tool for developing CPSs (Cyber Physical System)&lt;/li&gt;
 &lt;li&gt;Demonstration: &lt;a href="https://www.youtube.com/watch?v=Fex2G_o1kzo"&gt;Tool&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;ECU-Level Real-Time Simulator&lt;/strong&gt;, 2013 - 2017
+&lt;li&gt;ECU-Level Real-Time Simulator, 2013 - 2017
 &lt;ul&gt;
 &lt;li&gt;w/ Hyundai Motors&lt;/li&gt;
 &lt;li&gt;Support verification of application logic on vehicle&lt;/li&gt;
 &lt;li&gt;Support ECU implementation by auto-code generator from given logic&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;Component based Design Theory and &lt;strong&gt;Control Kernel for CPS&lt;/strong&gt;, 2013 - 2015
+&lt;li&gt;Component based Design Theory and Control Kernel for CPS, 2013 - 2015
 &lt;ul&gt;
 &lt;li&gt;Demonstration: &lt;a href="https://www.youtube.com/watch?v=jOabWQ9EY3U"&gt;Unity&lt;/a&gt;, &lt;a href="https://www.youtube.com/watch?v=tD4z7mAAjBg"&gt;Drone&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;Real-Time System SW on &lt;strong&gt;Multicore and GPGPU&lt;/strong&gt; for Unmanned Vehicles, 2016 - 2017&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Drone simulation&lt;/strong&gt; delivering Automatic External Defibrillator (AED), 2017&lt;/li&gt;
+&lt;li&gt;Real-Time System SW on Multicore and GPGPU for Unmanned Vehicles, 2016 - 2017&lt;/li&gt;
+&lt;li&gt;Drone simulation delivering Automatic External Defibrillator (AED), 2017&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
