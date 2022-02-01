@@ -1,7 +1,6 @@
 {
     "name": "casper",
     "description": "The default personal blogging theme for Ghost. Beautiful, minimal and responsive.",
-    "demo": "https://demo.ghost.io",
     "version": "2.1.9",
     "scripts": {
         "gulp": "gulp"
@@ -15,9 +14,9 @@
         "mobile": "assets/screenshot-mobile.jpg"
     },
     "author": {
-        "name": "Ghost Foundation",
-        "email": "hello@ghost.org",
-        "url": "https://ghost.org"
+        "name": "hexoul",
+        "email": "crosien@gmail.com",
+        "url": "https://hexoul.github.io"
     },
     "gpm": {
         "type": "theme",

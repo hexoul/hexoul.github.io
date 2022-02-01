@@ -1,7 +1,7 @@
 ---
 layout: page
-current: about
-title: About
+current: cv
+title: CV (Curriculum Vitae)
 navigation: true
 logo: 'assets/images/ghost.png'
 class: page-template
