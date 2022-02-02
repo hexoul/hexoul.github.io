@@ -162,20 +162,46 @@ into the {body} of the default.hbs template -->
 
 <h3 id="work-experience">Work experience</h3>
 
-<p align="right">Mar. 2022 - Present</p>
+<p align="right">Feb. 2022 - Present</p>
 
 <p><em>Software engineer</em>, Kinolights Inc. - Korea</p>
 <ul>
   <li>Developed back-end of <a href="https://kinolights.com/">Kinolights</a>.</li>
 </ul>
 
+<hr />
+
 <p align="right">Jul. 2021 - Feb. 2022</p>
 
 <p><em>Software engineer</em>, ActionPower Corp. - Korea</p>
 <ul>
-  <li>Developed back-end of <a href="https://daglo.ai/">Daglo</a> that is Speech-To-Text (STT) service.</li>
-  <li>Developed back-end of <a href="https://atend.ai/">Atend</a>.</li>
+  <li>Built stable and scalable Speech-To-Text (STT) pipeline.
+    <ul>
+      <li>Constructed high availability (HA) with several k8s clusters that are in-house Airflow and Composer.</li>
+      <li>📚 Python, <a href="https://airflow.apache.org/">Airflow</a>, <a href="https://cloud.google.com/composer">Composer</a>, Kubernetes, <a href="https://cloud.google.com/kubernetes-engine">GKE</a>, <a href="https://microk8s.io/">Microk8s</a>, <a href="https://developer.nvidia.com/nvidia-triton-inference-server">NVIDIA Triton</a></li>
+    </ul>
+  </li>
+  <li>Built a real-time STT architect.
+    <ul>
+      <li>📚 Java, Spring boot, Kafka stream, Redis, <a href="https://github.com/alphacep/vosk-api">Vosk</a>, <a href="https://kaldi-asr.org/">Kaldi</a></li>
+    </ul>
+  </li>
+  <li>Developed back-end of <a href="https://daglo.ai/">Daglo</a> that is B2C/B2B/B2G service providing STT.
+    <ul>
+      <li>Optimized operating cost by adopting Airflow with proper machine type.</li>
+      <li>Built a data warehouse with Elasticsearch and Kibana.</li>
+      <li>Built a search engine for transcripts and <a href="https://en.wikipedia.org/wiki/Tf%E2%80%93idf">TF-IDF</a> with Elasticsearch Korean analyzer called <a href="https://www.elastic.co/guide/en/elasticsearch/plugins/current/analysis-nori.html">Nori</a>.</li>
+      <li>📚 JS, TS, Express, Firebase, Elasticsearch, Kibana, GKE, GAE, GCS, <a href="https://cloud.google.com/speech-to-text">GSR</a></li>
+    </ul>
+  </li>
+  <li>Developed back-end of <a href="https://atend.ai/">Atend</a> for video conference and following STT.
+    <ul>
+      <li>📚 JS, TS, NestJS, Firebase, Redis, <a href="https://www.twilio.com/docs/video/api">Twilio</a>, GAE, GCS</li>
+    </ul>
+  </li>
 </ul>
+
+<hr />
 
 <p align="right">Jun. 2019 - Jul. 2021</p>
 
@@ -186,12 +212,14 @@ into the {body} of the default.hbs template -->
       <li>📚 Java, Spring, MySQL, Redis, Elasticsearch, HBase, Kafka, Zookeeper, <a href="https://github.com/line/armeria">Armeria</a>, <a href="https://github.com/line/centraldogma">Central Dogma</a></li>
     </ul>
   </li>
-  <li>Developed CI/CD.
+  <li>Developed CI/CD with periodically generated data and end-to-end (E2E) testing.
     <ul>
-      <li>📚 Spring Batch, Python, Flask, Jenkins, Ansible</li>
+      <li>📚 Java, Python, Kotlin, Spring Batch, Flask, Jenkins, Ansible</li>
     </ul>
   </li>
 </ul>
+
+<hr />
 
 <p align="right">Oct. 2017 - Jun. 2019</p>
 
@@ -210,31 +238,82 @@ into the {body} of the default.hbs template -->
   </li>
   <li>Built <a href="https://github.com/hexoul?tab=repositories&amp;q=dapp">decentralized appications (DApp)</a> interacting <a href="https://github.com/hexoul/governance-contract">smart contract</a> through <a href="https://github.com/hexoul/meta-web3">web3</a>.
     <ul>
-      <li>📚 Solidity, Ethereum, IPFS, ReactJs</li>
+      <li>📚 Solidity, Ethereum, IPFS, ReactJS</li>
     </ul>
   </li>
   <li>Built <a href="https://github.com/hexoul?tab=repositories&amp;q=api-client">API clients</a> for trading and <a href="https://github.com/hexoul/coinmarketcap-react-chart">monitoring</a> the tendency.
     <ul>
-      <li>📚 Go, ReactJs</li>
+      <li>📚 Go, ReactJS</li>
     </ul>
   </li>
   <li>Researched blockchain technologies and security issues on all sides such as platform, smart contract, GDPR and so on.</li>
 </ul>
 
 <h3 id="education">Education</h3>
-<p>WIP</p>
+<ul>
+  <li>M.S. and Ph.D. Candidate, CE, Seoul National University, Korea, 2017</li>
+  <li>B.S., CE, Kwangwoon University, Korea, 2012</li>
+  <li><em>Extra</em>
+    <ul>
+      <li>Self-Driving Car Nanodegree Term1 and Term2, Udacity, 2017</li>
+      <li>Software Maestro, Ministry of Science, Korea, 2013</li>
+    </ul>
+  </li>
+</ul>
 
 <h3 id="projects">Projects</h3>
-<p>WIP</p>
+<ul>
+  <li>Open source
+    <ul>
+      <li><a href="https://github.com/line/armeria/pulls?q=is%3Apr+author%3Ahexoul+is%3Aclosed">Armeria</a></li>
+      <li><a href="https://github.com/line/centraldogma-python/pulls?q=is%3Apr+author%3Ahexoul+is%3Aclosed">Python client for Central Dogma</a></li>
+    </ul>
+  </li>
+  <li>Individual
+    <ul>
+      <li>(WIP)</li>
+    </ul>
+  </li>
+  <li>Research
+    <ul>
+      <li>CPS-Sim, 2016 - 2017
+        <ul>
+          <li><a href="https://www.youtube.com/watch?v=Fex2G_o1kzo">End-to-end tool</a> for developing CPSs (Cyber Physical System)</li>
+        </ul>
+      </li>
+      <li>ECU-level real-time simulator, 2013 - 2017
+        <ul>
+          <li>w/ Hyundai Motors</li>
+          <li>Support verification of application logic on vehicle</li>
+          <li>Support ECU implementation by auto-code generator from given logic</li>
+        </ul>
+      </li>
+      <li>Component based design theory and control kernel for CPS, 2013 - 2015
+        <ul>
+          <li>Demonstration <a href="https://www.youtube.com/watch?v=jOabWQ9EY3U">1</a>, <a href="https://www.youtube.com/watch?v=tD4z7mAAjBg">2</a></li>
+        </ul>
+      </li>
+      <li>Real-time system SW on multicore and GPGPU for unmanned vehicles, 2016 - 2017</li>
+      <li>Drone simulation for Automatic External Defibrillator (AED) delivery, 2017</li>
+    </ul>
+  </li>
+</ul>
 
 <h3 id="skills">Skills</h3>
-<p>WIP</p>
+<p>(WIP)</p>
 
 <h3 id="awards">Awards</h3>
-<p>WIP</p>
+<ul>
+  <li>2nd prize, OSS grand developers challenge, National IT Industry Promotion Agency (NIPA), 2016</li>
+  <li>Best paper award, Korea Computer Congress (KCC), 2017</li>
+</ul>
 
 <h3 id="publications">Publications</h3>
-<p>WIP</p>
+<ul>
+  <li>Kyoung-Soo We, Seunggon Kim, Wonseok Lee, and Chang-Gun Lee, <strong>Functionally and Temporally Correct Simulation of Cyber-Systems for Automotive Systems</strong>, in IEEE Real-Time Systems Symposium (RTSS), Dec. 2017</li>
+  <li>Wonseok Lee, Kyoung-Soo We, Seunggon Kim, Sangyoun Paik, Jonathon Soulis, and and Chang-Gun Lee, <strong>An ECU-Close Design/Verification Tool for Automotive Systems</strong>, in IEEE Real-Time Systems Symposium (RTSS@Work), Paris, France, Dec. 2017</li>
+  <li>Hyejin Joo, Kyoung-Soo We, Seunggon Kim, and Chang-Gun Lee, <strong>An End-to-End Tool for Developing CPSs from Design to Implementation</strong>, in The First International Workshop on Verification and Validation of Cyber-Physical Systems (V2CPS), Reykjavik University, Iceland, June 2016</li>
+</ul>
 
 <h3 id="languages">Languages</h3>
 
