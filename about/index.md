@@ -17,7 +17,7 @@ Seungon Kim
 
 ### Work experience
 
-<p align="right">Mar. 2022 - Present</p>
+<p align="right">Feb. 2022 - Present</p>
 
 *Software engineer*, Kinolights Inc. - Korea
 - Developed back-end of [Kinolights](https://kinolights.com/).
@@ -27,8 +27,18 @@ Seungon Kim
 <p align="right">Jul. 2021 - Feb. 2022</p>
 
 *Software engineer*, ActionPower Corp. - Korea
-- Developed back-end of [Daglo](https://daglo.ai/) that is Speech-To-Text (STT) service.
-- Developed back-end of [Atend](https://atend.ai/).
+- Built stable and scalable Speech-To-Text (STT) pipeline.
+  - Constructed high availability (HA) with several k8s clusters that are in-house Airflow and Composer.
+  - 📚 Python, [Airflow](https://airflow.apache.org/), [Composer](https://cloud.google.com/composer), Kubernetes, [GKE](https://cloud.google.com/kubernetes-engine), [Microk8s](https://microk8s.io/), [NVIDIA Triton](https://developer.nvidia.com/nvidia-triton-inference-server)
+- Built a real-time STT architect.
+  - 📚 Java, Spring boot, Kafka stream, Redis, [Vosk](https://github.com/alphacep/vosk-api), [Kaldi](https://kaldi-asr.org/)
+- Developed back-end of [Daglo](https://daglo.ai/) that is B2C/B2B/B2G service providing STT.
+  - Optimized operating cost by adopting Airflow with proper machine type.
+  - Built a data warehouse with Elasticsearch and Kibana.
+  - Built a search engine for transcripts and [TF-IDF](https://en.wikipedia.org/wiki/Tf%E2%80%93idf) with Elasticsearch Korean analyzer called [Nori](https://www.elastic.co/guide/en/elasticsearch/plugins/current/analysis-nori.html).
+  - 📚 JS, TS, Express, Firebase, Elasticsearch, Kibana, GKE, GAE, GCS, [GSR](https://cloud.google.com/speech-to-text)
+- Developed back-end of [Atend](https://atend.ai/) for video conference and following STT.
+  - 📚 JS, TS, NestJS, Firebase, Redis, [Twilio](https://www.twilio.com/docs/video/api), GAE, GCS
 
 ---
 
@@ -51,9 +61,9 @@ Seungon Kim
 - Built [Ethereum proxy](https://github.com/hexoul/aws-lambda-eth-proxy) as delegator of transactions.
   - 📚 Go, Ethereum, AWS Lambda
 - Built [decentralized appications (DApp)](https://github.com/hexoul?tab=repositories&q=dapp) interacting [smart contract](https://github.com/hexoul/governance-contract) through [web3](https://github.com/hexoul/meta-web3).
-  - 📚 Solidity, Ethereum, IPFS, ReactJs
+  - 📚 Solidity, Ethereum, IPFS, ReactJS
 - Built [API clients](https://github.com/hexoul?tab=repositories&q=api-client) for trading and [monitoring](https://github.com/hexoul/coinmarketcap-react-chart) the tendency.
-  - 📚 Go, ReactJs
+  - 📚 Go, ReactJS
 - Researched blockchain technologies and security issues on all sides such as platform, smart contract, GDPR and so on.
 
 ### Education
@@ -64,6 +74,9 @@ Seungon Kim
   - Software Maestro, Ministry of Science, Korea, 2013
 
 ### Projects
+- Open source
+  - [Armeria](https://github.com/line/armeria/pulls?q=is%3Apr+author%3Ahexoul+is%3Aclosed)
+  - [Python client for Central Dogma](https://github.com/line/centraldogma-python/pulls?q=is%3Apr+author%3Ahexoul+is%3Aclosed)
 - Individual
   - (WIP)
 - Research
