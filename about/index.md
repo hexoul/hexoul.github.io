@@ -8,10 +8,58 @@ class: page-template
 subclass: 'post page'
 ---
 
-Ghost is professional publishing platform designed for modern journalism. This is a demo site of a basic Ghost install to give you a general sense of what a new Ghost site looks like when set up for the first time.
+Seungon Kim
 
-> If you'd like to set up a site like this for yourself, head over to [Ghost.org](https://ghost.org/) and start a free 14 day trial to give Ghost a try!
+> I'm passionate about software engineering for architecting, programming and theory also. 
 
-If you're a developer: Ghost is a completely open source (MIT) Node.js application built on a JSON API with an Ember.js admin client. It works with MySQL and SQLite, and is publicly available [on Github](https://github.com/TryGhost/ghost).
+## Contents
+[Work experience](#work-experience) | [Education](#education) | [Projects](#projects) | [Skills](#skills) | [Awards](#awards) | [Publications](#publications) | [Languages](#languages)
 
-If you need help with using Ghost, you'll find a ton of useful articles on [our knowledgebase](https://help.ghost.org/), as well as extensive [developer documentation](https://docs.ghost.org/).
+### Work experience
+
+<p align="right">Mar. 2022 - Present</p>
+
+Software engineer, Kinolights Inc. - Korea
+- Developed back-end of Kinolights.
+
+<p align="right">Jul. 2021 - Feb. 2022</p>
+
+Software engineer, ActionPower Corp. - Korea
+- Developed back-end of Daglo that is Speech-To-Text (STT) service.
+- Atend
+
+<p align="right">Jun. 2019 - Jul. 2021</p>
+
+Software engineer, LINE Plus Corp. - Korea
+- Developed back-end of LINE messenger for features.
+
+<p align="right">Oct. 2017 - Jun. 2019</p>
+
+Senior researcher, Coinplug Inc. - Korea
+- Improved the performance of back-end of cryptocurrency exchange.
+  - Throughput for bidding API was increased 200 times. It is done by resolving single-threaded task with RabbitMQ.
+- Built [Ethereum proxy server](https://github.com/hexoul/aws-lambda-eth-proxy) as delegator of transactions.
+- Built [Decentralized appications (DApp)](https://github.com/hexoul?tab=repositories&q=dapp) interacting smart contract through web3.
+- Built [API clients](https://github.com/hexoul?tab=repositories&q=api-client) for trading and [monitoring](https://github.com/hexoul/coinmarketcap-react-chart) the tendency.
+- Researched blockchain technologies and security issues on all sides such as platform, smart contract, GDPR and so on.
+
+### Education
+bbb
+
+### Projects
+p
+
+### Skills
+s
+
+### Awards
+a
+
+### Publications
+p
+
+### Languages
+
+- 🇺🇸 English
+- 🇰🇷 Korean (native)
+- 🇯🇵 Japanese (JLPT N2)

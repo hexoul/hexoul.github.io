@@ -1,7 +1,7 @@
 # Jekyll configuration
 markdown: kramdown
 highlighter: rouge
-paginate: 100 # it will paginate after this number
+paginate: 10 # it will paginate after this number
 language: 'en-uk'
 words_per_minute: 200
 
@@ -10,7 +10,7 @@ baseurl: /
 
 # Website info
 title: Hexoul
-description: Creative needs multi-points of view and insight as if intersection needs multiple lines.
+description: The creative needs diverse points of view and insight.
 cover: assets/images/blog-cover.jpg
 # logo: assets/images/blog-icon.png
 logo_dark: assets/images/favicon.png

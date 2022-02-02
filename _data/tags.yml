@@ -1,15 +1,11 @@
-speeches:
-  name: speeches
+front-end:
+  name: front-end
   description: Some of the greatest words ever spoken.
-  cover: assets/images/speeches.jpg
-fiction:
-  name: fiction
+  cover: assets/images/design.jpg
+back-end:
+  name: back-end
   description: False
-  cover: False
-fables:
-  name: fables
-  description: A series of short stories that make you think.
-  cover: assets/images/fables.jpg
+  cover: assets/images/advanced.jpg
 getting-started:
   name: getting-started
   description: False
