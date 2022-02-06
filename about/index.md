@@ -38,7 +38,7 @@ Seungon Kim
   - Built a search engine for transcripts and [TF-IDF](https://en.wikipedia.org/wiki/Tf%E2%80%93idf) with Elasticsearch Korean analyzer called [Nori](https://www.elastic.co/guide/en/elasticsearch/plugins/current/analysis-nori.html).
   - 📚 JS, TS, ExpressJS, Firebase, Elasticsearch, Kibana, GKE, GAE, GCS, [GSR](https://cloud.google.com/speech-to-text)
 - Developed back-end of [Atend](https://atend.ai/) for video conference and following STT.
-  - 📚 JS, TS, RxJS, NestJS, Firebase, Redis, [Twilio](https://www.twilio.com/docs/video/api), GAE, GCS
+  - 📚 JS, TS, RxJS, NestJS, Firestore, Redis, [Twilio](https://www.twilio.com/docs/video/api), GAE, GCS
 - Built end-to-end (E2E) testing. 
   - 📚 JS, Selenium, [Nightwatch](https://nightwatchjs.org), [LambdaTest](https://www.lambdatest.com)
 
@@ -83,11 +83,14 @@ Seungon Kim
 
 ### Projects
 - Open source
-  - [Armeria](https://github.com/line/armeria/pulls?q=is%3Apr+author%3Ahexoul+is%3Aclosed) - a microservice framework for building any type of technologies including gRPC, Thrift, Retrofit easily.
+  - [Armeria](https://github.com/line/armeria/pulls?q=is%3Apr+author%3Ahexoul+is%3Aclosed) - a microservice framework to easily build any type of technologies including gRPC, Thrift, Retrofit and so on.
   - [Python client for Central Dogma](https://github.com/line/centraldogma-python/pulls?q=is%3Apr+author%3Ahexoul+is%3Aclosed) - a Python client for Central Dogma that is highly-available version-controlled service configuration repository based on Git, ZooKeeper and HTTP/2.
 - Individual
-  - 오늘부터 전공면접 IT - a study helper for IT interview with Multiple Choice Questions (MCQs).
-    - [iOS](https://apps.apple.com/kr/app/id1526993862), [Android](https://play.google.com/store/apps/details?id=com.whatseries.prepareinterview), [Web](https://hexoul.github.io/prepare-interview-data)
+  - 오늘부터 전공면접 IT - a MCQ-based (Multiple Choice Question) study helper for IT interview.
+    - [iOS](https://apps.apple.com/kr/app/id1526993862), [Android](https://play.google.com/store/apps/details?id=com.whatseries.prepareinterview)
+      - 📚 Dart, Flutter, Firebase(Analystics, Crashlytics, Cloud messaging, Admob)
+    - [Web](https://hexoul.github.io/prepare-interview-data)
+      - 📚 JS, TS, NextJS, Chakra UI
 - Research
   - CPS-Sim, 2016 - 2017
     - [End-to-end tool](https://www.youtube.com/watch?v=Fex2G_o1kzo) for developing CPSs (Cyber Physical System)
@@ -101,7 +104,42 @@ Seungon Kim
   - Drone simulation for Automatic External Defibrillator (AED) delivery, 2017
 
 ### Skills
-- (WIP)
+- Programming language
+  - **Java, JS, TS, Python, Go, Dart, SQL**
+  - Assembly, C, C++, C#, Kotlin, MATLAB, ML, Objective-C, Ocaml, Painless, PHP, Scala, Solidity, Tcl/Tk
+- Platform & Framework
+  - Reactive
+    - **RxJava, RxJS**
+  - Back-end
+    - (Java) **Armeria**, Central Dogma, **Spring**
+    - (JS) ExpressJS, **NestJS**, NodeJS
+    - (Python) Django, Flask
+    - (Storage) DynamoDB, Ethereum, **Elasticsearch, Firestore, HBase**, IPFS, LevelDB, **MySQL**, PostgreSQL, **Redis**, Zookeeper
+    - (Stream) **Kafka**, RabbitMQ
+    - (Orchestration) **Docker, Kubernetes**
+    - (Monitoring) Gatling, **Grafana, Jenkins, Kibana, Prometheus**, Zipkin
+  - Front-end
+    - **Flutter, NextJS, ReactJS**
+    - Cocos2d, MFC, Qt, Tizen, Unity
+  - Vehicle field
+    - (Simulator) CarSim, Torcs
+    - AutoBox, AUTOSAR, EB Tresos, Odin, Simulink
+    - FlexRay, Controller Area Network (CAN), CAN-FD
+- Protocol
+  - **HTTP2**, gRPC, **Retrofit**, RTC, SSE, SPDY, **Thrift**, Websocket
+- Cloud service
+  - AWS - ALB, API Gateway, EC2, Lambda, RDS
+  - GCP - Composer, GAE, GCE, GCR, GCS, GKE, GSR, Memorystore
+- Tool
+  - Github, Gitlab, Sourcetree, JSFiddle, Remix
+  - Slack, JIRA, Trello
+  - (Documentation) Confluence, Doxygen, Javadoc, Sphinx, Jekyll
+  - (Analysis) async-profiler, Dr.Memory, Valgrind, Black Duck Hub
+  - (Package manager) Gradle, Helm, npm, yarn, pip, dep
+  - Hardware-related
+    - CodeWarrior, GreenHills, TASKING, Trace32
+    - Infineon(TC1797, TC275), STMicro(SPC56EL70), Freescale(MPC5606B), Raspberry Pi, Arduino
+    - CANalyzer, CANDB, PCAN-USB, Vector(VN1640, VN7600)
 
 ### Awards
 - 2nd prize, OSS grand developers challenge, National IT Industry Promotion Agency (NIPA), 2016
