@@ -6,7 +6,3 @@ back-end:
   name: back-end
   description: False
   cover: assets/images/advanced.jpg
-getting-started:
-  name: getting-started
-  description: False
-  cover: False

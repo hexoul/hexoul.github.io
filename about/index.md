@@ -36,7 +36,7 @@ Seungon Kim
   - Optimized operating cost by adopting Airflow with proper machine type and commitment.
   - Built a data warehouse with Elasticsearch and Kibana.
   - Built a search engine for transcripts and [TF-IDF](https://en.wikipedia.org/wiki/Tf%E2%80%93idf) with Elasticsearch Korean analyzer called [Nori](https://www.elastic.co/guide/en/elasticsearch/plugins/current/analysis-nori.html).
-  - 📚 JS, TS, ExpressJS, Firebase, Elasticsearch, Kibana, GKE, GAE, GCS, [GSR](https://cloud.google.com/speech-to-text)
+  - 📚 JS, TS, Python, ExpressJS, FastAPI, Firebase, Elasticsearch, Kibana, GKE, GAE, GCS, [GSR](https://cloud.google.com/speech-to-text)
 - Developed back-end of [Atend](https://atend.ai/) for video conference and following STT.
   - 📚 JS, TS, RxJS, NestJS, Firestore, Redis, [Twilio](https://www.twilio.com/docs/video/api), GAE, GCS
 - Built end-to-end (E2E) testing. 
@@ -113,11 +113,11 @@ Seungon Kim
   - Back-end
     - (Java) **Armeria**, Central Dogma, **Spring**
     - (JS) ExpressJS, **NestJS**, NodeJS
-    - (Python) Django, Flask
+    - (Python) Django, Flask, FastAPI
     - (Storage) DynamoDB, Ethereum, **Elasticsearch, Firestore, HBase**, IPFS, LevelDB, **MySQL**, PostgreSQL, **Redis**, Zookeeper
     - (Stream) **Kafka**, RabbitMQ
-    - (Orchestration) **Docker, Kubernetes**
-    - (Monitoring) Gatling, **Grafana, Jenkins, Kibana, Prometheus**, Zipkin
+    - (Orchestration) **Docker, Jenkins, Kubernetes**
+    - (Monitoring) Gatling, **Grafana, Kibana, Prometheus**, Zipkin
   - Front-end
     - **Flutter, NextJS, ReactJS**
     - Cocos2d, MFC, Qt, Tizen, Unity
