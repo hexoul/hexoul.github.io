@@ -1,8 +1,11 @@
 front-end:
-  name: front-end
-  description: Some of the greatest words ever spoken.
+  name: Front-end
+  description: False
   cover: assets/images/design.jpg
 back-end:
-  name: back-end
+  name: Back-end
   description: False
   cover: assets/images/advanced.jpg
+os:
+  name: OS
+  description: Operating System

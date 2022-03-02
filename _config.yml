@@ -34,7 +34,7 @@ google_analytics: G-LC65J8E6R6 # replace with your GA tracking identifier
 
 # Permalinks
 permalink: /:title
-permalink: /tag/:tag
+# permalink: /tag/:tag
 # permalink: /author/:author
 
 # Authors' info in `_data/authors.yml`
