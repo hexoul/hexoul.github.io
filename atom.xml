@@ -6,5 +6,20 @@
     <link>
     </link>
     
+      
+      <item>
+        <title>운영체제와 커널</title>
+        
+          <description>&lt;p&gt;일반적으로 커널은 운영체제에서 핵심이 되는 부분이라고 정의된다. 핵심이란 무엇일까? 핵심이라 분류하여 나누는 기준은 시스템 자체에 영향을 줄 수 있는 코드의 실행 여부이다. 즉, 보안 취약점이 될 가능성을 가진 코드로 해석할 수도 있다. 구체적으로 메모리와 하드웨어의 보호를 위한 실행 영역의 분리가 커널의 목적 중 하나이다.&lt;/p&gt;
+
+</description>
+        
+        <pubDate>Thu, 03 Mar 2022 00:00:00 +0900</pubDate>
+        <link>
+        /os-n-kernel</link>
+        <guid isPermaLink="true">/os-n-kernel</guid>
+      </item>
+      
+    
   </channel>
 </rss>
