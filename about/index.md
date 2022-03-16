@@ -8,9 +8,9 @@ class: page-template
 subclass: 'post page'
 ---
 
-Seungon Kim
+Seunggon (Esji) Kim
 
-> I'm passionate about software engineering for architecting, programming and theory also. 
+> I'm passionate about software engineering for SOTA architecture, programming and theory also. 
 
 ## Contents
 [Work experience](#work-experience) | [Education](#education) | [Projects](#projects) | [Skills](#skills) | [Awards](#awards) | [Publications](#publications) | [Languages](#languages)
