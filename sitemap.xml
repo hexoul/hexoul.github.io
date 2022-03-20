@@ -8,7 +8,7 @@ layout: null
         xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
         <loc>{{ site.production_url }}/about/</loc>
-        <lastmod>{{ date_to_xmlschema }}</lastmod>
+        <lastmod>2022-03-20T00:00:00+09:00</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.5</priority>
     </url>
