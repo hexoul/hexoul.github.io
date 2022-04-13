@@ -8,6 +8,21 @@
     
       
       <item>
+        <title>프로세서와 프로세스</title>
+        
+          <description>&lt;p&gt;간단하게 말하면 프로세스(process)는 실행해야 하는 일련의 작업이고, 프로세서(processor)는 프로세스를 실행하는 주체이다. 나아가 어떤 프로세서가 어떤 프로세스를 얼마나 실행시킬지에 대한 실행을 계획하는 것을 스케줄링이라 한다.&lt;/p&gt;
+
+</description>
+        
+        <pubDate>Wed, 13 Apr 2022 00:00:00 +0900</pubDate>
+        <link>
+        /processor</link>
+        <guid isPermaLink="true">/processor</guid>
+      </item>
+      
+    
+      
+      <item>
         <title>인터럽트 벡터 테이블과 ISR</title>
         
           <description>&lt;p&gt;인터럽트는 IRQ(Interrupt ReQuest)라고 하는 하드웨어 전기신호로 회로의 버스(bus)를 통해 CPU에 전달된다.&lt;/p&gt;
