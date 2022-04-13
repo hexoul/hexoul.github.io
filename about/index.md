@@ -21,6 +21,7 @@ Seunggon (Esji) Kim
 
 *Software engineer*, **Kinolights Inc.** - Korea
 - Developed back-end of [Kinolights](https://kinolights.com/).
+  - 📚 JS, TS, RxJS, NestJS, TypeORM, GraphQL, Elasticsearch
 
 ---
 
@@ -126,7 +127,7 @@ Seunggon (Esji) Kim
     - AutoBox, AUTOSAR, EB Tresos, Odin, Simulink
     - FlexRay, Controller Area Network (CAN), CAN-FD
 - Protocol
-  - **HTTP2**, gRPC, **Retrofit**, RTC, SSE, SPDY, **Thrift**, Websocket
+  - **HTTP/2**, **REST**, **GraphQL**, gRPC, RTC, SSE, SPDY, **Thrift**, Websocket
 - Cloud service
   - AWS - ALB, API Gateway, EC2, Lambda, RDS
   - GCP - Composer, GAE, GCE, GCR, GCS, GKE, GSR, Memorystore
