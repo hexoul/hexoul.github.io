@@ -22,6 +22,7 @@ Seunggon (Esji) Kim
 *Software engineer*, **Kinolights Inc.** - Korea
 - Developed back-end of [Kinolights](https://kinolights.com/).
   - 📚 JS, TS, RxJS, NestJS, TypeORM, GraphQL, Elasticsearch
+  - ☁ AWS - ECS, Aurora, S3, Route 53, MQ, MSK, OpenSearch, SNS, SMS
 
 ---
 
@@ -30,16 +31,19 @@ Seunggon (Esji) Kim
 *Software engineer*, **ActionPower Corp.** - Korea
 - Built stable and scalable Speech-To-Text (STT) pipeline.
   - Constructed high availability (HA) with several k8s clusters that are in-house Airflow and Composer.
-  - 📚 Python, [Airflow](https://airflow.apache.org/), [Composer](https://cloud.google.com/composer), Kubernetes, [GKE](https://cloud.google.com/kubernetes-engine), [Microk8s](https://microk8s.io/), [NVIDIA Triton](https://developer.nvidia.com/nvidia-triton-inference-server)
+  - 📚 Python, [Airflow](https://airflow.apache.org/), [Microk8s](https://microk8s.io/), [NVIDIA Triton](https://developer.nvidia.com/nvidia-triton-inference-server)
+  - ☁ GCP - [Composer](https://cloud.google.com/composer), Kubernetes, [GKE](https://cloud.google.com/kubernetes-engine)
 - Built a real-time STT architect.
   - 📚 Java, RxJava, Spring boot, Kafka stream, Redis, [Vosk](https://github.com/alphacep/vosk-api), [Kaldi](https://kaldi-asr.org/)
 - Developed back-end of [Daglo](https://daglo.ai/) that is B2C/B2B/B2G service providing STT.
   - Optimized operating cost by adopting Airflow with proper machine type and commitment.
   - Built a data warehouse with Elasticsearch and Kibana.
   - Built a search engine for transcripts and [TF-IDF](https://en.wikipedia.org/wiki/Tf%E2%80%93idf) with Elasticsearch Korean analyzer called [Nori](https://www.elastic.co/guide/en/elasticsearch/plugins/current/analysis-nori.html).
-  - 📚 JS, TS, Python, ExpressJS, FastAPI, Firebase, Elasticsearch, Kibana, GKE, GAE, GCS, [GSR](https://cloud.google.com/speech-to-text)
+  - 📚 JS, TS, Python, ExpressJS, FastAPI, Firebase, Elasticsearch, Kibana
+  - ☁ GCP - GKE, GAE, GCS, [GSR](https://cloud.google.com/speech-to-text)
 - Developed back-end of [Atend](https://atend.ai/) for video conference and following STT.
-  - 📚 JS, TS, RxJS, NestJS, Firestore, Redis, [Twilio](https://www.twilio.com/docs/video/api), GAE, GCS
+  - 📚 JS, TS, RxJS, NestJS, Firestore, Redis, [Twilio](https://www.twilio.com/docs/video/api)
+  - ☁ GCP - GAE, GCS
 - Built end-to-end (E2E) testing. 
   - 📚 JS, Selenium, [Nightwatch](https://nightwatchjs.org), [LambdaTest](https://www.lambdatest.com)
 
@@ -67,8 +71,10 @@ Seunggon (Esji) Kim
 - Improved the performance of back-end of cryptocurrency exchange.
   - Throughput for bidding API was increased 200 times. It is done by resolving single-threaded task.
   - 📚 Java, Spring, MySQL, RabbitMQ, AWS EC2
+  - ☁ AWS - EC2, MQ
 - Built [Ethereum proxy](https://github.com/hexoul/aws-lambda-eth-proxy) as delegator of transactions.
-  - 📚 Go, Ethereum, AWS Lambda
+  - 📚 Go, Ethereum
+  - ☁ AWS - Lambda, API Gateway
 - Built [decentralized appications (DApp)](https://github.com/hexoul?tab=repositories&q=dapp) interacting [smart contract](https://github.com/hexoul/governance-contract) through [web3](https://github.com/hexoul/meta-web3).
   - 📚 Solidity, Ethereum, IPFS, ReactJS
 - Built [API clients](https://github.com/hexoul?tab=repositories&q=api-client) for trading and [monitoring](https://github.com/hexoul/coinmarketcap-react-chart) the tendency.
@@ -87,14 +93,18 @@ Seunggon (Esji) Kim
   - [Armeria](https://github.com/line/armeria/pulls?q=is%3Apr+author%3Ahexoul+is%3Aclosed) - a microservice framework to easily build any type of technologies including gRPC, Thrift, Retrofit and so on.
   - [Python client for Central Dogma](https://github.com/line/centraldogma-python/pulls?q=is%3Apr+author%3Ahexoul+is%3Aclosed) - a Python client for Central Dogma that is highly-available version-controlled service configuration repository based on Git, ZooKeeper and HTTP/2.
 - Individual
-  - 오늘부터 전공면접 IT - a MCQ-based (Multiple Choice Question) study helper for IT interview.
-    - [iOS](https://apps.apple.com/kr/app/id1526993862), [Android](https://play.google.com/store/apps/details?id=com.whatseries.prepareinterview)
-      - 📚 Dart, Flutter, Firebase(Analystics, Crashlytics, Cloud messaging, Admob)
+  - Employee Stock Option Calc. (ESO calculator, 스톡옵션 계산기)
+    - [iOS](https://apps.apple.com/app/id1609432239), [Android](https://play.google.com/store/apps/details?id=hexoul.stockoption.calculator)
+      - 📚 Dart, Flutter, Firebase (Analytics, Crashlytics, Admob)
+  - 오늘부터 전공면접 IT
+    - a MCQ-based (Multiple Choice Question) study helper for IT interview.
+    - [iOS](https://apps.apple.com/app/id1526993862), [Android](https://play.google.com/store/apps/details?id=com.whatseries.prepareinterview)
+      - 📚 Dart, Flutter, Firebase (Analytics, Crashlytics, Cloud messaging, Admob)
     - [Web](https://hexoul.github.io/prepare-interview-data)
       - 📚 JS, TS, NextJS, Chakra UI
 - Research
   - CPS-Sim, 2016 - 2017
-    - [End-to-end tool](https://www.youtube.com/watch?v=Fex2G_o1kzo) for developing CPSs (Cyber Physical System)
+    - [End-to-end tool](https://www.youtube.com/watch?v=Fex2G_o1kzo) for developing CPS(Cyber Physical System)
   - ECU-level real-time simulator, 2013 - 2017
     - w/ Hyundai Motors
     - Support verification of application logic on vehicle
@@ -102,7 +112,7 @@ Seunggon (Esji) Kim
   - Component based design theory and control kernel for CPS, 2013 - 2015
     - Demonstration [1](https://www.youtube.com/watch?v=jOabWQ9EY3U), [2](https://www.youtube.com/watch?v=tD4z7mAAjBg)
   - Real-time system SW on multicore and GPGPU for unmanned vehicles, 2016 - 2017
-  - Drone simulation for Automatic External Defibrillator (AED) delivery, 2017
+  - Drone simulation for AED(Automatic External Defibrillator) delivery, 2017
 
 ### Skills
 - Programming language
