@@ -25,4 +25,4 @@ author: hexoul
 ### Reference
 - [https://ko.wikipedia.org/wiki/운영_체제](https://ko.wikipedia.org/wiki/운영_체제)
 - [https://en.wikipedia.org/wiki/Operating_system](https://en.wikipedia.org/wiki/Operating_system)
-- [https://en.wikipedia.org/wiki/Kernel_(operating_system)](https://en.wikipedia.org/wiki/Kernel_(operating_system))
+- [https://en.wikipedia.org/wiki/Kernel](https://en.wikipedia.org/wiki/Kernel_(operating_system))

@@ -31,7 +31,7 @@ author: hexoul
 - [https://ko.wikipedia.org/wiki/프로세스](https://ko.wikipedia.org/wiki/프로세스)
 - [https://ko.wikipedia.org/wiki/다중_처리](https://ko.wikipedia.org/wiki/다중_처리)
 - [https://ko.wikipedia.org/wiki/불균열_기억_장치_접근](https://ko.wikipedia.org/wiki/불균열_기억_장치_접근)
-- [https://en.wikipedia.org/wiki/Process_(computing)](https://en.wikipedia.org/wiki/Process_(computing))
+- [https://en.wikipedia.org/wiki/Process](https://en.wikipedia.org/wiki/Process_(computing))
 - [https://en.wikipedia.org/wiki/Uniprocessor_system](https://en.wikipedia.org/wiki/Uniprocessor_system)
 - [https://en.wikipedia.org/wiki/Uniform_memory_access](https://en.wikipedia.org/wiki/Uniform_memory_access)
 - [https://en.wikipedia.org/wiki/Non-uniform_memory_access](https://en.wikipedia.org/wiki/Non-uniform_memory_access)
