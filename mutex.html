@@ -11,7 +11,7 @@
 
 
 
-    <title>프로세서와 프로세스</title>
+    <title>스핀락, 세마포어 그리고 뮤텍스</title>
     <meta name="HandheldFriendly" content="True" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Styles'n'Scripts -->
@@ -36,24 +36,24 @@
     <!-- This tag outputs SEO meta+structured data and other important settings -->
     <meta name="description" content="The creative needs diverse points of view and insight." />
     <link rel="shortcut icon" href="/assets/images/favicon.png" type="image/png" />
-    <link rel="canonical" href="/processor" />
+    <link rel="canonical" href="/mutex" />
     <meta name="referrer" content="no-referrer-when-downgrade" />
 
      <!--title below is coming from _includes/dynamic_title-->
     <meta property="og:site_name" content="Hexoul" />
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="프로세서와 프로세스" />
-    <meta property="og:description" content="간단하게 말하면 프로세스(process)는 실행해야 하는 일련의 작업이고, 프로세서(processor)는 프로세스를 실행하는 주체이다. 나아가 어떤 프로세서가 어떤 프로세스를 얼마나 실행시킬지에 대한 실행을 계획하는 것을 스케줄링이라 한다. 만약 프로세서와 프로세스가 하나씩만 있다면 항상 같은 프로세서가 같은 프로세스를 실행할 것이므로 스케줄은 항상 같아 스케줄링이 필요없다. 하지만 프로세스의 수가 많다면 어떤 프로세스를 언제 실행할 것인지" />
-    <meta property="og:url" content="/processor" />
+    <meta property="og:title" content="스핀락, 세마포어 그리고 뮤텍스" />
+    <meta property="og:description" content="스핀락(spinlock)과 세마포어(semaphore) 그리고 뮤텍스(mutex)는 모두 공유 자원에 대한 동시 접근을 제어하기 위해 쓰이는 락(lock)이다. 공유가 불가능한 자원에 동시 접근을 허용한다면, 동시성이 제어되지 않아 의도치않게 값이 덮어써지는 등 데이터가 일관성을 잃게 될 가능성이 생기기 때문이다. 이에 따라 락을 통해 공유 자원에 접근하는 부분, 즉 동시에 접근되면 안되는 구역인 임계 구역(critical section)의" />
+    <meta property="og:url" content="/mutex" />
     <meta property="og:image" content="/assets/images/blog-cover.jpg" />
     <meta property="article:publisher" content="https://www.facebook.com/" />
     <meta property="article:author" content="https://www.facebook.com/" />
-    <meta property="article:published_time" content="2022-04-13T00:00:00+09:00" />
-    <meta property="article:modified_time" content="2022-04-13T00:00:00+09:00" />
+    <meta property="article:published_time" content="2022-05-06T00:00:00+09:00" />
+    <meta property="article:modified_time" content="2022-05-06T00:00:00+09:00" />
     <meta property="article:tag" content="Os" />
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="프로세서와 프로세스" />
-    <meta name="twitter:description" content="간단하게 말하면 프로세스(process)는 실행해야 하는 일련의 작업이고, 프로세서(processor)는 프로세스를 실행하는 주체이다. 나아가 어떤 프로세서가 어떤 프로세스를 얼마나 실행시킬지에 대한 실행을 계획하는 것을 스케줄링이라 한다. 만약 프로세서와 프로세스가 하나씩만 있다면 항상 같은 프로세서가 같은 프로세스를 실행할 것이므로 스케줄은 항상 같아 스케줄링이 필요없다. 하지만 프로세스의 수가 많다면 어떤 프로세스를 언제 실행할 것인지" />
+    <meta name="twitter:title" content="스핀락, 세마포어 그리고 뮤텍스" />
+    <meta name="twitter:description" content="스핀락(spinlock)과 세마포어(semaphore) 그리고 뮤텍스(mutex)는 모두 공유 자원에 대한 동시 접근을 제어하기 위해 쓰이는 락(lock)이다. 공유가 불가능한 자원에 동시 접근을 허용한다면, 동시성이 제어되지 않아 의도치않게 값이 덮어써지는 등 데이터가 일관성을 잃게 될 가능성이 생기기 때문이다. 이에 따라 락을 통해 공유 자원에 접근하는 부분, 즉 동시에 접근되면 안되는 구역인 임계 구역(critical section)의" />
     <meta name="twitter:url" content="/" />
     <meta name="twitter:image" content="/assets/images/blog-cover.jpg" />
     <meta name="twitter:label1" content="Written by" />
@@ -74,7 +74,7 @@
         "name": "Hexoul",
         "logo": "/"
     },
-    "url": "/processor",
+    "url": "/mutex",
     "image": {
         "@type": "ImageObject",
         "url": "/assets/images/blog-cover.jpg",
@@ -83,9 +83,9 @@
     },
     "mainEntityOfPage": {
         "@type": "WebPage",
-        "@id": "/processor"
+        "@id": "/mutex"
     },
-    "description": "간단하게 말하면 프로세스(process)는 실행해야 하는 일련의 작업이고, 프로세서(processor)는 프로세스를 실행하는 주체이다. 나아가 어떤 프로세서가 어떤 프로세스를 얼마나 실행시킬지에 대한 실행을 계획하는 것을 스케줄링이라 한다. 만약 프로세서와 프로세스가 하나씩만 있다면 항상 같은 프로세서가 같은 프로세스를 실행할 것이므로 스케줄은 항상 같아 스케줄링이 필요없다. 하지만 프로세스의 수가 많다면 어떤 프로세스를 언제 실행할 것인지"
+    "description": "스핀락(spinlock)과 세마포어(semaphore) 그리고 뮤텍스(mutex)는 모두 공유 자원에 대한 동시 접근을 제어하기 위해 쓰이는 락(lock)이다. 공유가 불가능한 자원에 동시 접근을 허용한다면, 동시성이 제어되지 않아 의도치않게 값이 덮어써지는 등 데이터가 일관성을 잃게 될 가능성이 생기기 때문이다. 이에 따라 락을 통해 공유 자원에 접근하는 부분, 즉 동시에 접근되면 안되는 구역인 임계 구역(critical section)의"
 }
     </script>
 
@@ -98,7 +98,7 @@
     </script> -->
 
     <meta name="generator" content="Jekyll 3.6.2" />
-    <link rel="alternate" type="application/rss+xml" title="프로세서와 프로세스" href="/feed.xml" />
+    <link rel="alternate" type="application/rss+xml" title="스핀락, 세마포어 그리고 뮤텍스" href="/feed.xml" />
 
 
 </head>
@@ -153,7 +153,7 @@ into the {body} of the default.hbs template -->
 
             <header class="post-full-header">
                 <section class="post-full-meta">
-                    <time class="post-full-meta-date" datetime="13 April 2022">13 April 2022</time>
+                    <time class="post-full-meta-date" datetime=" 6 May 2022"> 6 May 2022</time>
                     
                         <span class="date-divider">/</span>
                         
@@ -163,38 +163,30 @@ into the {body} of the default.hbs template -->
                         
                     
                 </section>
-                <h1 class="post-full-title">프로세서와 프로세스</h1>
+                <h1 class="post-full-title">스핀락, 세마포어 그리고 뮤텍스</h1>
             </header>
 
             
 
             <section class="post-full-content">
                 <div class="kg-card-markdown">
-                    <p>간단하게 말하면 프로세스(process)는 실행해야 하는 일련의 작업이고, 프로세서(processor)는 프로세스를 실행하는 주체이다. 나아가 어떤 프로세서가 어떤 프로세스를 얼마나 실행시킬지에 대한 실행을 계획하는 것을 스케줄링이라 한다.</p>
+                    <p>스핀락(spinlock)과 세마포어(semaphore) 그리고 뮤텍스(mutex)는 모두 공유 자원에 대한 동시 접근을 제어하기 위해 쓰이는 락(lock)이다.</p>
 
-<p>만약 프로세서와 프로세스가 하나씩만 있다면 항상 같은 프로세서가 같은 프로세스를 실행할 것이므로 스케줄은 항상 같아 스케줄링이 필요없다. 하지만 프로세스의 수가 많다면 어떤 프로세스를 언제 실행할 것인지 스케줄링을 할 필요가 생긴다. 만약 스케줄링을 하지 않고 시작한 프로세스를 다 끝내고 나서야 다음 프로세스를 실행시킨다면 실행 중인 프로세스를 제외한 나머지 프로세스들은 기약없이 기다리게 될 수도 있다. 왜냐하면 프로그램의 구현이나 예외 등에 따라 프로세스 수행 중 대기시간이 무한대가 될 수 있기때문에 종료시간이 보장되지 않기 때문이다.</p>
+<p>공유가 불가능한 자원에 동시 접근을 허용한다면, 동시성이 제어되지 않아 의도치않게 값이 덮어써지는 등 데이터가 일관성을 잃게 될 가능성이 생기기 때문이다. 이에 따라 락을 통해 공유 자원에 접근하는 부분, 즉 동시에 접근되면 안되는 구역인 임계 구역(critical section)의 진입을 통제함으로써 일관성을 보장한다.</p>
 
-<h3 id="멀티-프로세서와-멀티-코어">멀티 프로세서와 멀티 코어</h3>
+<p>스핀락, 세마포어 및 뮤텍스는 임계 구역에 진입하고 나갈 때 락과 언락(unlock)을 하는 방법이 서로 다르게 구현된다. 우선 스핀락은 임계 구역에 진입할 때까지 CPU를 놓지 않고 계속하여 락의 취득을 시도하는 busy waiting으로 구현된다. 세마포어와 뮤텍스도 busy waiting으로 구현될 수 있는데, 이 경우 락을 취득하는 방식에는 차이가 없다. 하지만 락을 요청한 후 취득할 때까지 CPU를 소모하지 않고 잠들어 있도록 대기 큐(wait queue)를 사용하도록 구현될 경우 차이가 생긴다. 금방 임계 구역에 진입이 불가능한 경우, 수행 가능한 다른 프로세스가 수행되고 있을 수 있도록 CPU를 낭비하지 않는 세마포어나 뮤텍스가 효율적이다. 하지만 금방 진입이 가능한 경우 프로세스가 잠들었다가 깨어나는 문맥 교환(context switch)이 필요없는 스핀락이 더 효율적이다.</p>
 
-<p>멀티 프로세서(multiprocessor)는 “멀티(multi-)”라는 뜻대로 복수의 프로세서를 가지는 것을 의미한다. 각 프로세서는 단일 직접 회로, 즉 하나의 칩이라는 것 까지만 정의되고 어떻게 구성되는 지는 알 수 없다. 하지만 한 프로세서가 적어도 하나의 CPU는 가지고 있을 것이므로 병렬 처리가 가능한 시스템이라는 사실은 알 수 있다. 주기억장치는 공유되지만 각 프로세서는 자신의 캐시와 CPU를 가지고 서로 다른 프로세스의 서로 다른 명령어를 동시에 실행시킬 수 있다.</p>
-
-<p><img width="500" src="assets/images/processor-fig1.jpeg" /></p>
-
-<p>반면 멀티 코어는 멀티 코어 프로세서(multi-core processor)의 줄임말로 하나의 프로세서 내에 두 개 이상의 코어가 있는 것을 말한다. 코어 수에 따라 구체적인 명칭을 사용하기도 한다. 예를 들어, 코어가 두 개일 경우 듀얼 코어(dual-core), 네 개일 경우 쿼드 코어(quad-core)라고 부른다. 복수의 프로세스를 동시에 실행시킬 수 있다는 점은 멀티 프로세서와 같지만 복수의 코어가 같은 칩 안에 있다는 점이 다르다. 따라서 코어 간 거리가 물리적으로 가깝기 때문에 코어 간 정보 전달이나 프로세스를 한 프로세서에서 다른 프로세서로 옮기는 프로세스 이주(process migration) 시에 멀티 프로세서보다 오버헤드(overhead)가 적은 등 여러 이점이 있다.</p>
-
-<p>그렇다면 싱글 코어 프로세서가 두 개인 시스템과 듀얼 코어를 비교한다면 어떤 것이 빠를까? 항상 우세인 것은 없고 상황에 따라 달라진다. 코어 간의 상호 작용이 없다면 클럭 속도(clock rate)에 의해 좌우될 수 있다. 클럭 속도가 높을 수록 같은 시간에 처리할 수 있는 명령어의 수가 많으므로, 전체 코어의 수가 같더라도 클럭 속도가 높은 쪽이 처리량이 높을 확률이 크다. 클럭 속도가 같다면 다음으로 캐시(cache)의 영향을 생각해 볼 수 있다. 프로세서마다 별도로 캐시를 가지기에 듀얼 코어는 동시에 두 코어가 같은 캐시에 접근한다. 자원을 공유할 일이 없는 서로 다른 프로세스를 실행시킨다면 경쟁적으로 캐시를 사용하여 싱글 코어에 비하여 캐시 실패(cache miss)를 더 많이 유발시킬 수도 있다. 이 경우 싱글 코어가 더 유리한 환경이 된다. 만약 반대로 동일한 프로그램을 다중으로 실행하는 등 동일한 메모리에 접근을 많이 하는 상황이 된다면 캐시 적중(cache hit)이 많아져 멀티 코어가 더 유리해질 것이다. 이렇듯 설계와 실제 실행 환경에 따라 드러나는 장단점을 인지해두는 것이 중요하다.</p>
-
-<p>추가적으로 UMA(Uniform Memory Access)와 NUMA(Non-uniform Memory Access)도 알아두면 좋다. UMA와 NUMA는 프로세서가 많아지는 병렬 컴퓨팅(parallel computing) 환경 하에서 메모리를 효율적으로 사용하기 위해 고안된 설계들이다. UMA는 각 코어에서 메모리에 접근하는 속도가 균등하도록 설계된 것으로, 접근 시간이 결정적이지만 동시에 여러 프로세서가 한 번에 메모리에 접근할 수 없어 시분할에 적합하다. NUMA는 UMA와 대조되는 개념으로 각 프로세서가 별도의 메모리 컨트롤러를 가지고 계층 구조로 연결되어 있어 요청한 메모리의 물리적 위치에 따라 접근 속도가 매번 달라질 수 있다. 대신 동시에 접근할 수 있어 일반적으로 UMA보다 빠르고 실시간성이 요구되는 시스템에 적합하다.</p>
+<p>세마포어는 임계 구역에 동시 진입을 허용할 프로세스의 수에 따라 1개만 허용하면 이진 세마포어(binary semaphore) 그 외에는 계수 세마포어(counting semaphore)라 한다. 뮤텍스도 임계 구역에 동시 진입을 허용할 프로세스가 1개이기 때문에 이진 세마포어와 동일하다 생각할 수 있지만 그렇지 않다. 뮤텍스의 경우, 락을 취득한 프로세스만이 언락을 할 수 있다는 점이 다르다. 따라서 뮤텍스를 통해 임계 구역에 진입한 프로세스가 비정상적으로 종료되거나 무한 루프에 빠진다면 같은 락을 바라보고 임계 구역에 진입하려고 시도하고 있던 프로세스는 영원히 진입할 수 없게 된다.
+반면, 세마포어는 락의 동시 접근만을 제어할 뿐 언락을 시도하는 프로세스가 락을 취득했던 프로세스인지는 확인하지는 않는다. 이에 따라, 위와 같이 락을 취득했던 프로세스가 락을 해제하지 않은 채 비정상 종료가 되었다고 하더라도, 세마포어에서는 다른 프로세스가 대신 언락을 하여 무한히 대기하는 상황을 회피할 수 있다.</p>
 
 <h3 id="reference">Reference</h3>
 <ul>
-  <li><a href="https://ko.wikipedia.org/wiki/프로세스">https://ko.wikipedia.org/wiki/프로세스</a></li>
-  <li><a href="https://ko.wikipedia.org/wiki/다중_처리">https://ko.wikipedia.org/wiki/다중_처리</a></li>
-  <li><a href="https://ko.wikipedia.org/wiki/불균열_기억_장치_접근">https://ko.wikipedia.org/wiki/불균열_기억_장치_접근</a></li>
-  <li><a href="https://en.wikipedia.org/wiki/Process_(computing)">https://en.wikipedia.org/wiki/Process</a></li>
-  <li><a href="https://en.wikipedia.org/wiki/Uniprocessor_system">https://en.wikipedia.org/wiki/Uniprocessor_system</a></li>
-  <li><a href="https://en.wikipedia.org/wiki/Uniform_memory_access">https://en.wikipedia.org/wiki/Uniform_memory_access</a></li>
-  <li><a href="https://en.wikipedia.org/wiki/Non-uniform_memory_access">https://en.wikipedia.org/wiki/Non-uniform_memory_access</a></li>
+  <li><a href="https://ko.wikipedia.org/wiki/스핀락">https://ko.wikipedia.org/wiki/스핀락</a></li>
+  <li><a href="https://ko.wikipedia.org/wiki/세마포어">https://ko.wikipedia.org/wiki/세마포어</a></li>
+  <li><a href="https://ko.wikipedia.org/wiki/락_(컴퓨터_과학)">https://ko.wikipedia.org/wiki/뮤텍스</a></li>
+  <li><a href="https://en.wikipedia.org/wiki/Spinlock">https://en.wikipedia.org/wiki/Spinlock</a></li>
+  <li><a href="https://en.wikipedia.org/wiki/Semaphore_(programming)">https://en.wikipedia.org/wiki/Semaphore</a></li>
+  <li><a href="https://en.wikipedia.org/wiki/Lock_(computer_science)">https://en.wikipedia.org/wiki/Mutex</a></li>
 </ul>
 
                 </div>
@@ -235,9 +227,9 @@ into the {body} of the default.hbs template -->
                     <div id="disqus_thread"></div>
                     <script>
                         var disqus_config = function () {
-                            var this_page_url = '/processor';
-                            var this_page_identifier = '/processor';
-                            var this_page_title = '프로세서와 프로세스';
+                            var this_page_url = '/mutex';
+                            var this_page_identifier = '/mutex';
+                            var this_page_title = '스핀락, 세마포어 그리고 뮤텍스';
                         };
                         (function() {
                             var d = document, s = d.createElement('script');
@@ -291,14 +283,14 @@ into the {body} of the default.hbs template -->
                                 
                                   
                                     
-                                        
-                                        
-                                            <li><a href="/mutex">스핀락, 세마포어 그리고 뮤텍스</a></li>
-                                        
-                                    
                                   
                                 
                                   
+                                    
+                                        
+                                        
+                                            <li><a href="/processor">프로세서와 프로세스</a></li>
+                                        
                                     
                                   
                                 
@@ -345,7 +337,7 @@ into the {body} of the default.hbs template -->
     <article class="post-card post-template no-image">
         
         <div class="post-card-content">
-            <a class="post-card-content-link" href="/mutex">
+            <a class="post-card-content-link" href="/process-sync">
                 <header class="post-card-header">
                     
                         
@@ -355,11 +347,11 @@ into the {body} of the default.hbs template -->
                         
                     
 
-                    <h2 class="post-card-title">스핀락, 세마포어 그리고 뮤텍스</h2>
+                    <h2 class="post-card-title">프로세스 동기화의 블로킹 방식</h2>
                 </header>
                 <section class="post-card-excerpt">
                     
-                        <p>스핀락(spinlock)과 세마포어(semaphore) 그리고 뮤텍스(mutex)는 모두 공유 자원에 대한 동시 접근을 제어하기 위해 쓰이는 락(lock)이다.
+                        <p>프로세스 동기화 방식은 임계 구역(critical section)에 진입하기 위해 대기하는 알고리즘(algorithm)에 따라 블로킹(blocking)과 논블로킹(non-blocking)으로 나뉜다.
 
 </p>
                     
@@ -395,7 +387,7 @@ into the {body} of the default.hbs template -->
     <article class="post-card post-template no-image">
         
         <div class="post-card-content">
-            <a class="post-card-content-link" href="/isr">
+            <a class="post-card-content-link" href="/processor">
                 <header class="post-card-header">
                     
                         
@@ -405,11 +397,11 @@ into the {body} of the default.hbs template -->
                         
                     
 
-                    <h2 class="post-card-title">인터럽트 벡터 테이블과 ISR</h2>
+                    <h2 class="post-card-title">프로세서와 프로세스</h2>
                 </header>
                 <section class="post-card-excerpt">
                     
-                        <p>인터럽트는 IRQ(Interrupt ReQuest)라고 하는 하드웨어 전기신호로 회로의 버스(bus)를 통해 CPU에 전달된다.
+                        <p>간단하게 말하면 프로세스(process)는 실행해야 하는 일련의 작업이고, 프로세서(processor)는 프로세스를 실행하는 주체이다. 나아가 어떤 프로세서가 어떤 프로세스를 얼마나 실행시킬지에 대한 실행을 계획하는 것을 스케줄링이라 한다.
 
 </p>
                     
@@ -429,7 +421,7 @@ into the {body} of the default.hbs template -->
                 <span class="reading-time">
                     
                     
-                      1 min read
+                      2 min read
                     
                 </span>
             </footer>
@@ -453,18 +445,18 @@ into the {body} of the default.hbs template -->
         </a>
     </div>
     <span class="floating-header-divider">&mdash;</span>
-    <div class="floating-header-title">프로세서와 프로세스</div>
+    <div class="floating-header-title">스핀락, 세마포어 그리고 뮤텍스</div>
     <div class="floating-header-share">
         <div class="floating-header-share-label">Share this <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
     <path d="M7.5 15.5V4a1.5 1.5 0 1 1 3 0v4.5h2a1 1 0 0 1 1 1h2a1 1 0 0 1 1 1H18a1.5 1.5 0 0 1 1.5 1.5v3.099c0 .929-.13 1.854-.385 2.748L17.5 23.5h-9c-1.5-2-5.417-8.673-5.417-8.673a1.2 1.2 0 0 1 1.76-1.605L7.5 15.5zm6-6v2m-3-3.5v3.5m6-1v2"/>
 </svg>
 </div>
-        <a class="floating-header-share-tw" href="https://twitter.com/share?text=%ED%94%84%EB%A1%9C%EC%84%B8%EC%84%9C%EC%99%80+%ED%94%84%EB%A1%9C%EC%84%B8%EC%8A%A4&amp;url=https://hexoul.github.ioprocessor"
+        <a class="floating-header-share-tw" href="https://twitter.com/share?text=%EC%8A%A4%ED%95%80%EB%9D%BD%2C+%EC%84%B8%EB%A7%88%ED%8F%AC%EC%96%B4+%EA%B7%B8%EB%A6%AC%EA%B3%A0+%EB%AE%A4%ED%85%8D%EC%8A%A4&amp;url=https://hexoul.github.iomutex"
             onclick="window.open(this.href, 'share-twitter', 'width=550,height=235');return false;">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="M30.063 7.313c-.813 1.125-1.75 2.125-2.875 2.938v.75c0 1.563-.188 3.125-.688 4.625a15.088 15.088 0 0 1-2.063 4.438c-.875 1.438-2 2.688-3.25 3.813a15.015 15.015 0 0 1-4.625 2.563c-1.813.688-3.75 1-5.75 1-3.25 0-6.188-.875-8.875-2.625.438.063.875.125 1.375.125 2.688 0 5.063-.875 7.188-2.5-1.25 0-2.375-.375-3.375-1.125s-1.688-1.688-2.063-2.875c.438.063.813.125 1.125.125.5 0 1-.063 1.5-.25-1.313-.25-2.438-.938-3.313-1.938a5.673 5.673 0 0 1-1.313-3.688v-.063c.813.438 1.688.688 2.625.688a5.228 5.228 0 0 1-1.875-2c-.5-.875-.688-1.813-.688-2.75 0-1.063.25-2.063.75-2.938 1.438 1.75 3.188 3.188 5.25 4.25s4.313 1.688 6.688 1.813a5.579 5.579 0 0 1 1.5-5.438c1.125-1.125 2.5-1.688 4.125-1.688s3.063.625 4.188 1.813a11.48 11.48 0 0 0 3.688-1.375c-.438 1.375-1.313 2.438-2.563 3.188 1.125-.125 2.188-.438 3.313-.875z"/></svg>
 
         </a>
-        <a class="floating-header-share-fb" href="https://www.facebook.com/sharer/sharer.php?u=https://hexoul.github.ioprocessor"
+        <a class="floating-header-share-fb" href="https://www.facebook.com/sharer/sharer.php?u=https://hexoul.github.iomutex"
             onclick="window.open(this.href, 'share-facebook','width=580,height=296');return false;">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="M19 6h5V0h-5c-3.86 0-7 3.14-7 7v3H8v6h4v16h6V16h5l1-6h-6V7c0-.542.458-1 1-1z"/></svg>
 

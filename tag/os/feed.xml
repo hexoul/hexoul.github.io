@@ -4,7 +4,7 @@
   <generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator>
   <link href="/tag/os/feed.xml" rel="self" type="application/atom+xml" />
   <link href="/" rel="alternate" type="text/html" />
-  <updated>2022-05-06T22:08:29+09:00</updated>
+  <updated>2022-05-07T12:00:20+09:00</updated>
   <id>/tag/os/feed.xml</id>
 
   
@@ -30,6 +30,107 @@
   
   
 
+  
+    <entry>
+      <title type="html">프로세스 동기화의 블로킹 방식</title>
+      <link href="/process-sync" rel="alternate" type="text/html" title="프로세스 동기화의 블로킹 방식" />
+      <published>2022-05-07T00:00:00+09:00</published>
+      <updated>2022-05-07T00:00:00+09:00</updated>
+      <id>/process-sync</id>
+      <content type="html" xml:base="/process-sync">&lt;p&gt;프로세스 동기화 방식은 임계 구역(critical section)에 진입하기 위해 대기하는 알고리즘(algorithm)에 따라 블로킹(blocking)과 논블로킹(non-blocking)으로 나뉜다.&lt;/p&gt;
+
+&lt;p&gt;구체적으로 진입이 될 때까지 다른 작업을 하지 못하고 무한히 기다릴 가능성이 있다면 블로킹, 그렇지 않고 유한한 시간 또는 단계 내에 진입의 완료가 보장된다면 논블로킹이다. 논블로킹이라 하여 진입 시도 후 임계 구역에 진입할 때까지 대기 시간이 아예 없는 것이 아님을 주의해야 한다.&lt;/p&gt;
+
+&lt;p&gt;논블로킹은 동시 접근이 발생하고 있는 상황에서 어느 정도까지 진행에 지장을 주지 않고 진입을 보장해주느냐에 따라서 단계가 나뉘어 진다. 단계는 wait-free, lock-free 및 obstruction-free가 있다. wait-free에서 obstruction-free로 갈수록 보장이 약해진다.
+우선 wait-free의 경우, 시스템 전역적으로 기아(starvation)가 없는 것을 보장해준다. 따라서 접근을 시도했던 모든 프로세스는 유한한 시간 내에 원자성을 지키면서 작업을 완료할 수 있다. 이러한 특성은 실시간성이 보장되어야 하는 실시간 시스템에 적합하다. 하지만 기아를 방지하기 위한 제약이 구현을 복잡하게 만들어 성능은 lock-free 또는 obstruction-free보다 좋지 않을 수도 있다.
+lock-free는 기아를 발생시킬 수 있으나, 경쟁이 있더라도 유한한 시간내에 적어도 하나의 프로세스는 성공적으로 작업을 진행할 수 있게 보장해 준다. lock-free의 보장 범위는 wait-free의 부분 집합이므로 모든 wait-free는 lock-free이다.
+obstruction-free는 가장 약한 수준의 논블로킹으로, 프로세스가 독립적으로 수행된다면 유한한 시간 내에 작업을 완료할 수 있는 것을 뜻한다. 달리 말해, 독립 수행이 보장되지 못한다면 경쟁을 발생시킬 수 있는 나머지 프로세스를 전부 대기시켜야 유한한 시간 내에 완료할 수 있다는 것을 의미한다. 논블로킹 중에서 제일 제약이 약한만큼, 앞서 모든 wait-free가 lock-free이었던 것처럼 모든 wait-free 또는 모든 lock-free는 obstruction-free도 만족한다고 말할 수 있다.&lt;/p&gt;
+
+&lt;h3 id=&quot;reference&quot;&gt;Reference&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://ko.wikipedia.org/wiki/기아_상태&quot;&gt;https://ko.wikipedia.org/wiki/기아_상태&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/Non-blocking_algorithm#Wait-freedom&quot;&gt;https://en.wikipedia.org/wiki/Non-blocking_algorithm#Wait-freedom&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/Non-blocking_algorithm#Lock-freedom&quot;&gt;https://en.wikipedia.org/wiki/Non-blocking_algorithm#Lock-freedom&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/Non-blocking_algorithm#Obstruction-freedom&quot;&gt;https://en.wikipedia.org/wiki/Non-blocking_algorithm#Obstruction-freedom&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/Starvation_(computer_science)&quot;&gt;https://en.wikipedia.org/wiki/Starvation&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+
+      
+      
+      
+      
+      
+
+      <author>
+          <name>Seunggon Kim</name>
+        
+        
+      </author>
+
+      
+
+      
+        <category term="os" />
+      
+
+      
+        <summary type="html">프로세스 동기화 방식은 임계 구역(critical section)에 진입하기 위해 대기하는 알고리즘(algorithm)에 따라 블로킹(blocking)과 논블로킹(non-blocking)으로 나뉜다.</summary>
+      
+
+      
+      
+    </entry>
+  
+    <entry>
+      <title type="html">스핀락, 세마포어 그리고 뮤텍스</title>
+      <link href="/mutex" rel="alternate" type="text/html" title="스핀락, 세마포어 그리고 뮤텍스" />
+      <published>2022-05-06T00:00:00+09:00</published>
+      <updated>2022-05-06T00:00:00+09:00</updated>
+      <id>/mutex</id>
+      <content type="html" xml:base="/mutex">&lt;p&gt;스핀락(spinlock)과 세마포어(semaphore) 그리고 뮤텍스(mutex)는 모두 공유 자원에 대한 동시 접근을 제어하기 위해 쓰이는 락(lock)이다.&lt;/p&gt;
+
+&lt;p&gt;공유가 불가능한 자원에 동시 접근을 허용한다면, 동시성이 제어되지 않아 의도치않게 값이 덮어써지는 등 데이터가 일관성을 잃게 될 가능성이 생기기 때문이다. 이에 따라 락을 통해 공유 자원에 접근하는 부분, 즉 동시에 접근되면 안되는 구역인 임계 구역(critical section)의 진입을 통제함으로써 일관성을 보장한다.&lt;/p&gt;
+
+&lt;p&gt;스핀락, 세마포어 및 뮤텍스는 임계 구역에 진입하고 나갈 때 락과 언락(unlock)을 하는 방법이 서로 다르게 구현된다. 우선 스핀락은 임계 구역에 진입할 때까지 CPU를 놓지 않고 계속하여 락의 취득을 시도하는 busy waiting으로 구현된다. 세마포어와 뮤텍스도 busy waiting으로 구현될 수 있는데, 이 경우 락을 취득하는 방식에는 차이가 없다. 하지만 락을 요청한 후 취득할 때까지 CPU를 소모하지 않고 잠들어 있도록 대기 큐(wait queue)를 사용하도록 구현될 경우 차이가 생긴다. 금방 임계 구역에 진입이 불가능한 경우, 수행 가능한 다른 프로세스가 수행되고 있을 수 있도록 CPU를 낭비하지 않는 세마포어나 뮤텍스가 효율적이다. 하지만 금방 진입이 가능한 경우 프로세스가 잠들었다가 깨어나는 문맥 교환(context switch)이 필요없는 스핀락이 더 효율적이다.&lt;/p&gt;
+
+&lt;p&gt;세마포어는 임계 구역에 동시 진입을 허용할 프로세스의 수에 따라 1개만 허용하면 이진 세마포어(binary semaphore) 그 외에는 계수 세마포어(counting semaphore)라 한다. 뮤텍스도 임계 구역에 동시 진입을 허용할 프로세스가 1개이기 때문에 이진 세마포어와 동일하다 생각할 수 있지만 그렇지 않다. 뮤텍스의 경우, 락을 취득한 프로세스만이 언락을 할 수 있다는 점이 다르다. 따라서 뮤텍스를 통해 임계 구역에 진입한 프로세스가 비정상적으로 종료되거나 무한 루프에 빠진다면 같은 락을 바라보고 임계 구역에 진입하려고 시도하고 있던 프로세스는 영원히 진입할 수 없게 된다.
+반면, 세마포어는 락의 동시 접근만을 제어할 뿐 언락을 시도하는 프로세스가 락을 취득했던 프로세스인지는 확인하지는 않는다. 이에 따라, 위와 같이 락을 취득했던 프로세스가 락을 해제하지 않은 채 비정상 종료가 되었다고 하더라도, 세마포어에서는 다른 프로세스가 대신 언락을 하여 무한히 대기하는 상황을 회피할 수 있다.&lt;/p&gt;
+
+&lt;h3 id=&quot;reference&quot;&gt;Reference&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://ko.wikipedia.org/wiki/스핀락&quot;&gt;https://ko.wikipedia.org/wiki/스핀락&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://ko.wikipedia.org/wiki/세마포어&quot;&gt;https://ko.wikipedia.org/wiki/세마포어&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://ko.wikipedia.org/wiki/락_(컴퓨터_과학)&quot;&gt;https://ko.wikipedia.org/wiki/뮤텍스&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/Spinlock&quot;&gt;https://en.wikipedia.org/wiki/Spinlock&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/Semaphore_(programming)&quot;&gt;https://en.wikipedia.org/wiki/Semaphore&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/Lock_(computer_science)&quot;&gt;https://en.wikipedia.org/wiki/Mutex&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+
+      
+      
+      
+      
+      
+
+      <author>
+          <name>Seunggon Kim</name>
+        
+        
+      </author>
+
+      
+
+      
+        <category term="os" />
+      
+
+      
+        <summary type="html">스핀락(spinlock)과 세마포어(semaphore) 그리고 뮤텍스(mutex)는 모두 공유 자원에 대한 동시 접근을 제어하기 위해 쓰이는 락(lock)이다.</summary>
+      
+
+      
+      
+    </entry>
   
     <entry>
       <title type="html">프로세서와 프로세스</title>
@@ -58,7 +159,7 @@
   &lt;li&gt;&lt;a href=&quot;https://ko.wikipedia.org/wiki/프로세스&quot;&gt;https://ko.wikipedia.org/wiki/프로세스&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;https://ko.wikipedia.org/wiki/다중_처리&quot;&gt;https://ko.wikipedia.org/wiki/다중_처리&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;https://ko.wikipedia.org/wiki/불균열_기억_장치_접근&quot;&gt;https://ko.wikipedia.org/wiki/불균열_기억_장치_접근&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/Process_(computing)&quot;&gt;https://en.wikipedia.org/wiki/Process_(computing)&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/Process_(computing)&quot;&gt;https://en.wikipedia.org/wiki/Process&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/Uniprocessor_system&quot;&gt;https://en.wikipedia.org/wiki/Uniprocessor_system&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/Uniform_memory_access&quot;&gt;https://en.wikipedia.org/wiki/Uniform_memory_access&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/Non-uniform_memory_access&quot;&gt;https://en.wikipedia.org/wiki/Non-uniform_memory_access&lt;/a&gt;&lt;/li&gt;
@@ -213,7 +314,7 @@
 &lt;ul&gt;
   &lt;li&gt;&lt;a href=&quot;https://ko.wikipedia.org/wiki/운영_체제&quot;&gt;https://ko.wikipedia.org/wiki/운영_체제&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/Operating_system&quot;&gt;https://en.wikipedia.org/wiki/Operating_system&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/Kernel_(operating_system)&quot;&gt;https://en.wikipedia.org/wiki/Kernel_(operating_system)&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/Kernel_(operating_system)&quot;&gt;https://en.wikipedia.org/wiki/Kernel&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;</content>
 
       
