@@ -8,7 +8,7 @@ class: page-template
 subclass: 'post page'
 ---
 
-Seunggon (Esji) Kim
+Seunggon Kim / Esji
 
 > I'm passionate about software engineering for SOTA architecture, programming and theory also. 
 
@@ -21,16 +21,16 @@ Seunggon (Esji) Kim
 
 *Software engineer*, **Kinolights Inc.** - Korea
 - Developed back-end of [Kinolights](https://kinolights.com/).
-  - 📚 JS, TS, RxJS, NestJS, TypeORM, GraphQL, Elasticsearch
-  - ☁ AWS - ECS, Aurora, S3, Route 53, MQ, MSK, OpenSearch, SNS, SMS
+  - 📚 JS, TS, RxJS, NestJS, TypeORM, GraphQL w/ federation, Elasticsearch, Redis
+  - ☁ AWS - Fargate, ECS, Aurora, S3, Route53, MQ, MSK, OpenSearch, SNS, SMS, SQS, WAF, CloudFront
 
 ---
 
 <p align="right">Jul. 2021 - Feb. 2022</p>
 
 *Software engineer*, **ActionPower Corp.** - Korea
-- Built stable and scalable Speech-To-Text (STT) pipeline.
-  - Constructed high availability (HA) with several k8s clusters that are in-house Airflow and Composer.
+- Built stable and scalable STT(Speech-To-Text) pipeline.
+  - Constructed HA(High Availability) with several k8s clusters that are in-house Airflow and Composer.
   - 📚 Python, [Airflow](https://airflow.apache.org/), [Microk8s](https://microk8s.io/), [NVIDIA Triton](https://developer.nvidia.com/nvidia-triton-inference-server)
   - ☁ GCP - [Composer](https://cloud.google.com/composer), Kubernetes, [GKE](https://cloud.google.com/kubernetes-engine)
 - Built a real-time STT architect.
@@ -102,17 +102,23 @@ Seunggon (Esji) Kim
       - 📚 Dart, Flutter, Firebase (Analytics, Crashlytics, Cloud messaging, Admob)
     - [Web](https://hexoul.github.io/prepare-interview-data)
       - 📚 JS, TS, NextJS, Chakra UI
-- Research
-  - CPS-Sim, 2016 - 2017
-    - [End-to-end tool](https://www.youtube.com/watch?v=Fex2G_o1kzo) for developing CPS(Cyber Physical System)
-  - ECU-level real-time simulator, 2013 - 2017
-    - w/ Hyundai Motors
-    - Support verification of application logic on vehicle
-    - Support ECU implementation by auto-code generator from given logic
-  - Component based design theory and control kernel for CPS, 2013 - 2015
-    - Demonstration [1](https://www.youtube.com/watch?v=jOabWQ9EY3U), [2](https://www.youtube.com/watch?v=tD4z7mAAjBg)
-  - Real-time system SW on multicore and GPGPU for unmanned vehicles, 2016 - 2017
-  - Drone simulation for AED(Automatic External Defibrillator) delivery, 2017
+  - MojiE (아무말)
+    - [iOS](https://apps.apple.com/app/id1632701886), [Android](https://play.google.com/store/apps/details?id=hexoul.image.gen)
+      - 📚 Dart, Flutter, Firebase (Analytics, Crashlytics, Admob)
+- <details>
+  <summary>Research</summary>
+  <ul>
+    <li>CPS-Sim, 2016 - 2017</li>
+    <ul><li><a href='https://www.youtube.com/watch?v=Fex2G_o1kzo'>End-to-end tool</a> for developing CPS(Cyber Physical System)</li></ul>
+    <li>ECU-level real-time simulator, 2013 - 2017</li>
+    <ul><li>w/ Hyundai Motors</li></ul>
+    <ul><li>Support verification of application logic on vehicle</li></ul>
+    <li>Component based design theory and control kernel for CPS, 2013 - 2015</li>
+    <ul><li>Demonstration <a target='_blank' href='https://www.youtube.com/watch?v=jOabWQ9EY3U'><sup>[1]</sup></a>, <a href='https://www.youtube.com/watch?v=tD4z7mAAjBg'><sup>[2]</sup></a></li></ul>
+    <li>Real-time system SW on multicore and GPGPU for unmanned vehicles, 2016 - 2017</li>
+    <li>Drone simulation for AED(Automatic External Defibrillator) delivery, 2017</li>
+  </ul>
+  </details>
 
 ### Skills
 - Programming language

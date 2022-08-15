@@ -349,7 +349,7 @@ ol ol,
 ul ul,
 ul ol,
 ol ul {
-    margin: 0.5em 0 1em;
+    margin: 0.2em 0 0.5em;
 }
 
 ul {
@@ -363,7 +363,7 @@ ol {
 li {
     margin: 0.5em 0;
     padding-left: 0.3em;
-    line-height: 1.6em;
+    line-height: 1.2em;
 }
 
 dt {
