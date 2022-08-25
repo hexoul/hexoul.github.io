@@ -128,35 +128,43 @@ Seunggon Kim / Esji
   - Reactive
     - **RxJava, RxJS**
   - Back-end
-    - (Java) **Armeria**, Central Dogma, **Spring**
-    - (JS) ExpressJS, **NestJS**, NodeJS
-    - (Python) Django, Flask, FastAPI
-    - (Storage) DynamoDB, Ethereum, **Elasticsearch, Firestore, HBase**, IPFS, LevelDB, **MySQL**, PostgreSQL, **Redis**, Zookeeper
-    - (Stream) **Kafka**, RabbitMQ
-    - (Orchestration) **Docker, Jenkins, Kubernetes**
-    - (Monitoring) Gatling, **Grafana, Kibana, Prometheus**, Zipkin
+    - [Java] **Armeria, Spring, Spring boot**, Central Dogma
+    - [JS] **NestJS**, ExpressJS, NodeJS
+    - [Python] Django, Flask, FastAPI
+    - [Storage] **Elasticsearch, Redis, MySQL, HBase**, Firestore, DynamoDB, LevelDB, PostgreSQL, Zookeeper, Ethereum, IPFS
+    - [Stream] **Kafka**, RabbitMQ, AWS SQS
+    - [Orchestration] **Docker, Jenkins, Kubernetes**
+    - [Monitoring] Gatling, **Grafana, Kibana, Prometheus**, Zipkin
   - Front-end
     - **Flutter, NextJS, ReactJS**
     - Cocos2d, MFC, Qt, Tizen, Unity
-  - Vehicle field
-    - (Simulator) CarSim, Torcs
-    - AutoBox, AUTOSAR, EB Tresos, Odin, Simulink
-    - FlexRay, Controller Area Network (CAN), CAN-FD
+  - <details>
+    <summary>Vehicle field</summary>
+    <ul>
+    <li>[Simulator] CarSim, Torcs</li>
+    <li>AutoBox, AUTOSAR, EB Tresos, Odin, Simulink</li>
+    <li>FlexRay, CAN(Controller Area Network), CAN-FD</li>
+    </ul>
+    </details>
 - Protocol
   - **HTTP/2**, **REST**, **GraphQL**, gRPC, RTC, SSE, SPDY, **Thrift**, Websocket
 - Cloud service
-  - AWS - ALB, API Gateway, EC2, Lambda, RDS
+  - AWS - OpenSearch, MSK, RDS, SNS, SMS, SQS, WAF, CloudFront, ALB, API Gateway, Fargate, ECS, EC2, Lambda
   - GCP - Composer, GAE, GCE, GCR, GCS, GKE, GSR, Memorystore
-- Tool
-  - Github, Gitlab, Sourcetree, JSFiddle, Remix
-  - Slack, JIRA, Trello
-  - (Documentation) Confluence, Doxygen, Javadoc, Sphinx, Jekyll
-  - (Analysis) async-profiler, Dr.Memory, Valgrind, Black Duck Hub
-  - (Package manager) Gradle, Helm, npm, yarn, pip, dep
-  - Hardware-related
-    - CodeWarrior, GreenHills, TASKING, Trace32
-    - Infineon(TC1797, TC275), STMicro(SPC56EL70), Freescale(MPC5606B), Raspberry Pi, Arduino
-    - CANalyzer, CANDB, PCAN-USB, Vector(VN1640, VN7600)
+- <details>
+  <summary>Tool</summary>
+  <ul>
+  <li>Github, Gitlab, Sourcetree, JSFiddle, Remix</li>
+  <li>Slack, JIRA, Trello</li>
+  <li>[Documentation] Confluence, Doxygen, Javadoc, Sphinx, Jekyll</li>
+  <li>[Analysis] async-profiler, Dr.Memory, Valgrind, Black Duck Hub</li>
+  <li>[Package manager] Gradle, Helm, npm, yarn, pip, dep</li>
+  <li>Hardware-related</li>
+  <ul><li>CodeWarrior, GreenHills, TASKING, Trace32</li></ul>
+  <ul><li>Infineon(TC1797, TC275), STMicro(SPC56EL70), Freescale(MPC5606B), Raspberry Pi, Arduino</li></ul>
+  <ul><li>CANalyzer, CANDB, PCAN-USB, Vector(VN1640, VN7600)</li></ul>
+  </ul>
+  </details>
 
 ### Awards
 - 2nd prize, OSS grand developers challenge, National IT Industry Promotion Agency (NIPA), 2016
