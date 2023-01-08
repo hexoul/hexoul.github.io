@@ -9,6 +9,7 @@ subclass: 'post page'
 ---
 
 Seunggon Kim / Esji
+<p align="right">📭: <a href="mailto:crosien@gmail.com">crosien@gmail.com</a></p>
 
 > I'm passionate about software engineering for SOTA architecture, programming and theory also. 
 
@@ -21,6 +22,8 @@ Seunggon Kim / Esji
 
 *Software engineer*, **Kinolights Inc.** - Korea
 - Developed back-end of [Kinolights](https://kinolights.com/).
+  - Built a notification server to control notification center and push notification such as FCM at the same time.
+  - Built a community server to provide Twitter-like features with posting, commenting, responding and tagging.
   - 📚 JS, TS, RxJS, NestJS, TypeORM, GraphQL w/ federation, Elasticsearch, Redis
   - ☁ AWS - Fargate, ECS, Aurora, S3, Route53, MQ, MSK, OpenSearch, SNS, SMS, SQS, WAF, CloudFront
 
