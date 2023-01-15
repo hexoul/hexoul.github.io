@@ -22,8 +22,8 @@ Seunggon Kim / Esji
 
 *Software engineer*, **Kinolights Inc.** - Korea
 - Developed back-end of [Kinolights](https://kinolights.com/).
-  - Built a notification server to control notification center and push notification such as FCM at the same time.
-  - Built a community server to provide Twitter-like features with posting, commenting, responding and tagging.
+  - Built a notification server to control both notification center and push notifications such as FCM.
+  - Built a community server to provide Twitter-like features such as posting, commenting, responding, tagging and searching.
   - 📚 JS, TS, RxJS, NestJS, TypeORM, GraphQL w/ federation, Elasticsearch, Redis
   - ☁ AWS - Fargate, ECS, Aurora, S3, Route53, MQ, MSK, OpenSearch, SNS, SMS, SQS, WAF, CloudFront
 
@@ -99,6 +99,9 @@ Seunggon Kim / Esji
   - Employee Stock Option Calc. (ESO calculator, 스톡옵션 계산기)
     - [iOS](https://apps.apple.com/app/id1609432239), [Android](https://play.google.com/store/apps/details?id=hexoul.stockoption.calculator)
       - 📚 Dart, Flutter, Firebase (Analytics, Crashlytics, Admob)
+  - Chewing Diet (츄잉 다이어트)
+    - [iOS](https://apps.apple.com/app/id6444375180), [Android](https://play.google.com/store/apps/details?id=hexoul.chewing.diet)
+      - 📚 Dart, Flutter, Firebase (Analytics, Crashlytics)
   - 오늘부터 전공면접 IT
     - a MCQ-based (Multiple Choice Question) study helper for IT interview.
     - [iOS](https://apps.apple.com/app/id1526993862), [Android](https://play.google.com/store/apps/details?id=com.whatseries.prepareinterview)
