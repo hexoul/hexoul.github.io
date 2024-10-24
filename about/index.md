@@ -22,10 +22,10 @@ Seunggon Kim / Esji
 
 *Software engineer*, **Kinolights Inc.** - Korea
 - Developed back-end of [Kinolights](https://kinolights.com/).
-  - Built a notification server to control both notification center and push notifications such as FCM.
-  - Built a community server to provide Twitter-like features such as posting, commenting, responding, tagging and searching.
+  - Implemented a notification server to control both notification center and push notifications such as FCM.
+  - Implemented a community server to provide Twitter-like features such as posting, commenting, responding, tagging and searching.
   - 📚 JS, TS, RxJS, NestJS, TypeORM, GraphQL w/ federation, Elasticsearch, Redis
-  - ☁ AWS - Fargate, ECS, Aurora, S3, Route53, MQ, MSK, OpenSearch, SNS, SMS, SQS, WAF, CloudFront
+  - ☁ AWS - RDS, OpenSearch, MQ, MSK, Fargate, ECS, SNS, SMS, SQS, Lambda, Batch, EventBridge, WAF, Route53, CloudFront, S3
 
 ---
 
@@ -40,8 +40,8 @@ Seunggon Kim / Esji
   - 📚 Java, RxJava, Spring boot, Kafka stream, Redis, [Vosk](https://github.com/alphacep/vosk-api), [Kaldi](https://kaldi-asr.org/)
 - Developed back-end of [Daglo](https://daglo.ai/) that is B2C/B2B/B2G service providing STT.
   - Optimized operating cost by adopting Airflow with proper machine type and commitment.
-  - Built a data warehouse with Elasticsearch and Kibana.
-  - Built a search engine for transcripts and [TF-IDF](https://en.wikipedia.org/wiki/Tf%E2%80%93idf) with Elasticsearch Korean analyzer called [Nori](https://www.elastic.co/guide/en/elasticsearch/plugins/current/analysis-nori.html).
+  - Implemented a data warehouse with Elasticsearch and Kibana.
+  - Implemented a search engine for transcripts and [TF-IDF](https://en.wikipedia.org/wiki/Tf%E2%80%93idf) with Elasticsearch Korean analyzer called [Nori](https://www.elastic.co/guide/en/elasticsearch/plugins/current/analysis-nori.html).
   - 📚 JS, TS, Python, ExpressJS, FastAPI, Firebase, Elasticsearch, Kibana
   - ☁ GCP - GKE, GAE, GCS, [GSR](https://cloud.google.com/speech-to-text)
 - Developed back-end of [Atend](https://atend.ai/) for video conference and following STT.
@@ -56,14 +56,17 @@ Seunggon Kim / Esji
 
 *Software engineer*, **LINE Plus Corp.** - Korea
 - Developed back-end of [LINE messenger](https://line.me/).
-  - Optimized the performance of ES get/search queries by tuning the cluster and the queries.
-  - Implemented business logics for features such as read-only chatroom and adult-only chatroom.
+  - Implemented features such as read-only chatroom, adult-only chatroom, abuser detection and so on.
+  - Improved the performance of LINE app with conditional chat prefetch which reduces total blocking time.
+  - Improved Elasticsearch get/search latency by 2x by optimizing both the cluster and the queries.
+  - Upgraded Elasticsearch version from 5.0 to 6.3 manually over two clusters (active-standby).
+  - Implemented a logging based fault-tolerant Kafka producer to mitigate message loss.
   - Developed a Content Management System (CMS) for back office.
   - 📚 Java, RxJava, Spring, MySQL, Redis, Elasticsearch, HBase, Kafka, Zookeeper, [Armeria](https://github.com/line/armeria), [Central Dogma](https://github.com/line/centraldogma), Retrofit, Thrift, Protobuf
 - Developed CI/CD and automation.
+  - Implemented and stabilized E2E test verifying behavior and server push on [SPDY called LEGY](https://engineering.linecorp.com/ko/blog/LINT-newtork-modernization-http2-tls).
   - Built periodic ranking/trending data generation with ES.
-  - Built automated monitoring with end-to-end (E2E) testing.
-  - Analyzed the bottleneck with profiling tools.
+  - Analyzed the bottleneck with profiling tools including heatmap, thread dump and heap dump.
   - 📚 Java, Python, Kotlin, Spring Batch, Flask, Jenkins, Ansible, [Zipkin](https://zipkin.io), [JMH](https://github.com/openjdk/jmh), [Gatling](https://gatling.io), Prometheus, Micrometer, Dropwizard
 
 ---
@@ -75,12 +78,12 @@ Seunggon Kim / Esji
   - Throughput for bidding API was increased 200 times. It is done by resolving single-threaded task.
   - 📚 Java, Spring, MySQL, RabbitMQ, AWS EC2
   - ☁ AWS - EC2, MQ
-- Built [Ethereum proxy](https://github.com/hexoul/aws-lambda-eth-proxy) as delegator of transactions.
+- Implemented [Ethereum proxy](https://github.com/hexoul/aws-lambda-eth-proxy) as delegator of transactions.
   - 📚 Go, Ethereum
   - ☁ AWS - Lambda, API Gateway
-- Built [decentralized appications (DApp)](https://github.com/hexoul?tab=repositories&q=dapp) interacting [smart contract](https://github.com/hexoul/governance-contract) through [web3](https://github.com/hexoul/meta-web3).
+- Implemented [decentralized applications (DApp)](https://github.com/hexoul?tab=repositories&q=dapp) interacting [smart contract](https://github.com/hexoul/governance-contract) through [web3](https://github.com/hexoul/meta-web3).
   - 📚 Solidity, Ethereum, IPFS, ReactJS
-- Built [API clients](https://github.com/hexoul?tab=repositories&q=api-client) for trading and [monitoring](https://github.com/hexoul/coinmarketcap-react-chart) the tendency.
+- Implemented [API clients](https://github.com/hexoul?tab=repositories&q=api-client) for trading and [monitoring](https://github.com/hexoul/coinmarketcap-react-chart) the tendency.
   - 📚 Go, ReactJS
 - Researched blockchain technologies and security issues on all sides such as platform, smart contract, GDPR and so on.
 
@@ -96,12 +99,12 @@ Seunggon Kim / Esji
   - [Armeria](https://github.com/line/armeria/pulls?q=is%3Apr+author%3Ahexoul+is%3Aclosed) - a microservice framework to easily build any type of technologies including gRPC, Thrift, Retrofit and so on.
   - [Python client for Central Dogma](https://github.com/line/centraldogma-python/pulls?q=is%3Apr+author%3Ahexoul+is%3Aclosed) - a Python client for Central Dogma that is highly-available version-controlled service configuration repository based on Git, ZooKeeper and HTTP/2.
 - Individual
-  - Employee Stock Option Calc. (ESO calculator, 스톡옵션 계산기)
-    - [iOS](https://apps.apple.com/app/id1609432239), [Android](https://play.google.com/store/apps/details?id=hexoul.stockoption.calculator)
-      - 📚 Dart, Flutter, Firebase (Analytics, Crashlytics, Admob)
   - Chewing Diet (츄잉 다이어트)
     - [iOS](https://apps.apple.com/app/id6444375180), [Android](https://play.google.com/store/apps/details?id=hexoul.chewing.diet)
       - 📚 Dart, Flutter, Firebase (Analytics, Crashlytics)
+  - Employee Stock Option Calc. (ESO calculator, 스톡옵션 계산기)
+    - [iOS](https://apps.apple.com/app/id1609432239), [Android](https://play.google.com/store/apps/details?id=hexoul.stockoption.calculator)
+      - 📚 Dart, Flutter, Firebase (Analytics, Crashlytics, Admob)
   - 오늘부터 전공면접 IT
     - a MCQ-based (Multiple Choice Question) study helper for IT interview.
     - [iOS](https://apps.apple.com/app/id1526993862), [Android](https://play.google.com/store/apps/details?id=com.whatseries.prepareinterview)
@@ -134,16 +137,18 @@ Seunggon Kim / Esji
   - Reactive
     - **RxJava, RxJS**
   - Back-end
-    - [Java] **Armeria, Spring, Spring boot**, Central Dogma
-    - [JS] **NestJS**, ExpressJS, NodeJS
-    - [Python] Django, Flask, FastAPI
-    - [Storage] **Elasticsearch, Redis, MySQL, HBase**, Firestore, DynamoDB, LevelDB, PostgreSQL, Zookeeper, Ethereum, IPFS
+    - [Java] **Spring, Spring boot, Armeria**, Guava, JUnit
+    - [JS] **NestJS**, ExpressJS, NodeJS, Puppeteer, Jest
+    - [Python] **Airflow**, Django, Flask, FastAPI, pytest, httpx, respx, tenacity, pandas, numpy
+    - [Storage] **Elasticsearch, Redis, MySQL, HBase**, Firestore, DynamoDB, LevelDB, PostgreSQL, Zookeeper, Central Dogma, Ethereum, IPFS
     - [Stream] **Kafka**, RabbitMQ, AWS SQS
     - [Orchestration] **Docker, Jenkins, Kubernetes**
-    - [Monitoring] Gatling, **Grafana, Kibana, Prometheus**, Zipkin
+    - [Monitoring] **Datadog, Grafana, Kibana, Prometheus**, Sentry, Zipkin, Gatling
   - Front-end
-    - **Flutter, NextJS, ReactJS**
+    - **NextJS, ReactJS**, VueJS
     - Cocos2d, MFC, Qt, Tizen, Unity
+  - App
+    - **Flutter**, watchOS, wearOS, Swift, Kotlin, l10n, flutter_hooks, fl_chart, flutter_animate, sqflite, sqflite
   - <details>
     <summary>Vehicle field</summary>
     <ul>
@@ -155,7 +160,7 @@ Seunggon Kim / Esji
 - Protocol
   - **HTTP/2**, **REST**, **GraphQL**, gRPC, RTC, SSE, SPDY, **Thrift**, Websocket
 - Cloud service
-  - AWS - OpenSearch, MSK, RDS, SNS, SMS, SQS, WAF, CloudFront, ALB, API Gateway, Fargate, ECS, EC2, Lambda
+  - AWS - RDS, OpenSearch, Elasticache, MQ, MSK, SNS, SMS, SQS, WAF, CloudFront, ALB, API Gateway, Fargate, ECS, EC2, Lambda, Batch, EventBridge
   - GCP - Composer, GAE, GCE, GCR, GCS, GKE, GSR, Memorystore
 - <details>
   <summary>Tool</summary>
@@ -186,4 +191,4 @@ Seunggon Kim / Esji
 
 - 🇺🇸 English
 - 🇰🇷 Korean (native)
-- 🇯🇵 Japanese (JLPT N2)
+- 🇯🇵 Japanese (JLPT N1)
