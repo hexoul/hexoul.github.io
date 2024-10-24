@@ -170,10 +170,10 @@ into the {body} of the default.hbs template -->
 <ul>
   <li>Developed back-end of <a href="https://kinolights.com/">Kinolights</a>.
     <ul>
-      <li>Built a notification server to control both notification center and push notifications such as FCM.</li>
-      <li>Built a community server to provide Twitter-like features such as posting, commenting, responding, tagging and searching.</li>
+      <li>Implemented a notification server to control both notification center and push notifications such as FCM.</li>
+      <li>Implemented a community server to provide Twitter-like features such as posting, commenting, responding, tagging and searching.</li>
       <li>📚 JS, TS, RxJS, NestJS, TypeORM, GraphQL w/ federation, Elasticsearch, Redis</li>
-      <li>☁ AWS - Fargate, ECS, Aurora, S3, Route53, MQ, MSK, OpenSearch, SNS, SMS, SQS, WAF, CloudFront</li>
+      <li>☁ AWS - RDS, OpenSearch, MQ, MSK, Fargate, ECS, SNS, SMS, SQS, Lambda, Batch, EventBridge, WAF, Route53, CloudFront, S3</li>
     </ul>
   </li>
 </ul>
@@ -199,8 +199,8 @@ into the {body} of the default.hbs template -->
   <li>Developed back-end of <a href="https://daglo.ai/">Daglo</a> that is B2C/B2B/B2G service providing STT.
     <ul>
       <li>Optimized operating cost by adopting Airflow with proper machine type and commitment.</li>
-      <li>Built a data warehouse with Elasticsearch and Kibana.</li>
-      <li>Built a search engine for transcripts and <a href="https://en.wikipedia.org/wiki/Tf%E2%80%93idf">TF-IDF</a> with Elasticsearch Korean analyzer called <a href="https://www.elastic.co/guide/en/elasticsearch/plugins/current/analysis-nori.html">Nori</a>.</li>
+      <li>Implemented a data warehouse with Elasticsearch and Kibana.</li>
+      <li>Implemented a search engine for transcripts and <a href="https://en.wikipedia.org/wiki/Tf%E2%80%93idf">TF-IDF</a> with Elasticsearch Korean analyzer called <a href="https://www.elastic.co/guide/en/elasticsearch/plugins/current/analysis-nori.html">Nori</a>.</li>
       <li>📚 JS, TS, Python, ExpressJS, FastAPI, Firebase, Elasticsearch, Kibana</li>
       <li>☁ GCP - GKE, GAE, GCS, <a href="https://cloud.google.com/speech-to-text">GSR</a></li>
     </ul>
@@ -226,17 +226,20 @@ into the {body} of the default.hbs template -->
 <ul>
   <li>Developed back-end of <a href="https://line.me/">LINE messenger</a>.
     <ul>
-      <li>Optimized the performance of ES get/search queries by tuning the cluster and the queries.</li>
-      <li>Implemented business logics for features such as read-only chatroom and adult-only chatroom.</li>
+      <li>Implemented features such as read-only chatroom, adult-only chatroom, abuser detection and so on.</li>
+      <li>Improved the performance of LINE app with conditional chat prefetch which reduces total blocking time.</li>
+      <li>Improved Elasticsearch get/search latency by 2x by optimizing both the cluster and the queries.</li>
+      <li>Upgraded Elasticsearch version from 5.0 to 6.3 manually over two clusters (active-standby).</li>
+      <li>Implemented a logging based fault-tolerant Kafka producer to mitigate message loss.</li>
       <li>Developed a Content Management System (CMS) for back office.</li>
       <li>📚 Java, RxJava, Spring, MySQL, Redis, Elasticsearch, HBase, Kafka, Zookeeper, <a href="https://github.com/line/armeria">Armeria</a>, <a href="https://github.com/line/centraldogma">Central Dogma</a>, Retrofit, Thrift, Protobuf</li>
     </ul>
   </li>
   <li>Developed CI/CD and automation.
     <ul>
+      <li>Implemented and stabilized E2E test verifying behavior and server push on <a href="https://engineering.linecorp.com/ko/blog/LINT-newtork-modernization-http2-tls">SPDY called LEGY</a>.</li>
       <li>Built periodic ranking/trending data generation with ES.</li>
-      <li>Built automated monitoring with end-to-end (E2E) testing.</li>
-      <li>Analyzed the bottleneck with profiling tools.</li>
+      <li>Analyzed the bottleneck with profiling tools including heatmap, thread dump and heap dump.</li>
       <li>📚 Java, Python, Kotlin, Spring Batch, Flask, Jenkins, Ansible, <a href="https://zipkin.io">Zipkin</a>, <a href="https://github.com/openjdk/jmh">JMH</a>, <a href="https://gatling.io">Gatling</a>, Prometheus, Micrometer, Dropwizard</li>
     </ul>
   </li>
@@ -255,18 +258,18 @@ into the {body} of the default.hbs template -->
       <li>☁ AWS - EC2, MQ</li>
     </ul>
   </li>
-  <li>Built <a href="https://github.com/hexoul/aws-lambda-eth-proxy">Ethereum proxy</a> as delegator of transactions.
+  <li>Implemented <a href="https://github.com/hexoul/aws-lambda-eth-proxy">Ethereum proxy</a> as delegator of transactions.
     <ul>
       <li>📚 Go, Ethereum</li>
       <li>☁ AWS - Lambda, API Gateway</li>
     </ul>
   </li>
-  <li>Built <a href="https://github.com/hexoul?tab=repositories&amp;q=dapp">decentralized appications (DApp)</a> interacting <a href="https://github.com/hexoul/governance-contract">smart contract</a> through <a href="https://github.com/hexoul/meta-web3">web3</a>.
+  <li>Implemented <a href="https://github.com/hexoul?tab=repositories&amp;q=dapp">decentralized applications (DApp)</a> interacting <a href="https://github.com/hexoul/governance-contract">smart contract</a> through <a href="https://github.com/hexoul/meta-web3">web3</a>.
     <ul>
       <li>📚 Solidity, Ethereum, IPFS, ReactJS</li>
     </ul>
   </li>
-  <li>Built <a href="https://github.com/hexoul?tab=repositories&amp;q=api-client">API clients</a> for trading and <a href="https://github.com/hexoul/coinmarketcap-react-chart">monitoring</a> the tendency.
+  <li>Implemented <a href="https://github.com/hexoul?tab=repositories&amp;q=api-client">API clients</a> for trading and <a href="https://github.com/hexoul/coinmarketcap-react-chart">monitoring</a> the tendency.
     <ul>
       <li>📚 Go, ReactJS</li>
     </ul>
@@ -296,20 +299,20 @@ into the {body} of the default.hbs template -->
   </li>
   <li>Individual
     <ul>
-      <li>Employee Stock Option Calc. (ESO calculator, 스톡옵션 계산기)
-        <ul>
-          <li><a href="https://apps.apple.com/app/id1609432239">iOS</a>, <a href="https://play.google.com/store/apps/details?id=hexoul.stockoption.calculator">Android</a>
-            <ul>
-              <li>📚 Dart, Flutter, Firebase (Analytics, Crashlytics, Admob)</li>
-            </ul>
-          </li>
-        </ul>
-      </li>
       <li>Chewing Diet (츄잉 다이어트)
         <ul>
           <li><a href="https://apps.apple.com/app/id6444375180">iOS</a>, <a href="https://play.google.com/store/apps/details?id=hexoul.chewing.diet">Android</a>
             <ul>
               <li>📚 Dart, Flutter, Firebase (Analytics, Crashlytics)</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li>Employee Stock Option Calc. (ESO calculator, 스톡옵션 계산기)
+        <ul>
+          <li><a href="https://apps.apple.com/app/id1609432239">iOS</a>, <a href="https://play.google.com/store/apps/details?id=hexoul.stockoption.calculator">Android</a>
+            <ul>
+              <li>📚 Dart, Flutter, Firebase (Analytics, Crashlytics, Admob)</li>
             </ul>
           </li>
         </ul>
@@ -375,19 +378,24 @@ into the {body} of the default.hbs template -->
       </li>
       <li>Back-end
         <ul>
-          <li>[Java] <strong>Armeria, Spring, Spring boot</strong>, Central Dogma</li>
-          <li>[JS] <strong>NestJS</strong>, ExpressJS, NodeJS</li>
-          <li>[Python] Django, Flask, FastAPI</li>
-          <li>[Storage] <strong>Elasticsearch, Redis, MySQL, HBase</strong>, Firestore, DynamoDB, LevelDB, PostgreSQL, Zookeeper, Ethereum, IPFS</li>
+          <li>[Java] <strong>Spring, Spring boot, Armeria</strong>, Guava, JUnit</li>
+          <li>[JS] <strong>NestJS</strong>, ExpressJS, NodeJS, Puppeteer, Jest</li>
+          <li>[Python] <strong>Airflow</strong>, Django, Flask, FastAPI, pytest, httpx, respx, tenacity, pandas, numpy</li>
+          <li>[Storage] <strong>Elasticsearch, Redis, MySQL, HBase</strong>, Firestore, DynamoDB, LevelDB, PostgreSQL, Zookeeper, Central Dogma, Ethereum, IPFS</li>
           <li>[Stream] <strong>Kafka</strong>, RabbitMQ, AWS SQS</li>
           <li>[Orchestration] <strong>Docker, Jenkins, Kubernetes</strong></li>
-          <li>[Monitoring] Gatling, <strong>Grafana, Kibana, Prometheus</strong>, Zipkin</li>
+          <li>[Monitoring] <strong>Datadog, Grafana, Kibana, Prometheus</strong>, Sentry, Zipkin, Gatling</li>
         </ul>
       </li>
       <li>Front-end
         <ul>
-          <li><strong>Flutter, NextJS, ReactJS</strong></li>
+          <li><strong>NextJS, ReactJS</strong>, VueJS</li>
           <li>Cocos2d, MFC, Qt, Tizen, Unity</li>
+        </ul>
+      </li>
+      <li>App
+        <ul>
+          <li><strong>Flutter</strong>, watchOS, wearOS, Swift, Kotlin, l10n, flutter_hooks, fl_chart, flutter_animate, sqflite, sqflite</li>
         </ul>
       </li>
       <li>
@@ -409,7 +417,7 @@ into the {body} of the default.hbs template -->
   </li>
   <li>Cloud service
     <ul>
-      <li>AWS - OpenSearch, MSK, RDS, SNS, SMS, SQS, WAF, CloudFront, ALB, API Gateway, Fargate, ECS, EC2, Lambda</li>
+      <li>AWS - RDS, OpenSearch, Elasticache, MQ, MSK, SNS, SMS, SQS, WAF, CloudFront, ALB, API Gateway, Fargate, ECS, EC2, Lambda, Batch, EventBridge</li>
       <li>GCP - Composer, GAE, GCE, GCR, GCS, GKE, GSR, Memorystore</li>
     </ul>
   </li>
@@ -450,7 +458,7 @@ into the {body} of the default.hbs template -->
 <ul>
   <li>🇺🇸 English</li>
   <li>🇰🇷 Korean (native)</li>
-  <li>🇯🇵 Japanese (JLPT N2)</li>
+  <li>🇯🇵 Japanese (JLPT N1)</li>
 </ul>
 
             </section>
@@ -478,7 +486,7 @@ $(function() {
         <!-- The footer at the very bottom of the screen -->
         <footer class="site-footer outer">
             <div class="site-footer-content inner">
-                <section class="copyright"><a href="/">Hexoul</a> &copy; 2023</section>
+                <section class="copyright"><a href="/">Hexoul</a> &copy; 2024</section>
                 <section class="poweredby">Proudly published with <a href="https://jekyllrb.com/">Jekyll</a> &
                     <a href="https://pages.github.com/" target="_blank" rel="noopener">GitHub Pages</a> using
                     <a href="https://github.com/jekyllt/jasper2" target="_blank" rel="noopener">Jasper2</a></section>
