@@ -448,7 +448,7 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
 }
 
 .post-card-excerpt {
-    font-family: Georgia, serif;
+    font-family: "Inter", Georgia, serif;
 }
 
 .post-card-meta {
@@ -591,6 +591,7 @@ The first (most recent) post in the list is styled to be bigger than the others 
 .post-full-title {
     margin: 0;
     color: color-mix(in srgb, black 5%, var(--darkgrey));
+    font-size: 3.5rem;
 }
 
 .date-divider {
@@ -624,10 +625,11 @@ The first (most recent) post in the list is styled to be bigger than the others 
     position: relative;
     margin: 0 auto;
     padding: 70px 100px 0;
-    min-height: 230px;
-    font-family: Georgia, serif;
-    font-size: 2.2rem;
-    line-height: 1.6em;
+    /* min-height: 230px; */
+    color: #2e2e2e;
+    font-family: "Inter", Georgia, serif;
+    font-size: 1.5rem;
+    /* line-height: 1.2em; */
     background: #fff;
 }
 
@@ -638,7 +640,7 @@ The first (most recent) post in the list is styled to be bigger than the others 
 }
 @media (max-width: 800px) {
     .post-full-content {
-        font-size: 1.9rem;
+        font-size: 1.3rem;
     }
 }
 
@@ -709,11 +711,6 @@ The first (most recent) post in the list is styled to be bigger than the others 
 
 .post-full-content li p {
     margin: 0;
-}
-
-.post-template .kg-card-markdown > p:first-child {
-    font-size: 1.25em;
-    line-height: 1.5em;
 }
 
 .post-full-content a {
@@ -872,45 +869,45 @@ Usage (In Ghost editor):
 
 .post-full-content h1 {
     margin: 0.5em 0 0.2em 0;
-    font-size: 4.6rem;
+    font-size: 4rem;
     font-weight: 700;
 }
 @media (max-width: 500px) {
     .post-full-content h1 {
-        font-size: 2.8rem;
+        font-size: 2.5rem;
     }
 }
 
 .post-full-content h2 {
-    margin: 0.5em 0 0.2em 0;
-    font-size: 3.6rem;
+    margin: 0.5em 0 0.3em 0;
+    font-size: 2.5rem;
     font-weight: 700;
 }
 @media (max-width: 500px) {
     .post-full-content h2 {
-        font-size: 2.6rem;
+        font-size: 2rem;
     }
 }
 
 .post-full-content h3 {
-    margin: 0.5em 0 0.2em 0;
-    font-size: 2.8rem;
+    margin: 0.5em 0 0.5em 0;
+    font-size: 2rem;
     font-weight: 700;
 }
 @media (max-width: 500px) {
     .post-full-content h3 {
-        font-size: 2.2rem;
+        font-size: 1.5rem;
     }
 }
 
 .post-full-content h4 {
     margin: 0.5em 0 0.2em 0;
-    font-size: 2.8rem;
+    font-size: 1.8rem;
     font-weight: 700;
 }
 @media (max-width: 500px) {
     .post-full-content h4 {
-        font-size: 2.2rem;
+        font-size: 1.3rem;
     }
 }
 
@@ -920,7 +917,7 @@ Usage (In Ghost editor):
     padding: 1em 0 1.5em;
     border: 0;
     color: var(--blue);
-    font-family: Georgia,serif;
+    font-family: "Inter", Georgia, serif;
     font-size: 3.2rem;
     line-height: 1.35em;
     text-align: center;
@@ -1043,6 +1040,21 @@ Usage (In Ghost editor):
     border: color-mix(in srgb, black 1%, var(--whitegrey)) 1px solid;
 }
 
+.contact-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 1em;
+}
+
+.work-experience-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 0.3em;
+    padding: 0 0.5em 0 0.5em;
+    background-color: color-mix(in srgb, var(--whitegrey) 90%, white 10%);
+}
 
 /* 7.1. Subscribe Form
 /* ---------------------------------------------------------- */
@@ -1615,7 +1627,7 @@ Usage (In Ghost editor):
     justify-content: center;
     align-items: center;
     margin: 0 0 10px 0;
-    font-family: Georgia, serif;
+    font-family: "Inter", Georgia, serif;
     font-style: italic;
 }
 
@@ -1754,7 +1766,7 @@ Usage (In Ghost editor):
 .subscribe-overlay-description {
     margin: 0 auto 50px;
     max-width: 650px;
-    font-family: Georgia, serif;
+    font-family: "Inter", Georgia, serif;
     font-size: 3rem;
     line-height: 1.3em;
     font-weight: 300;

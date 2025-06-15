@@ -8,8 +8,10 @@ class: page-template
 subclass: 'post page'
 ---
 
-Seunggon Kim / Esji
-<p align="right">📭: <a href="mailto:crosien@gmail.com">crosien@gmail.com</a></p>
+<div class="contact-info">
+  <div>Seunggon Kim</div>
+  <div>📭: <a href="mailto:crosien@gmail.com">crosien@gmail.com</a></div>
+</div>
 
 > I'm passionate about software engineering for SOTA architecture, programming and theory also. 
 
@@ -18,20 +20,22 @@ Seunggon Kim / Esji
 
 ### Work experience
 
-<p align="right">Mar. 2022 - Present</p>
+<div class="work-experience-header">
+  <div>Tech lead, <i>Kinolights Inc.</i> - Korea</div>
+  <div>Mar. 2022 - Present</div>
+</div>
 
-*Software engineer*, **Kinolights Inc.** - Korea
 - Developed back-end of [Kinolights](https://kinolights.com/).
   - Implemented a notification server to control both notification center and push notifications such as FCM.
   - Implemented a community server to provide Twitter-like features such as posting, commenting, responding, tagging and searching.
   - 📚 JS, TS, RxJS, NestJS, TypeORM, GraphQL w/ federation, Elasticsearch, Redis
   - ☁ AWS - RDS, OpenSearch, MQ, MSK, Fargate, ECS, SNS, SMS, SQS, Lambda, Batch, EventBridge, WAF, Route53, CloudFront, S3
 
----
+<div class="work-experience-header">
+  <div>Software engineer, <i>ActionPower Corp.</i> - Korea</div>
+  <div>Jul. 2021 - Feb. 2022</div>
+</div>
 
-<p align="right">Jul. 2021 - Feb. 2022</p>
-
-*Software engineer*, **ActionPower Corp.** - Korea
 - Built stable and scalable STT(Speech-To-Text) pipeline.
   - Constructed HA(High Availability) with several k8s clusters that are in-house Airflow and Composer.
   - 📚 Python, [Airflow](https://airflow.apache.org/), [Microk8s](https://microk8s.io/), [NVIDIA Triton](https://developer.nvidia.com/nvidia-triton-inference-server)
@@ -50,11 +54,11 @@ Seunggon Kim / Esji
 - Built end-to-end (E2E) testing. 
   - 📚 JS, Selenium, [Nightwatch](https://nightwatchjs.org), [LambdaTest](https://www.lambdatest.com)
 
----
+<div class="work-experience-header">
+  <div>Software engineer, <i>LINE Plus Corp.</i> - Korea</div>
+  <div>Jun. 2019 - Jul. 2021</div>
+</div>
 
-<p align="right">Jun. 2019 - Jul. 2021</p>
-
-*Software engineer*, **LINE Plus Corp.** - Korea
 - Developed back-end of [LINE messenger](https://line.me/).
   - Implemented features such as read-only chatroom, adult-only chatroom, abuser detection and so on.
   - Improved the performance of LINE app with conditional chat prefetch which reduces total blocking time.
@@ -69,11 +73,11 @@ Seunggon Kim / Esji
   - Analyzed the bottleneck with profiling tools including heatmap, thread dump and heap dump.
   - 📚 Java, Python, Kotlin, Spring Batch, Flask, Jenkins, Ansible, [Zipkin](https://zipkin.io), [JMH](https://github.com/openjdk/jmh), [Gatling](https://gatling.io), Prometheus, Micrometer, Dropwizard
 
----
+<div class="work-experience-header">
+  <div>Senior researcher, <i>Coinplug Inc.</i> - Korea</div>
+  <div>Oct. 2017 - Jun. 2019</div>
+</div>
 
-<p align="right">Oct. 2017 - Jun. 2019</p>
-
-*Senior researcher*, **Coinplug Inc.** - Korea
 - Improved the performance of back-end of cryptocurrency exchange.
   - Throughput for bidding API was increased 200 times. It is done by resolving single-threaded task.
   - 📚 Java, Spring, MySQL, RabbitMQ, AWS EC2
