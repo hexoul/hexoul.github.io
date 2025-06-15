@@ -819,11 +819,11 @@ Usage (In Ghost editor):
     margin: 1.5em 0 3em;
     padding: 20px;
     max-width: 100%;
-    border: color(var(--darkgrey) l(-10%)) 1px solid;
+    border: color-mix(in srgb, black 10%, var(--darkgrey)) 1px solid;
     color: var(--whitegrey);
     font-size: 1.4rem;
     line-height: 1.5em;
-    background: color(var(--darkgrey) l(-3%));
+    background: color-mix(in srgb, black 3%, var(--darkgrey));
     border-radius: 5px;
 }
 
@@ -855,7 +855,7 @@ Usage (In Ghost editor):
     margin-left: -10px;
     width: 1px;
     height: 30px;
-    background: color(var(--lightgrey) l(+10%));
+    background: color-mix(in srgb, var(--lightgrey) 90%, white 10%);
     box-shadow: #fff 0 0 0 5px;
     transform: rotate(45deg);
 }
@@ -866,7 +866,7 @@ Usage (In Ghost editor):
 .post-full-content h4,
 .post-full-content h5,
 .post-full-content h6 {
-    color: color(var(--darkgrey) l(-5%));
+    color: color-mix(in srgb, black 5%, var(--darkgrey));
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
@@ -1034,13 +1034,13 @@ Usage (In Ghost editor):
     letter-spacing: 0.2px;
     text-align: left;
     text-transform: uppercase;
-    background-color: color(var(--whitegrey) l(+4%));
+    background-color: color-mix(in srgb, var(--whitegrey) 96%, white 4%);
 }
 
 .post-full-content table th,
 .post-full-content table td {
     padding: 6px 12px;
-    border: color(var(--whitegrey) l(-1%) s(-5%)) 1px solid;
+    border: color-mix(in srgb, black 1%, var(--whitegrey)) 1px solid;
 }
 
 
@@ -1050,9 +1050,9 @@ Usage (In Ghost editor):
 .subscribe-form {
     margin: 1.5em 0;
     padding: 6.5vw 7vw 7vw;
-    border: color(var(--whitegrey) l(+2%)) 1px solid;
+    border: color-mix(in srgb, var(--whitegrey) 98%, white 2%) 1px solid;
     text-align: center;
-    background: color(var(--whitegrey) l(+4%));
+    background: color-mix(in srgb, var(--whitegrey) 96%, white 4%);
     border-radius: 7px;
 }
 
@@ -1089,7 +1089,7 @@ Usage (In Ghost editor):
     display: block;
     padding: 10px;
     width: 100%;
-    border: color(var(--lightgrey) l(+7%)) 1px solid;
+    border: color-mix(in srgb, var(--lightgrey) 93%, white 7%) 1px solid;
     color: var(--midgrey);
     font-size: 1.8rem;
     line-height: 1em;
@@ -1103,7 +1103,7 @@ Usage (In Ghost editor):
 
 .subscribe-email:focus {
     outline: 0;
-    border-color: color(var(--lightgrey) l(-2%));
+    border-color: color-mix(in srgb, black 2%, var(--lightgrey));
 }
 
 .subscribe-form button {
@@ -1119,10 +1119,10 @@ Usage (In Ghost editor):
     text-align: center;
     text-shadow: 0 -1px 0 rgba(0,0,0,0.1);
     background: linear-gradient(
-    color(var(--blue) whiteness(+7%)),
-    color(var(--blue) lightness(-7%) saturation(-10%)) 60%,
-    color(var(--blue) lightness(-7%) saturation(-10%)) 90%,
-    color(var(--blue) lightness(-4%) saturation(-10%))
+    color-mix(in srgb, var(--blue) 93%, white 7%),
+    color-mix(in srgb, black 7%, var(--blue)) 60%,
+    color-mix(in srgb, black 7%, var(--blue)) 90%,
+    color-mix(in srgb, black 4%, var(--blue))
     );
     border-radius: 5px;
     box-shadow: 0 0 0 1px inset rgba(0,0,0,0.14);
@@ -1132,7 +1132,7 @@ Usage (In Ghost editor):
 
 .subscribe-form button:active,
 .subscribe-form button:focus {
-    background: color(var(--blue) lightness(-9%) saturation(-10%));
+    background: color-mix(in srgb, black 9%, var(--blue));
 }
 
 @media (max-width: 650px) {
@@ -1210,7 +1210,7 @@ Usage (In Ghost editor):
 .author-card-button {
     display: block;
     padding: 9px 16px;
-    border: color(var(--midgrey) l(+20%)) 1px solid;
+    border: color-mix(in srgb, var(--midgrey) 80%, white 20%) 1px solid;
     color: var(--midgrey);
     font-size: 1.2rem;
     line-height: 1;
@@ -1792,7 +1792,7 @@ Usage (In Ghost editor):
 
 .subscribe-email:focus {
     outline: 0;
-    border-color: color(var(--lightgrey) l(-2%));
+    border-color: color-mix(in srgb, black 2%, var(--lightgrey));
 }
 
 .subscribe-overlay button {
@@ -1808,10 +1808,10 @@ Usage (In Ghost editor):
     text-align: center;
     text-shadow: 0 -1px 0 rgba(0,0,0,0.1);
     background: linear-gradient(
-    color(var(--blue) whiteness(+7%)),
-    color(var(--blue) lightness(-7%) saturation(-10%)) 60%,
-    color(var(--blue) lightness(-7%) saturation(-10%)) 90%,
-    color(var(--blue) lightness(-4%) saturation(-10%))
+    color-mix(in srgb, var(--blue) 93%, white 7%),
+    color-mix(in srgb, black 7%, var(--blue)) 60%,
+    color-mix(in srgb, black 7%, var(--blue)) 90%,
+    color-mix(in srgb, black 4%, var(--blue))
     );
     border-radius: 8px;
     box-shadow: 0 0 0 1px inset rgba(0,0,0,0.14);
@@ -1821,7 +1821,7 @@ Usage (In Ghost editor):
 
 .subscribe-overlay button:active,
 .subscribe-overlay button:focus {
-    background: color(var(--blue) lightness(-9%) saturation(-10%));
+    background: color-mix(in srgb, black 9%, var(--blue));
 }
 
 .subscribe-overlay-close {
@@ -1872,7 +1872,7 @@ Usage (In Ghost editor):
     padding-top: 20px;
     padding-bottom: 60px;
     color: #fff;
-    background: color(var(--darkgrey) l(-15%));
+    background: color-mix(in srgb, black 15%, var(--darkgrey));
 }
 
 .site-footer-content {
