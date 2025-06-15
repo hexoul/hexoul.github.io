@@ -35,12 +35,13 @@
     
     <!-- This tag outputs SEO meta+structured data and other important settings -->
     <meta name="description" content="The creative needs diverse points of view and insight." />
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="/assets/images/favicon.png" type="image/png" />
     <link rel="canonical" href="/about/" />
     <meta name="referrer" content="no-referrer-when-downgrade" />
 
      <!--title below is coming from _includes/dynamic_title-->
-    <meta property="og:site_name" content="Hexoul" />
+    <meta property="og:site_name" content="Seunggon Kim" />
     <meta property="og:type" content="website" />
     <meta property="og:title" content="CV (Curriculum Vitae)" />
     <meta property="og:description" content="The creative needs diverse points of view and insight." />
@@ -53,7 +54,7 @@
     <meta name="twitter:url" content="/" />
     <meta name="twitter:image" content="/assets/images/blog-cover.jpg" />
     <meta name="twitter:label1" content="Written by" />
-    <meta name="twitter:data1" content="Hexoul" />
+    <meta name="twitter:data1" content="Seunggon Kim" />
     <meta name="twitter:site" content="@" />
     <meta name="twitter:creator" content="@" />
     <meta property="og:image:width" content="2000" />
@@ -65,7 +66,7 @@
     "@type": "Website",
     "publisher": {
         "@type": "Organization",
-        "name": "Hexoul",
+        "name": "Seunggon Kim",
         "logo": "/"
     },
     "url": "/about/",
@@ -111,7 +112,7 @@ into the {body} of the default.hbs template -->
     <div class="site-nav-left">
         
             
-                <a class="site-nav-logo" href="/">Hexoul</a>
+                <a class="site-nav-logo" href="/">Seunggon Kim</a>
             
         
         
@@ -152,8 +153,10 @@ into the {body} of the default.hbs template -->
             
 
             <section class="post-full-content">
-                <p>Seunggon Kim / Esji</p>
-<p align="right">📭: <a href="mailto:crosien@gmail.com">crosien@gmail.com</a></p>
+                <div class="contact-info">
+  <div>Seunggon Kim</div>
+  <div>📭: <a href="mailto:crosien@gmail.com">crosien@gmail.com</a></div>
+</div>
 
 <blockquote>
   <p>I’m passionate about software engineering for SOTA architecture, programming and theory also.</p>
@@ -164,9 +167,11 @@ into the {body} of the default.hbs template -->
 
 <h3 id="work-experience">Work experience</h3>
 
-<p align="right">Mar. 2022 - Present</p>
+<div class="work-experience-header">
+  <div>Tech lead, <i>Kinolights Inc.</i> - Korea</div>
+  <div>Mar. 2022 - Present</div>
+</div>
 
-<p><em>Software engineer</em>, <strong>Kinolights Inc.</strong> - Korea</p>
 <ul>
   <li>Developed back-end of <a href="https://kinolights.com/">Kinolights</a>.
     <ul>
@@ -178,11 +183,11 @@ into the {body} of the default.hbs template -->
   </li>
 </ul>
 
-<hr />
+<div class="work-experience-header">
+  <div>Software engineer, <i>ActionPower Corp.</i> - Korea</div>
+  <div>Jul. 2021 - Feb. 2022</div>
+</div>
 
-<p align="right">Jul. 2021 - Feb. 2022</p>
-
-<p><em>Software engineer</em>, <strong>ActionPower Corp.</strong> - Korea</p>
 <ul>
   <li>Built stable and scalable STT(Speech-To-Text) pipeline.
     <ul>
@@ -218,11 +223,11 @@ into the {body} of the default.hbs template -->
   </li>
 </ul>
 
-<hr />
+<div class="work-experience-header">
+  <div>Software engineer, <i>LINE Plus Corp.</i> - Korea</div>
+  <div>Jun. 2019 - Jul. 2021</div>
+</div>
 
-<p align="right">Jun. 2019 - Jul. 2021</p>
-
-<p><em>Software engineer</em>, <strong>LINE Plus Corp.</strong> - Korea</p>
 <ul>
   <li>Developed back-end of <a href="https://line.me/">LINE messenger</a>.
     <ul>
@@ -245,11 +250,11 @@ into the {body} of the default.hbs template -->
   </li>
 </ul>
 
-<hr />
+<div class="work-experience-header">
+  <div>Senior researcher, <i>Coinplug Inc.</i> - Korea</div>
+  <div>Oct. 2017 - Jun. 2019</div>
+</div>
 
-<p align="right">Oct. 2017 - Jun. 2019</p>
-
-<p><em>Senior researcher</em>, <strong>Coinplug Inc.</strong> - Korea</p>
 <ul>
   <li>Improved the performance of back-end of cryptocurrency exchange.
     <ul>
@@ -276,6 +281,8 @@ into the {body} of the default.hbs template -->
   </li>
   <li>Researched blockchain technologies and security issues on all sides such as platform, smart contract, GDPR and so on.</li>
 </ul>
+
+<hr />
 
 <h3 id="education">Education</h3>
 <ul>
@@ -390,12 +397,12 @@ into the {body} of the default.hbs template -->
       <li>Front-end
         <ul>
           <li><strong>NextJS, ReactJS</strong>, VueJS</li>
-          <li>Cocos2d, MFC, Qt, Tizen, Unity</li>
         </ul>
       </li>
       <li>App
         <ul>
           <li><strong>Flutter</strong>, watchOS, wearOS, Swift, Kotlin, l10n, flutter_hooks, fl_chart, flutter_animate, sqflite, sqflite</li>
+          <li>Tizen, Qt, Unity, Cocos2d, MFC</li>
         </ul>
       </li>
       <li>
@@ -486,15 +493,13 @@ $(function() {
         <!-- The footer at the very bottom of the screen -->
         <footer class="site-footer outer">
             <div class="site-footer-content inner">
-                <section class="copyright"><a href="/">Hexoul</a> &copy; 2024</section>
-                <section class="poweredby">Proudly published with <a href="https://jekyllrb.com/">Jekyll</a> &
-                    <a href="https://pages.github.com/" target="_blank" rel="noopener">GitHub Pages</a> using
-                    <a href="https://github.com/jekyllt/jasper2" target="_blank" rel="noopener">Jasper2</a></section>
+                <section class="copyright">
+                    <a href="/">Seunggon Kim</a> &copy; 2025
+                </section>
                 <nav class="site-footer-nav">
                     <a href="/">Latest Posts</a>
                     
                     
-                    <a href="https://ghost.org" target="_blank" rel="noopener">Ghost</a>
                 </nav>
             </div>
         </footer>
