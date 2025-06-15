@@ -87,6 +87,8 @@ Seunggon Kim / Esji
   - 📚 Go, ReactJS
 - Researched blockchain technologies and security issues on all sides such as platform, smart contract, GDPR and so on.
 
+---
+
 ### Education
 - M.S. and Ph.D. Candidate, CE, Seoul National University, Korea, 2017
 - B.S., CE, Kwangwoon University, Korea, 2012
@@ -146,9 +148,9 @@ Seunggon Kim / Esji
     - [Monitoring] **Datadog, Grafana, Kibana, Prometheus**, Sentry, Zipkin, Gatling
   - Front-end
     - **NextJS, ReactJS**, VueJS
-    - Cocos2d, MFC, Qt, Tizen, Unity
   - App
     - **Flutter**, watchOS, wearOS, Swift, Kotlin, l10n, flutter_hooks, fl_chart, flutter_animate, sqflite, sqflite
+    - Tizen, Qt, Unity, Cocos2d, MFC
   - <details>
     <summary>Vehicle field</summary>
     <ul>
