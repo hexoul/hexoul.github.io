@@ -175,10 +175,16 @@ into the {body} of the default.hbs template -->
 <ul>
   <li>Developed back-end of <a href="https://kinolights.com/">Kinolights</a>.
     <ul>
-      <li>Implemented a notification server to control both notification center and push notifications such as FCM.</li>
-      <li>Implemented a community server to provide Twitter-like features such as posting, commenting, responding, tagging and searching.</li>
+      <li>Built a notification server to control both in-app notification center and push notifications such as FCM.</li>
+      <li>Designed and implemented a community server to post, comment, respond and search. The feature-rich post includes link preview, poll, image/video upload, and tagging.</li>
       <li>📚 JS, TS, RxJS, NestJS, TypeORM, GraphQL w/ federation, Elasticsearch, Redis</li>
       <li>☁ AWS - RDS, OpenSearch, MQ, MSK, Fargate, ECS, SNS, SMS, SQS, Lambda, Batch, EventBridge, WAF, Route53, CloudFront, S3</li>
+    </ul>
+  </li>
+  <li>Gradually modernized a legacy mobile application through a phased transformation.
+    <ul>
+      <li>Consolidated separate Android and iOS web apps into a single Flutter-based web app, reducing maintenance costs and improving rendering performance.</li>
+      <li>Further evolved the application into a full-featured native app using Expo and React Native to enhance cross-platform capability and user experience.</li>
     </ul>
   </li>
 </ul>
@@ -191,21 +197,21 @@ into the {body} of the default.hbs template -->
 <ul>
   <li>Built stable and scalable STT(Speech-To-Text) pipeline.
     <ul>
-      <li>Constructed HA(High Availability) with several k8s clusters that are in-house Airflow and Composer.</li>
+      <li>Achieved high availability by orchestrating multiple Kubernetes clusters and integrating both in-house Airflow and Google Cloud Composer.</li>
       <li>📚 Python, <a href="https://airflow.apache.org/">Airflow</a>, <a href="https://microk8s.io/">Microk8s</a>, <a href="https://developer.nvidia.com/nvidia-triton-inference-server">NVIDIA Triton</a></li>
       <li>☁ GCP - <a href="https://cloud.google.com/composer">Composer</a>, Kubernetes, <a href="https://cloud.google.com/kubernetes-engine">GKE</a></li>
     </ul>
   </li>
-  <li>Built a real-time STT architect.
+  <li>Designed a streaming STT service.
     <ul>
       <li>📚 Java, RxJava, Spring boot, Kafka stream, Redis, <a href="https://github.com/alphacep/vosk-api">Vosk</a>, <a href="https://kaldi-asr.org/">Kaldi</a></li>
     </ul>
   </li>
   <li>Developed back-end of <a href="https://daglo.ai/">Daglo</a> that is B2C/B2B/B2G service providing STT.
     <ul>
-      <li>Optimized operating cost by adopting Airflow with proper machine type and commitment.</li>
-      <li>Implemented a data warehouse with Elasticsearch and Kibana.</li>
-      <li>Implemented a search engine for transcripts and <a href="https://en.wikipedia.org/wiki/Tf%E2%80%93idf">TF-IDF</a> with Elasticsearch Korean analyzer called <a href="https://www.elastic.co/guide/en/elasticsearch/plugins/current/analysis-nori.html">Nori</a>.</li>
+      <li>Reduced operational costs by adopting Airflow and optimizing infrastructure resources.</li>
+      <li>Built a data warehouse using Elasticsearch and Kibana for data storage and visualization.</li>
+      <li>Developed a transcript search engine leveraging Elasticsearch’s Korean analyzer <a href="https://www.elastic.co/guide/en/elasticsearch/plugins/current/analysis-nori.html">Nori</a> and <a href="https://en.wikipedia.org/wiki/Tf%E2%80%93idf">TF-IDF</a> for relevance ranking.</li>
       <li>📚 JS, TS, Python, ExpressJS, FastAPI, Firebase, Elasticsearch, Kibana</li>
       <li>☁ GCP - GKE, GAE, GCS, <a href="https://cloud.google.com/speech-to-text">GSR</a></li>
     </ul>
@@ -231,20 +237,21 @@ into the {body} of the default.hbs template -->
 <ul>
   <li>Developed back-end of <a href="https://line.me/">LINE messenger</a>.
     <ul>
-      <li>Implemented features such as read-only chatroom, adult-only chatroom, abuser detection and so on.</li>
-      <li>Improved the performance of LINE app with conditional chat prefetch which reduces total blocking time.</li>
-      <li>Improved Elasticsearch get/search latency by 2x by optimizing both the cluster and the queries.</li>
-      <li>Upgraded Elasticsearch version from 5.0 to 6.3 manually over two clusters (active-standby).</li>
-      <li>Implemented a logging based fault-tolerant Kafka producer to mitigate message loss.</li>
-      <li>Developed a Content Management System (CMS) for back office.</li>
+      <li>Implemented features including read-only chatroom, adult-only chatroom, abusive user detection and so on.</li>
+      <li>Improved the performance of LINE app by introducing conditional chat prefetching, which reduced total blocking time.</li>
+      <li>Reduced Elasticsearch get/search latency by 2x through query and cluster optimization.</li>
+      <li>Manually upgraded Elasticsearch from version 5.0 to 6.3 across two clusters (active-standby configuration).</li>
+      <li>Built a fault-tolerant Kafka producer with logging-based recovery to minimize message loss.</li>
+      <li>Developed a back-office Content Management System (CMS) for internal operations.</li>
       <li>📚 Java, RxJava, Spring, MySQL, Redis, Elasticsearch, HBase, Kafka, Zookeeper, <a href="https://github.com/line/armeria">Armeria</a>, <a href="https://github.com/line/centraldogma">Central Dogma</a>, Retrofit, Thrift, Protobuf</li>
     </ul>
   </li>
-  <li>Developed CI/CD and automation.
+  <li>Developed CI/CD pipelines and automation processes.
     <ul>
-      <li>Implemented and stabilized E2E test verifying behavior and server push on <a href="https://engineering.linecorp.com/ko/blog/LINT-newtork-modernization-http2-tls">SPDY called LEGY</a>.</li>
-      <li>Built periodic ranking/trending data generation with ES.</li>
-      <li>Analyzed the bottleneck with profiling tools including heatmap, thread dump and heap dump.</li>
+      <li>Implemented and stabilized end-to-end (E2E) tests to verify behavior and server push on <a href="https://engineering.linecorp.com/ko/blog/LINT-newtork-modernization-http2-tls">SPDY called LEGY</a>.</li>
+      <li>Built a periodic ranking/trending data generation system using Elasticsearch.</li>
+      <li>Developed custom load-testing programs using Gatling to simulate high-load conditions.</li>
+      <li>Identified and resolved performance bottlenecks using profiling tools such as heatmaps, thread dumps, and heap dumps.</li>
       <li>📚 Java, Python, Kotlin, Spring Batch, Flask, Jenkins, Ansible, <a href="https://zipkin.io">Zipkin</a>, <a href="https://github.com/openjdk/jmh">JMH</a>, <a href="https://gatling.io">Gatling</a>, Prometheus, Micrometer, Dropwizard</li>
     </ul>
   </li>
