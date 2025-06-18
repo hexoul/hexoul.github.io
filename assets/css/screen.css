@@ -1048,12 +1048,12 @@ Usage (In Ghost editor):
 }
 
 .work-experience-header {
+    background-color: color-mix(in srgb, var(--whitegrey) 90%, white 10%);
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     margin-bottom: 0.3em;
     padding: 0 0.5em 0 0.5em;
-    background-color: color-mix(in srgb, var(--whitegrey) 90%, white 10%);
 }
 
 /* 7.1. Subscribe Form

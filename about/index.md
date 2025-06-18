@@ -26,10 +26,13 @@ subclass: 'post page'
 </div>
 
 - Developed back-end of [Kinolights](https://kinolights.com/).
-  - Implemented a notification server to control both notification center and push notifications such as FCM.
-  - Implemented a community server to provide Twitter-like features such as posting, commenting, responding, tagging and searching.
+  - Built a notification server to control both in-app notification center and push notifications such as FCM.
+  - Designed and implemented a community server to post, comment, respond and search. The feature-rich post includes link preview, poll, image/video upload, and tagging.
   - 📚 JS, TS, RxJS, NestJS, TypeORM, GraphQL w/ federation, Elasticsearch, Redis
   - ☁ AWS - RDS, OpenSearch, MQ, MSK, Fargate, ECS, SNS, SMS, SQS, Lambda, Batch, EventBridge, WAF, Route53, CloudFront, S3
+- Gradually modernized a legacy mobile application through a phased transformation.
+  - Consolidated separate Android and iOS web apps into a single Flutter-based web app, reducing maintenance costs and improving rendering performance.
+  - Further evolved the application into a full-featured native app using Expo and React Native to enhance cross-platform capability and user experience.
 
 <div class="work-experience-header">
   <div>Software engineer, <i>ActionPower Corp.</i> - Korea</div>
@@ -37,15 +40,15 @@ subclass: 'post page'
 </div>
 
 - Built stable and scalable STT(Speech-To-Text) pipeline.
-  - Constructed HA(High Availability) with several k8s clusters that are in-house Airflow and Composer.
+  - Achieved high availability by orchestrating multiple Kubernetes clusters and integrating both in-house Airflow and Google Cloud Composer.
   - 📚 Python, [Airflow](https://airflow.apache.org/), [Microk8s](https://microk8s.io/), [NVIDIA Triton](https://developer.nvidia.com/nvidia-triton-inference-server)
   - ☁ GCP - [Composer](https://cloud.google.com/composer), Kubernetes, [GKE](https://cloud.google.com/kubernetes-engine)
-- Built a real-time STT architect.
+- Designed a streaming STT service.
   - 📚 Java, RxJava, Spring boot, Kafka stream, Redis, [Vosk](https://github.com/alphacep/vosk-api), [Kaldi](https://kaldi-asr.org/)
 - Developed back-end of [Daglo](https://daglo.ai/) that is B2C/B2B/B2G service providing STT.
-  - Optimized operating cost by adopting Airflow with proper machine type and commitment.
-  - Implemented a data warehouse with Elasticsearch and Kibana.
-  - Implemented a search engine for transcripts and [TF-IDF](https://en.wikipedia.org/wiki/Tf%E2%80%93idf) with Elasticsearch Korean analyzer called [Nori](https://www.elastic.co/guide/en/elasticsearch/plugins/current/analysis-nori.html).
+  - Reduced operational costs by adopting Airflow and optimizing infrastructure resources.
+  - Built a data warehouse using Elasticsearch and Kibana for data storage and visualization.
+  - Developed a transcript search engine leveraging Elasticsearch’s Korean analyzer [Nori](https://www.elastic.co/guide/en/elasticsearch/plugins/current/analysis-nori.html) and [TF-IDF](https://en.wikipedia.org/wiki/Tf%E2%80%93idf) for relevance ranking.
   - 📚 JS, TS, Python, ExpressJS, FastAPI, Firebase, Elasticsearch, Kibana
   - ☁ GCP - GKE, GAE, GCS, [GSR](https://cloud.google.com/speech-to-text)
 - Developed back-end of [Atend](https://atend.ai/) for video conference and following STT.
@@ -60,17 +63,18 @@ subclass: 'post page'
 </div>
 
 - Developed back-end of [LINE messenger](https://line.me/).
-  - Implemented features such as read-only chatroom, adult-only chatroom, abuser detection and so on.
-  - Improved the performance of LINE app with conditional chat prefetch which reduces total blocking time.
-  - Improved Elasticsearch get/search latency by 2x by optimizing both the cluster and the queries.
-  - Upgraded Elasticsearch version from 5.0 to 6.3 manually over two clusters (active-standby).
-  - Implemented a logging based fault-tolerant Kafka producer to mitigate message loss.
-  - Developed a Content Management System (CMS) for back office.
+  - Implemented features including read-only chatroom, adult-only chatroom, abusive user detection and so on.
+  - Improved the performance of LINE app by introducing conditional chat prefetching, which reduced total blocking time.
+  - Reduced Elasticsearch get/search latency by 2x through query and cluster optimization.
+  - Manually upgraded Elasticsearch from version 5.0 to 6.3 across two clusters (active-standby configuration).
+  - Built a fault-tolerant Kafka producer with logging-based recovery to minimize message loss.
+  - Developed a back-office Content Management System (CMS) for internal operations.
   - 📚 Java, RxJava, Spring, MySQL, Redis, Elasticsearch, HBase, Kafka, Zookeeper, [Armeria](https://github.com/line/armeria), [Central Dogma](https://github.com/line/centraldogma), Retrofit, Thrift, Protobuf
-- Developed CI/CD and automation.
-  - Implemented and stabilized E2E test verifying behavior and server push on [SPDY called LEGY](https://engineering.linecorp.com/ko/blog/LINT-newtork-modernization-http2-tls).
-  - Built periodic ranking/trending data generation with ES.
-  - Analyzed the bottleneck with profiling tools including heatmap, thread dump and heap dump.
+- Developed CI/CD pipelines and automation processes.
+  - Implemented and stabilized end-to-end (E2E) tests to verify behavior and server push on [SPDY called LEGY](https://engineering.linecorp.com/ko/blog/LINT-newtork-modernization-http2-tls).
+  - Built a periodic ranking/trending data generation system using Elasticsearch.
+  - Developed custom load-testing programs using Gatling to simulate high-load conditions.
+  - Identified and resolved performance bottlenecks using profiling tools such as heatmaps, thread dumps, and heap dumps.
   - 📚 Java, Python, Kotlin, Spring Batch, Flask, Jenkins, Ansible, [Zipkin](https://zipkin.io), [JMH](https://github.com/openjdk/jmh), [Gatling](https://gatling.io), Prometheus, Micrometer, Dropwizard
 
 <div class="work-experience-header">

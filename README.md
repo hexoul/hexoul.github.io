@@ -7,7 +7,7 @@
 > sudo bundle install
 > bundle exec jekyll serve
 > bundle exec jekyll build
-> cp ../jasper2-pages ./
+> cp -rf ../jasper2-pages/* ./
 ```
 
 ## Changing CSS

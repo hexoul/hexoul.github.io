@@ -27,10 +27,10 @@ subscribers: False # you need to connect an external service for this to work,
 
 # Disqus
 disqus: True
-disqus_shortname: hexoul # replace with your disqus username
+disqus_shortname: hexoul
 
 # Google Analytics
-google_analytics: G-LC65J8E6R6 # replace with your GA tracking identifier
+google_analytics: G-LC65J8E6R6
 
 # Permalinks
 permalink: /:title
