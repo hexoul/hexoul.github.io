@@ -25,51 +25,53 @@ subclass: 'post page'
   <div>Mar. 2022 - Present</div>
 </div>
 
-- Developed back-end of [Kinolights](https://kinolights.com/).
+- Developed the back-end of [Kinolights](https://kinolights.com/).
   - Built a notification server to control both in-app notification center and push notifications such as FCM.
   - Designed and implemented a community server to post, comment, respond and search. The feature-rich post includes link preview, poll, image/video upload, and tagging.
-  - 📚 JS, TS, RxJS, NestJS, TypeORM, GraphQL w/ federation, Elasticsearch, Redis
-  - ☁ AWS - RDS, OpenSearch, MQ, MSK, Fargate, ECS, SNS, SMS, SQS, Lambda, Batch, EventBridge, WAF, Route53, CloudFront, S3
+  - 📚 NestJS, RxJS, TypeORM, GraphQL w/ federation, Elasticsearch, Redis, Amplitude, Datadog, Sentry
+  - ☁ AWS - RDS, Elasticache, OpenSearch, MQ, MSK, Fargate, ECS, SNS, SMS, SQS, Lambda, Batch, EventBridge, WAF, Route53, CloudFront, S3, MediaConvert, CloudWatch
 - Gradually modernized a legacy mobile application through a phased transformation.
   - Consolidated separate Android and iOS web apps into a single Flutter-based web app, reducing maintenance costs and improving rendering performance.
   - Further evolved the application into a full-featured native app using Expo and React Native to enhance cross-platform capability and user experience.
+  - 📚 Flutter, React Native
 
 <div class="work-experience-header">
   <div>Software engineer, <i>ActionPower Corp.</i> - Korea</div>
   <div>Jul. 2021 - Feb. 2022</div>
 </div>
 
-- Built stable and scalable STT(Speech-To-Text) pipeline.
-  - Achieved high availability by orchestrating multiple Kubernetes clusters and integrating both in-house Airflow and Google Cloud Composer.
-  - 📚 Python, [Airflow](https://airflow.apache.org/), [Microk8s](https://microk8s.io/), [NVIDIA Triton](https://developer.nvidia.com/nvidia-triton-inference-server)
+- Built a stable and scalable Speech-To-Text (STT) pipeline.
+  - Achieved high availability by orchestrating multiple kubernetes clusters consisting of on-premise Airflow and Google Cloud Composer.
+  - Increased inference throughput by leveraging NVIDIA Triton for parallel execution.
+  - 📚 [Airflow](https://airflow.apache.org/), [Microk8s](https://microk8s.io/), [NVIDIA Triton](https://developer.nvidia.com/nvidia-triton-inference-server)
   - ☁ GCP - [Composer](https://cloud.google.com/composer), Kubernetes, [GKE](https://cloud.google.com/kubernetes-engine)
-- Designed a streaming STT service.
-  - 📚 Java, RxJava, Spring boot, Kafka stream, Redis, [Vosk](https://github.com/alphacep/vosk-api), [Kaldi](https://kaldi-asr.org/)
-- Developed back-end of [Daglo](https://daglo.ai/) that is B2C/B2B/B2G service providing STT.
-  - Reduced operational costs by adopting Airflow and optimizing infrastructure resources.
-  - Built a data warehouse using Elasticsearch and Kibana for data storage and visualization.
-  - Developed a transcript search engine leveraging Elasticsearch’s Korean analyzer [Nori](https://www.elastic.co/guide/en/elasticsearch/plugins/current/analysis-nori.html) and [TF-IDF](https://en.wikipedia.org/wiki/Tf%E2%80%93idf) for relevance ranking.
-  - 📚 JS, TS, Python, ExpressJS, FastAPI, Firebase, Elasticsearch, Kibana
+- Designed and implemented a real-time streaming STT service.
+  - 📚 Spring boot, RxJava, Kafka stream, Redis, [Vosk](https://github.com/alphacep/vosk-api), [Kaldi](https://kaldi-asr.org/)
+- Developed the back-end of [Daglo](https://daglo.ai/) that is B2C/B2B/B2G service providing STT.
+  - Reduced operational costs by adopting Apache Airflow and optimizing infrastructure resources.
+  - Built a data warehouse using Elasticsearch and Kibana for efficient data storage and visualization.
+  - Developed a transcript search engine using Elasticsearch’s Korean analyzer [Nori](https://www.elastic.co/guide/en/elasticsearch/plugins/current/analysis-nori.html) and [TF-IDF](https://en.wikipedia.org/wiki/Tf%E2%80%93idf) for relevance ranking.
+  - 📚 Express.js, FastAPI, Firebase, Elasticsearch
   - ☁ GCP - GKE, GAE, GCS, [GSR](https://cloud.google.com/speech-to-text)
-- Developed back-end of [Atend](https://atend.ai/) for video conference and following STT.
-  - 📚 JS, TS, RxJS, NestJS, Firestore, Redis, [Twilio](https://www.twilio.com/docs/video/api)
+- Developed the back-end of [Atend](https://atend.ai/) for video conference and following STT.
+  - 📚 NestJS, RxJS, Firestore, Redis, [Twilio](https://www.twilio.com/docs/video/api)
   - ☁ GCP - GAE, GCS
-- Built end-to-end (E2E) testing. 
-  - 📚 JS, Selenium, [Nightwatch](https://nightwatchjs.org), [LambdaTest](https://www.lambdatest.com)
+- Implemented an automated end-to-end testing environment for continuous integration.
+  - 📚 Selenium, [Nightwatch](https://nightwatchjs.org), [LambdaTest](https://www.lambdatest.com)
 
 <div class="work-experience-header">
   <div>Software engineer, <i>LINE Plus Corp.</i> - Korea</div>
   <div>Jun. 2019 - Jul. 2021</div>
 </div>
 
-- Developed back-end of [LINE messenger](https://line.me/).
+- Developed the back-end of [LINE messenger](https://line.me/).
   - Implemented features including read-only chatroom, adult-only chatroom, abusive user detection and so on.
   - Improved the performance of LINE app by introducing conditional chat prefetching, which reduced total blocking time.
   - Reduced Elasticsearch get/search latency by 2x through query and cluster optimization.
   - Manually upgraded Elasticsearch from version 5.0 to 6.3 across two clusters (active-standby configuration).
   - Built a fault-tolerant Kafka producer with logging-based recovery to minimize message loss.
   - Developed a back-office Content Management System (CMS) for internal operations.
-  - 📚 Java, RxJava, Spring, MySQL, Redis, Elasticsearch, HBase, Kafka, Zookeeper, [Armeria](https://github.com/line/armeria), [Central Dogma](https://github.com/line/centraldogma), Retrofit, Thrift, Protobuf
+  - 📚 Spring, Java, RxJava, MySQL, Redis, Elasticsearch, HBase, Kafka, Zookeeper, [Armeria](https://github.com/line/armeria), [Central Dogma](https://github.com/line/centraldogma), Retrofit, Thrift, Protobuf
 - Developed CI/CD pipelines and automation processes.
   - Implemented and stabilized end-to-end (E2E) tests to verify behavior and server push on [SPDY called LEGY](https://engineering.linecorp.com/ko/blog/LINT-newtork-modernization-http2-tls).
   - Built a periodic ranking/trending data generation system using Elasticsearch.
@@ -82,17 +84,19 @@ subclass: 'post page'
   <div>Oct. 2017 - Jun. 2019</div>
 </div>
 
-- Improved the performance of back-end of cryptocurrency exchange.
-  - Throughput for bidding API was increased 200 times. It is done by resolving single-threaded task.
-  - 📚 Java, Spring, MySQL, RabbitMQ, AWS EC2
+- Developed the back-end of [cryptocurrency exchange](https://x.com/cpdax).
+  - Enhanced bidding API performance by 200x through architectural redesign.
+  - Implemented KYC (Know Your Customer) authentication system.
+  - Developed deposit and withdrawal processing for KRW and cryptocurrencies.
+  - 📚 Spring, MySQL, RabbitMQ
   - ☁ AWS - EC2, MQ
-- Implemented [Ethereum proxy](https://github.com/hexoul/aws-lambda-eth-proxy) as delegator of transactions.
+- Built a [Ethereum proxy](https://github.com/hexoul/aws-lambda-eth-proxy) as delegator of transactions.
   - 📚 Go, Ethereum
   - ☁ AWS - Lambda, API Gateway
-- Implemented [decentralized applications (DApp)](https://github.com/hexoul?tab=repositories&q=dapp) interacting [smart contract](https://github.com/hexoul/governance-contract) through [web3](https://github.com/hexoul/meta-web3).
-  - 📚 Solidity, Ethereum, IPFS, ReactJS
+- Introduced [decentralized applications (DApp)](https://github.com/hexoul?tab=repositories&q=dapp)s interacting [smart contract](https://github.com/hexoul/governance-contract) through [web3](https://github.com/hexoul/meta-web3).
+  - 📚 Solidity, Ethereum, IPFS, React
 - Implemented [API clients](https://github.com/hexoul?tab=repositories&q=api-client) for trading and [monitoring](https://github.com/hexoul/coinmarketcap-react-chart) the tendency.
-  - 📚 Go, ReactJS
+  - 📚 Go, React
 - Researched blockchain technologies and security issues on all sides such as platform, smart contract, GDPR and so on.
 
 ---
@@ -109,21 +113,15 @@ subclass: 'post page'
   - [Armeria](https://github.com/line/armeria/pulls?q=is%3Apr+author%3Ahexoul+is%3Aclosed) - a microservice framework to easily build any type of technologies including gRPC, Thrift, Retrofit and so on.
   - [Python client for Central Dogma](https://github.com/line/centraldogma-python/pulls?q=is%3Apr+author%3Ahexoul+is%3Aclosed) - a Python client for Central Dogma that is highly-available version-controlled service configuration repository based on Git, ZooKeeper and HTTP/2.
 - Individual
-  - Chewing Diet (츄잉 다이어트)
-    - [iOS](https://apps.apple.com/app/id6444375180), [Android](https://play.google.com/store/apps/details?id=hexoul.chewing.diet)
-      - 📚 Dart, Flutter, Firebase (Analytics, Crashlytics)
-  - Employee Stock Option Calc. (ESO calculator, 스톡옵션 계산기)
-    - [iOS](https://apps.apple.com/app/id1609432239), [Android](https://play.google.com/store/apps/details?id=hexoul.stockoption.calculator)
-      - 📚 Dart, Flutter, Firebase (Analytics, Crashlytics, Admob)
-  - 오늘부터 전공면접 IT
+  - Chewing Diet - [iOS](https://apps.apple.com/app/id6444375180), [Android](https://play.google.com/store/apps/details?id=hexoul.chewing.diet), [Web](https://chewingdietweb.vercel.app/)
+    - 📚 Flutter, Firebase, Next.js, Tailwind CSS
+  - 오늘부터 전공면접 IT - [iOS](https://apps.apple.com/app/id1526993862), [Android](https://play.google.com/store/apps/details?id=com.whatseries.prepareinterview), [Web](https://hexoul.github.io/prepare-interview-data)
     - a MCQ-based (Multiple Choice Question) study helper for IT interview.
-    - [iOS](https://apps.apple.com/app/id1526993862), [Android](https://play.google.com/store/apps/details?id=com.whatseries.prepareinterview)
-      - 📚 Dart, Flutter, Firebase (Analytics, Crashlytics, Cloud messaging, Admob)
-    - [Web](https://hexoul.github.io/prepare-interview-data)
-      - 📚 JS, TS, NextJS, Chakra UI
-  - MojiE (아무말)
-    - [iOS](https://apps.apple.com/app/id1632701886), [Android](https://play.google.com/store/apps/details?id=hexoul.image.gen)
-      - 📚 Dart, Flutter, Firebase (Analytics, Crashlytics, Admob)
+    - 📚 Flutter, Firebase, Next.js, Chakra UI
+  - Employee Stock Option Calculator - [iOS](https://apps.apple.com/app/id1609432239), [Android](https://play.google.com/store/apps/details?id=hexoul.stockoption.calculator)
+    - 📚 Flutter, Firebase
+  - MojiE - [iOS](https://apps.apple.com/app/id1632701886), [Android](https://play.google.com/store/apps/details?id=hexoul.image.gen)
+    - 📚 Flutter, Firebase
 - <details>
   <summary>Research</summary>
   <ul>
@@ -141,23 +139,23 @@ subclass: 'post page'
 
 ### Skills
 - Programming language
-  - **Java, JS, TS, Python, Go, Dart, SQL**
+  - **Java, TypeScript, Python, Go, Dart, SQL**
   - Assembly, C, C++, C#, Kotlin, MATLAB, ML, Objective-C, Ocaml, Painless, PHP, Scala, Solidity, Tcl/Tk
 - Platform & Framework
   - Reactive
     - **RxJava, RxJS**
   - Back-end
     - [Java] **Spring, Spring boot, Armeria**, Guava, JUnit
-    - [JS] **NestJS**, ExpressJS, NodeJS, Puppeteer, Jest
-    - [Python] **Airflow**, Django, Flask, FastAPI, pytest, httpx, respx, tenacity, pandas, numpy
+    - [TypeScript] **NestJS**, Express.js, Node.js, Puppeteer, Jest
+    - [Python] **Airflow**, FastAPI, Flask, Django, pytest
     - [Storage] **Elasticsearch, Redis, MySQL, HBase**, Firestore, DynamoDB, LevelDB, PostgreSQL, Zookeeper, Central Dogma, Ethereum, IPFS
-    - [Stream] **Kafka**, RabbitMQ, AWS SQS
+    - [Stream] **Kafka**, RabbitMQ, BullMQ, AWS SQS
     - [Orchestration] **Docker, Jenkins, Kubernetes**
     - [Monitoring] **Datadog, Grafana, Kibana, Prometheus**, Sentry, Zipkin, Gatling
   - Front-end
-    - **NextJS, ReactJS**, VueJS
+    - **Next.js, React**, Vue.js, Tailwind CSS
   - App
-    - **Flutter**, watchOS, wearOS, Swift, Kotlin, l10n, flutter_hooks, fl_chart, flutter_animate, sqflite, sqflite
+    - **Flutter**, React Native, Nativewind
     - Tizen, Qt, Unity, Cocos2d, MFC
   - <details>
     <summary>Vehicle field</summary>
@@ -170,7 +168,7 @@ subclass: 'post page'
 - Protocol
   - **HTTP/2**, **REST**, **GraphQL**, gRPC, RTC, SSE, SPDY, **Thrift**, Websocket
 - Cloud service
-  - AWS - RDS, OpenSearch, Elasticache, MQ, MSK, SNS, SMS, SQS, WAF, CloudFront, ALB, API Gateway, Fargate, ECS, EC2, Lambda, Batch, EventBridge
+  - AWS - RDS, OpenSearch, Elasticache, MQ, MSK, SNS, SMS, SQS, WAF, CloudFront, ALB, API Gateway, Fargate, ECS, EC2, Lambda, Batch, EventBridge, MediaConvert, CloudWatch
   - GCP - Composer, GAE, GCE, GCR, GCS, GKE, GSR, Memorystore
 - <details>
   <summary>Tool</summary>
@@ -200,5 +198,5 @@ subclass: 'post page'
 ### Languages
 
 - 🇺🇸 English
-- 🇰🇷 Korean (native)
 - 🇯🇵 Japanese (JLPT N1)
+- 🇰🇷 Korean (native)

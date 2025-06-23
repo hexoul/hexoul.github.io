@@ -1,16 +1,18 @@
 ## Getting Started
 
 ```
-> cd $(xcode-select -p)/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks/Ruby.framework/Versions/Current/usr/include/ruby-2.*
-> sudo ln -s universal-darwin24 universal-darwin23
-> sudo arch -arm64 gem install ffi
-> sudo bundle install
+> bundle install
 > bundle exec jekyll serve
+```
+
+## Build
+
+```
 > bundle exec jekyll build
 > cp -rf ../jasper2-pages/* ./
 ```
 
-## Changing CSS
+## Update CSS
 
 ```
 > npm install
