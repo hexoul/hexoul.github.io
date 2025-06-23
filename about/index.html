@@ -173,18 +173,19 @@ into the {body} of the default.hbs template -->
 </div>
 
 <ul>
-  <li>Developed back-end of <a href="https://kinolights.com/">Kinolights</a>.
+  <li>Developed the back-end of <a href="https://kinolights.com/">Kinolights</a>.
     <ul>
       <li>Built a notification server to control both in-app notification center and push notifications such as FCM.</li>
       <li>Designed and implemented a community server to post, comment, respond and search. The feature-rich post includes link preview, poll, image/video upload, and tagging.</li>
-      <li>📚 JS, TS, RxJS, NestJS, TypeORM, GraphQL w/ federation, Elasticsearch, Redis</li>
-      <li>☁ AWS - RDS, OpenSearch, MQ, MSK, Fargate, ECS, SNS, SMS, SQS, Lambda, Batch, EventBridge, WAF, Route53, CloudFront, S3</li>
+      <li>📚 NestJS, RxJS, TypeORM, GraphQL w/ federation, Elasticsearch, Redis, Amplitude, Datadog, Sentry</li>
+      <li>☁ AWS - RDS, Elasticache, OpenSearch, MQ, MSK, Fargate, ECS, SNS, SMS, SQS, Lambda, Batch, EventBridge, WAF, Route53, CloudFront, S3, MediaConvert, CloudWatch</li>
     </ul>
   </li>
   <li>Gradually modernized a legacy mobile application through a phased transformation.
     <ul>
       <li>Consolidated separate Android and iOS web apps into a single Flutter-based web app, reducing maintenance costs and improving rendering performance.</li>
       <li>Further evolved the application into a full-featured native app using Expo and React Native to enhance cross-platform capability and user experience.</li>
+      <li>📚 Flutter, React Native</li>
     </ul>
   </li>
 </ul>
@@ -195,36 +196,37 @@ into the {body} of the default.hbs template -->
 </div>
 
 <ul>
-  <li>Built stable and scalable STT(Speech-To-Text) pipeline.
+  <li>Built a stable and scalable Speech-To-Text (STT) pipeline.
     <ul>
-      <li>Achieved high availability by orchestrating multiple Kubernetes clusters and integrating both in-house Airflow and Google Cloud Composer.</li>
-      <li>📚 Python, <a href="https://airflow.apache.org/">Airflow</a>, <a href="https://microk8s.io/">Microk8s</a>, <a href="https://developer.nvidia.com/nvidia-triton-inference-server">NVIDIA Triton</a></li>
+      <li>Achieved high availability by orchestrating multiple kubernetes clusters consisting of on-premise Airflow and Google Cloud Composer.</li>
+      <li>Increased inference throughput by leveraging NVIDIA Triton for parallel execution.</li>
+      <li>📚 <a href="https://airflow.apache.org/">Airflow</a>, <a href="https://microk8s.io/">Microk8s</a>, <a href="https://developer.nvidia.com/nvidia-triton-inference-server">NVIDIA Triton</a></li>
       <li>☁ GCP - <a href="https://cloud.google.com/composer">Composer</a>, Kubernetes, <a href="https://cloud.google.com/kubernetes-engine">GKE</a></li>
     </ul>
   </li>
-  <li>Designed a streaming STT service.
+  <li>Designed and implemented a real-time streaming STT service.
     <ul>
-      <li>📚 Java, RxJava, Spring boot, Kafka stream, Redis, <a href="https://github.com/alphacep/vosk-api">Vosk</a>, <a href="https://kaldi-asr.org/">Kaldi</a></li>
+      <li>📚 Spring boot, RxJava, Kafka stream, Redis, <a href="https://github.com/alphacep/vosk-api">Vosk</a>, <a href="https://kaldi-asr.org/">Kaldi</a></li>
     </ul>
   </li>
-  <li>Developed back-end of <a href="https://daglo.ai/">Daglo</a> that is B2C/B2B/B2G service providing STT.
+  <li>Developed the back-end of <a href="https://daglo.ai/">Daglo</a> that is B2C/B2B/B2G service providing STT.
     <ul>
-      <li>Reduced operational costs by adopting Airflow and optimizing infrastructure resources.</li>
-      <li>Built a data warehouse using Elasticsearch and Kibana for data storage and visualization.</li>
-      <li>Developed a transcript search engine leveraging Elasticsearch’s Korean analyzer <a href="https://www.elastic.co/guide/en/elasticsearch/plugins/current/analysis-nori.html">Nori</a> and <a href="https://en.wikipedia.org/wiki/Tf%E2%80%93idf">TF-IDF</a> for relevance ranking.</li>
-      <li>📚 JS, TS, Python, ExpressJS, FastAPI, Firebase, Elasticsearch, Kibana</li>
+      <li>Reduced operational costs by adopting Apache Airflow and optimizing infrastructure resources.</li>
+      <li>Built a data warehouse using Elasticsearch and Kibana for efficient data storage and visualization.</li>
+      <li>Developed a transcript search engine using Elasticsearch’s Korean analyzer <a href="https://www.elastic.co/guide/en/elasticsearch/plugins/current/analysis-nori.html">Nori</a> and <a href="https://en.wikipedia.org/wiki/Tf%E2%80%93idf">TF-IDF</a> for relevance ranking.</li>
+      <li>📚 Express.js, FastAPI, Firebase, Elasticsearch</li>
       <li>☁ GCP - GKE, GAE, GCS, <a href="https://cloud.google.com/speech-to-text">GSR</a></li>
     </ul>
   </li>
-  <li>Developed back-end of <a href="https://atend.ai/">Atend</a> for video conference and following STT.
+  <li>Developed the back-end of <a href="https://atend.ai/">Atend</a> for video conference and following STT.
     <ul>
-      <li>📚 JS, TS, RxJS, NestJS, Firestore, Redis, <a href="https://www.twilio.com/docs/video/api">Twilio</a></li>
+      <li>📚 NestJS, RxJS, Firestore, Redis, <a href="https://www.twilio.com/docs/video/api">Twilio</a></li>
       <li>☁ GCP - GAE, GCS</li>
     </ul>
   </li>
-  <li>Built end-to-end (E2E) testing.
+  <li>Implemented an automated end-to-end testing environment for continuous integration.
     <ul>
-      <li>📚 JS, Selenium, <a href="https://nightwatchjs.org">Nightwatch</a>, <a href="https://www.lambdatest.com">LambdaTest</a></li>
+      <li>📚 Selenium, <a href="https://nightwatchjs.org">Nightwatch</a>, <a href="https://www.lambdatest.com">LambdaTest</a></li>
     </ul>
   </li>
 </ul>
@@ -235,7 +237,7 @@ into the {body} of the default.hbs template -->
 </div>
 
 <ul>
-  <li>Developed back-end of <a href="https://line.me/">LINE messenger</a>.
+  <li>Developed the back-end of <a href="https://line.me/">LINE messenger</a>.
     <ul>
       <li>Implemented features including read-only chatroom, adult-only chatroom, abusive user detection and so on.</li>
       <li>Improved the performance of LINE app by introducing conditional chat prefetching, which reduced total blocking time.</li>
@@ -243,7 +245,7 @@ into the {body} of the default.hbs template -->
       <li>Manually upgraded Elasticsearch from version 5.0 to 6.3 across two clusters (active-standby configuration).</li>
       <li>Built a fault-tolerant Kafka producer with logging-based recovery to minimize message loss.</li>
       <li>Developed a back-office Content Management System (CMS) for internal operations.</li>
-      <li>📚 Java, RxJava, Spring, MySQL, Redis, Elasticsearch, HBase, Kafka, Zookeeper, <a href="https://github.com/line/armeria">Armeria</a>, <a href="https://github.com/line/centraldogma">Central Dogma</a>, Retrofit, Thrift, Protobuf</li>
+      <li>📚 Spring, Java, RxJava, MySQL, Redis, Elasticsearch, HBase, Kafka, Zookeeper, <a href="https://github.com/line/armeria">Armeria</a>, <a href="https://github.com/line/centraldogma">Central Dogma</a>, Retrofit, Thrift, Protobuf</li>
     </ul>
   </li>
   <li>Developed CI/CD pipelines and automation processes.
@@ -263,27 +265,29 @@ into the {body} of the default.hbs template -->
 </div>
 
 <ul>
-  <li>Improved the performance of back-end of cryptocurrency exchange.
+  <li>Developed the back-end of <a href="https://x.com/cpdax">cryptocurrency exchange</a>.
     <ul>
-      <li>Throughput for bidding API was increased 200 times. It is done by resolving single-threaded task.</li>
-      <li>📚 Java, Spring, MySQL, RabbitMQ, AWS EC2</li>
+      <li>Enhanced bidding API performance by 200x through architectural redesign.</li>
+      <li>Implemented KYC (Know Your Customer) authentication system.</li>
+      <li>Developed deposit and withdrawal processing for KRW and cryptocurrencies.</li>
+      <li>📚 Spring, MySQL, RabbitMQ</li>
       <li>☁ AWS - EC2, MQ</li>
     </ul>
   </li>
-  <li>Implemented <a href="https://github.com/hexoul/aws-lambda-eth-proxy">Ethereum proxy</a> as delegator of transactions.
+  <li>Built a <a href="https://github.com/hexoul/aws-lambda-eth-proxy">Ethereum proxy</a> as delegator of transactions.
     <ul>
       <li>📚 Go, Ethereum</li>
       <li>☁ AWS - Lambda, API Gateway</li>
     </ul>
   </li>
-  <li>Implemented <a href="https://github.com/hexoul?tab=repositories&amp;q=dapp">decentralized applications (DApp)</a> interacting <a href="https://github.com/hexoul/governance-contract">smart contract</a> through <a href="https://github.com/hexoul/meta-web3">web3</a>.
+  <li>Introduced <a href="https://github.com/hexoul?tab=repositories&amp;q=dapp">decentralized applications (DApp)</a>s interacting <a href="https://github.com/hexoul/governance-contract">smart contract</a> through <a href="https://github.com/hexoul/meta-web3">web3</a>.
     <ul>
-      <li>📚 Solidity, Ethereum, IPFS, ReactJS</li>
+      <li>📚 Solidity, Ethereum, IPFS, React</li>
     </ul>
   </li>
   <li>Implemented <a href="https://github.com/hexoul?tab=repositories&amp;q=api-client">API clients</a> for trading and <a href="https://github.com/hexoul/coinmarketcap-react-chart">monitoring</a> the tendency.
     <ul>
-      <li>📚 Go, ReactJS</li>
+      <li>📚 Go, React</li>
     </ul>
   </li>
   <li>Researched blockchain technologies and security issues on all sides such as platform, smart contract, GDPR and so on.</li>
@@ -313,46 +317,25 @@ into the {body} of the default.hbs template -->
   </li>
   <li>Individual
     <ul>
-      <li>Chewing Diet (츄잉 다이어트)
+      <li>Chewing Diet - <a href="https://apps.apple.com/app/id6444375180">iOS</a>, <a href="https://play.google.com/store/apps/details?id=hexoul.chewing.diet">Android</a>, <a href="https://chewingdietweb.vercel.app/">Web</a>
         <ul>
-          <li><a href="https://apps.apple.com/app/id6444375180">iOS</a>, <a href="https://play.google.com/store/apps/details?id=hexoul.chewing.diet">Android</a>
-            <ul>
-              <li>📚 Dart, Flutter, Firebase (Analytics, Crashlytics)</li>
-            </ul>
-          </li>
+          <li>📚 Flutter, Firebase, Next.js, Tailwind CSS</li>
         </ul>
       </li>
-      <li>Employee Stock Option Calc. (ESO calculator, 스톡옵션 계산기)
-        <ul>
-          <li><a href="https://apps.apple.com/app/id1609432239">iOS</a>, <a href="https://play.google.com/store/apps/details?id=hexoul.stockoption.calculator">Android</a>
-            <ul>
-              <li>📚 Dart, Flutter, Firebase (Analytics, Crashlytics, Admob)</li>
-            </ul>
-          </li>
-        </ul>
-      </li>
-      <li>오늘부터 전공면접 IT
+      <li>오늘부터 전공면접 IT - <a href="https://apps.apple.com/app/id1526993862">iOS</a>, <a href="https://play.google.com/store/apps/details?id=com.whatseries.prepareinterview">Android</a>, <a href="https://hexoul.github.io/prepare-interview-data">Web</a>
         <ul>
           <li>a MCQ-based (Multiple Choice Question) study helper for IT interview.</li>
-          <li><a href="https://apps.apple.com/app/id1526993862">iOS</a>, <a href="https://play.google.com/store/apps/details?id=com.whatseries.prepareinterview">Android</a>
-            <ul>
-              <li>📚 Dart, Flutter, Firebase (Analytics, Crashlytics, Cloud messaging, Admob)</li>
-            </ul>
-          </li>
-          <li><a href="https://hexoul.github.io/prepare-interview-data">Web</a>
-            <ul>
-              <li>📚 JS, TS, NextJS, Chakra UI</li>
-            </ul>
-          </li>
+          <li>📚 Flutter, Firebase, Next.js, Chakra UI</li>
         </ul>
       </li>
-      <li>MojiE (아무말)
+      <li>Employee Stock Option Calculator - <a href="https://apps.apple.com/app/id1609432239">iOS</a>, <a href="https://play.google.com/store/apps/details?id=hexoul.stockoption.calculator">Android</a>
         <ul>
-          <li><a href="https://apps.apple.com/app/id1632701886">iOS</a>, <a href="https://play.google.com/store/apps/details?id=hexoul.image.gen">Android</a>
-            <ul>
-              <li>📚 Dart, Flutter, Firebase (Analytics, Crashlytics, Admob)</li>
-            </ul>
-          </li>
+          <li>📚 Flutter, Firebase</li>
+        </ul>
+      </li>
+      <li>MojiE - <a href="https://apps.apple.com/app/id1632701886">iOS</a>, <a href="https://play.google.com/store/apps/details?id=hexoul.image.gen">Android</a>
+        <ul>
+          <li>📚 Flutter, Firebase</li>
         </ul>
       </li>
     </ul>
@@ -379,7 +362,7 @@ into the {body} of the default.hbs template -->
 <ul>
   <li>Programming language
     <ul>
-      <li><strong>Java, JS, TS, Python, Go, Dart, SQL</strong></li>
+      <li><strong>Java, TypeScript, Python, Go, Dart, SQL</strong></li>
       <li>Assembly, C, C++, C#, Kotlin, MATLAB, ML, Objective-C, Ocaml, Painless, PHP, Scala, Solidity, Tcl/Tk</li>
     </ul>
   </li>
@@ -393,22 +376,22 @@ into the {body} of the default.hbs template -->
       <li>Back-end
         <ul>
           <li>[Java] <strong>Spring, Spring boot, Armeria</strong>, Guava, JUnit</li>
-          <li>[JS] <strong>NestJS</strong>, ExpressJS, NodeJS, Puppeteer, Jest</li>
-          <li>[Python] <strong>Airflow</strong>, Django, Flask, FastAPI, pytest, httpx, respx, tenacity, pandas, numpy</li>
+          <li>[TypeScript] <strong>NestJS</strong>, Express.js, Node.js, Puppeteer, Jest</li>
+          <li>[Python] <strong>Airflow</strong>, FastAPI, Flask, Django, pytest</li>
           <li>[Storage] <strong>Elasticsearch, Redis, MySQL, HBase</strong>, Firestore, DynamoDB, LevelDB, PostgreSQL, Zookeeper, Central Dogma, Ethereum, IPFS</li>
-          <li>[Stream] <strong>Kafka</strong>, RabbitMQ, AWS SQS</li>
+          <li>[Stream] <strong>Kafka</strong>, RabbitMQ, BullMQ, AWS SQS</li>
           <li>[Orchestration] <strong>Docker, Jenkins, Kubernetes</strong></li>
           <li>[Monitoring] <strong>Datadog, Grafana, Kibana, Prometheus</strong>, Sentry, Zipkin, Gatling</li>
         </ul>
       </li>
       <li>Front-end
         <ul>
-          <li><strong>NextJS, ReactJS</strong>, VueJS</li>
+          <li><strong>Next.js, React</strong>, Vue.js, Tailwind CSS</li>
         </ul>
       </li>
       <li>App
         <ul>
-          <li><strong>Flutter</strong>, watchOS, wearOS, Swift, Kotlin, l10n, flutter_hooks, fl_chart, flutter_animate, sqflite, sqflite</li>
+          <li><strong>Flutter</strong>, React Native, Nativewind</li>
           <li>Tizen, Qt, Unity, Cocos2d, MFC</li>
         </ul>
       </li>
@@ -431,7 +414,7 @@ into the {body} of the default.hbs template -->
   </li>
   <li>Cloud service
     <ul>
-      <li>AWS - RDS, OpenSearch, Elasticache, MQ, MSK, SNS, SMS, SQS, WAF, CloudFront, ALB, API Gateway, Fargate, ECS, EC2, Lambda, Batch, EventBridge</li>
+      <li>AWS - RDS, OpenSearch, Elasticache, MQ, MSK, SNS, SMS, SQS, WAF, CloudFront, ALB, API Gateway, Fargate, ECS, EC2, Lambda, Batch, EventBridge, MediaConvert, CloudWatch</li>
       <li>GCP - Composer, GAE, GCE, GCR, GCS, GKE, GSR, Memorystore</li>
     </ul>
   </li>
@@ -471,8 +454,8 @@ into the {body} of the default.hbs template -->
 
 <ul>
   <li>🇺🇸 English</li>
-  <li>🇰🇷 Korean (native)</li>
   <li>🇯🇵 Japanese (JLPT N1)</li>
+  <li>🇰🇷 Korean (native)</li>
 </ul>
 
             </section>
