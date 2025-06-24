@@ -177,10 +177,13 @@ into the {body} of the default.hbs template -->
     <ul>
       <li>Built a notification server to control both in-app notification center and push notifications such as FCM.</li>
       <li>Designed and implemented a community server to post, comment, respond and search. The feature-rich post includes link preview, poll, image/video upload, and tagging.</li>
+      <li>Built a search engine on top of Elasticsearch with support for initial consonant search, phoneme-level matching, synonym expansion, typo correction, and trend-aware scoring.</li>
+      <li>Developed a metadata collection system combining crawling and third-party API integration to enrich internal datasets.</li>
       <li>📚 NestJS, RxJS, TypeORM, GraphQL w/ federation, Elasticsearch, Redis, Amplitude, Datadog, Sentry</li>
       <li>☁ AWS - RDS, Elasticache, OpenSearch, MQ, MSK, Fargate, ECS, SNS, SMS, SQS, Lambda, Batch, EventBridge, WAF, Route53, CloudFront, S3, MediaConvert, CloudWatch</li>
     </ul>
   </li>
+  <li>Improved SEO to increase monthly Google search clicks from 250K to 800K through technical optimizations and content restructuring.</li>
   <li>Gradually modernized a legacy mobile application through a phased transformation.
     <ul>
       <li>Consolidated separate Android and iOS web apps into a single Flutter-based web app, reducing maintenance costs and improving rendering performance.</li>
@@ -188,6 +191,8 @@ into the {body} of the default.hbs template -->
       <li>📚 Flutter, React Native</li>
     </ul>
   </li>
+  <li>Maintained overall service infrastructure including cost optimization, deployment pipelines, and resource monitoring.</li>
+  <li>Implemented event tracking pipeline with Amplitude: managed quotas, user identity mapping, event schema, dashboard guidelines, and internal onboarding.</li>
 </ul>
 
 <div class="work-experience-header">
@@ -200,8 +205,8 @@ into the {body} of the default.hbs template -->
     <ul>
       <li>Achieved high availability by orchestrating multiple kubernetes clusters consisting of on-premise Airflow and Google Cloud Composer.</li>
       <li>Increased inference throughput by leveraging NVIDIA Triton for parallel execution.</li>
-      <li>📚 <a href="https://airflow.apache.org/">Airflow</a>, <a href="https://microk8s.io/">Microk8s</a>, <a href="https://developer.nvidia.com/nvidia-triton-inference-server">NVIDIA Triton</a></li>
-      <li>☁ GCP - <a href="https://cloud.google.com/composer">Composer</a>, Kubernetes, <a href="https://cloud.google.com/kubernetes-engine">GKE</a></li>
+      <li>📚 <a href="https://airflow.apache.org/">Airflow</a>, <a href="https://microk8s.io/">Microk8s</a>, <a href="https://developer.nvidia.com/nvidia-triton-inference-server">NVIDIA Triton</a>, Kubernetes, Python, GCSFuse</li>
+      <li>☁ GCP - <a href="https://cloud.google.com/composer">Composer</a>, <a href="https://cloud.google.com/kubernetes-engine">GKE</a>, GCS</li>
     </ul>
   </li>
   <li>Designed and implemented a real-time streaming STT service.
@@ -242,10 +247,12 @@ into the {body} of the default.hbs template -->
       <li>Implemented features including read-only chatroom, adult-only chatroom, abusive user detection and so on.</li>
       <li>Improved the performance of LINE app by introducing conditional chat prefetching, which reduced total blocking time.</li>
       <li>Reduced Elasticsearch get/search latency by 2x through query and cluster optimization.</li>
+      <li>Contributed to <a href="https://github.com/line/armeria/pulls?q=is%3Apr+author%3Ahexoul">Armeria</a> to expose internal metrics for server monitoring. And integrated Prometheus-compatible metrics and built Grafana dashboards for service observability.</li>
+      <li>Identified and resolved performance bottlenecks using profiling tools such as heatmaps, thread dumps, and heap dumps.</li>
       <li>Manually upgraded Elasticsearch from version 5.0 to 6.3 across two clusters (active-standby configuration).</li>
       <li>Built a fault-tolerant Kafka producer with logging-based recovery to minimize message loss.</li>
       <li>Developed a back-office Content Management System (CMS) for internal operations.</li>
-      <li>📚 Spring, Java, RxJava, MySQL, Redis, Elasticsearch, HBase, Kafka, Zookeeper, <a href="https://github.com/line/armeria">Armeria</a>, <a href="https://github.com/line/centraldogma">Central Dogma</a>, Retrofit, Thrift, Protobuf</li>
+      <li>📚 Spring, Java, RxJava, MySQL, Redis, Elasticsearch, HBase, Kafka, Zookeeper, <a href="https://github.com/line/armeria">Armeria</a>, <a href="https://github.com/line/centraldogma">Central Dogma</a>, Retrofit, Thrift, Protobuf, Jenkins, Ansible, <a href="https://zipkin.io">Zipkin</a>, <a href="https://github.com/openjdk/jmh">JMH</a>, Prometheus, Micrometer, Dropwizard</li>
     </ul>
   </li>
   <li>Developed CI/CD pipelines and automation processes.
@@ -253,8 +260,7 @@ into the {body} of the default.hbs template -->
       <li>Implemented and stabilized end-to-end (E2E) tests to verify behavior and server push on <a href="https://engineering.linecorp.com/ko/blog/LINT-newtork-modernization-http2-tls">SPDY called LEGY</a>.</li>
       <li>Built a periodic ranking/trending data generation system using Elasticsearch.</li>
       <li>Developed custom load-testing programs using Gatling to simulate high-load conditions.</li>
-      <li>Identified and resolved performance bottlenecks using profiling tools such as heatmaps, thread dumps, and heap dumps.</li>
-      <li>📚 Java, Python, Kotlin, Spring Batch, Flask, Jenkins, Ansible, <a href="https://zipkin.io">Zipkin</a>, <a href="https://github.com/openjdk/jmh">JMH</a>, <a href="https://gatling.io">Gatling</a>, Prometheus, Micrometer, Dropwizard</li>
+      <li>📚 Spring Batch, Flask, <a href="https://gatling.io">Gatling</a>, Java, Python, Kotlin, Scala</li>
     </ul>
   </li>
 </ul>
@@ -270,17 +276,18 @@ into the {body} of the default.hbs template -->
       <li>Enhanced bidding API performance by 200x through architectural redesign.</li>
       <li>Implemented KYC (Know Your Customer) authentication system.</li>
       <li>Developed deposit and withdrawal processing for KRW and cryptocurrencies.</li>
+      <li>Continuously integrated newly listed cryptocurrencies into the exchange platform, ensuring timely support and smooth trading operations.</li>
       <li>📚 Spring, MySQL, RabbitMQ</li>
       <li>☁ AWS - EC2, MQ</li>
     </ul>
   </li>
-  <li>Built a <a href="https://github.com/hexoul/aws-lambda-eth-proxy">Ethereum proxy</a> as delegator of transactions.
+  <li>Designed and deployed <a href="https://github.com/hexoul/aws-lambda-eth-proxy">an Ethereum proxy server</a> that delegates user transactions to the blockchain network.
     <ul>
       <li>📚 Go, Ethereum</li>
       <li>☁ AWS - Lambda, API Gateway</li>
     </ul>
   </li>
-  <li>Introduced <a href="https://github.com/hexoul?tab=repositories&amp;q=dapp">decentralized applications (DApp)</a>s interacting <a href="https://github.com/hexoul/governance-contract">smart contract</a> through <a href="https://github.com/hexoul/meta-web3">web3</a>.
+  <li>Developed <a href="https://github.com/hexoul?tab=repositories&amp;q=dapp">decentralized applications (DApps)</a> that interact with <a href="https://github.com/hexoul/governance-contract">smart contracts</a> via <a href="https://github.com/hexoul/meta-web3">Web3</a>.
     <ul>
       <li>📚 Solidity, Ethereum, IPFS, React</li>
     </ul>
@@ -311,8 +318,8 @@ into the {body} of the default.hbs template -->
 <ul>
   <li>Open source
     <ul>
-      <li><a href="https://github.com/line/armeria/pulls?q=is%3Apr+author%3Ahexoul+is%3Aclosed">Armeria</a> - a microservice framework to easily build any type of technologies including gRPC, Thrift, Retrofit and so on.</li>
-      <li><a href="https://github.com/line/centraldogma-python/pulls?q=is%3Apr+author%3Ahexoul+is%3Aclosed">Python client for Central Dogma</a> - a Python client for Central Dogma that is highly-available version-controlled service configuration repository based on Git, ZooKeeper and HTTP/2.</li>
+      <li><a href="https://github.com/line/armeria/pulls?q=is%3Apr+author%3Ahexoul">Armeria</a> - a microservice framework to easily build any type of technologies including gRPC, Thrift, Retrofit and so on.</li>
+      <li><a href="https://github.com/line/centraldogma-python/pulls?q=is%3Apr+author%3Ahexoul">Python client for Central Dogma</a> - a Python client for Central Dogma that is highly-available version-controlled service configuration repository based on Git, ZooKeeper and HTTP/2.</li>
     </ul>
   </li>
   <li>Individual
@@ -362,8 +369,8 @@ into the {body} of the default.hbs template -->
 <ul>
   <li>Programming language
     <ul>
-      <li><strong>Java, TypeScript, Python, Go, Dart, SQL</strong></li>
-      <li>Assembly, C, C++, C#, Kotlin, MATLAB, ML, Objective-C, Ocaml, Painless, PHP, Scala, Solidity, Tcl/Tk</li>
+      <li><strong>Java, TypeScript, Python, Go, Dart</strong></li>
+      <li>Assembly, C, C++, C#, Kotlin, Scala, MATLAB, ML, Objective-C, Ocaml, Painless, PHP, Scala, Solidity, Tcl/Tk</li>
     </ul>
   </li>
   <li>Platform &amp; Framework
