@@ -28,12 +28,17 @@ subclass: 'post page'
 - Developed the back-end of [Kinolights](https://kinolights.com/).
   - Built a notification server to control both in-app notification center and push notifications such as FCM.
   - Designed and implemented a community server to post, comment, respond and search. The feature-rich post includes link preview, poll, image/video upload, and tagging.
+  - Built a search engine on top of Elasticsearch with support for initial consonant search, phoneme-level matching, synonym expansion, typo correction, and trend-aware scoring.
+  - Developed a metadata collection system combining crawling and third-party API integration to enrich internal datasets.
   - 📚 NestJS, RxJS, TypeORM, GraphQL w/ federation, Elasticsearch, Redis, Amplitude, Datadog, Sentry
   - ☁ AWS - RDS, Elasticache, OpenSearch, MQ, MSK, Fargate, ECS, SNS, SMS, SQS, Lambda, Batch, EventBridge, WAF, Route53, CloudFront, S3, MediaConvert, CloudWatch
+- Improved SEO to increase monthly Google search clicks from 250K to 800K through technical optimizations and content restructuring.
 - Gradually modernized a legacy mobile application through a phased transformation.
   - Consolidated separate Android and iOS web apps into a single Flutter-based web app, reducing maintenance costs and improving rendering performance.
   - Further evolved the application into a full-featured native app using Expo and React Native to enhance cross-platform capability and user experience.
   - 📚 Flutter, React Native
+- Maintained overall service infrastructure including cost optimization, deployment pipelines, and resource monitoring.
+- Implemented event tracking pipeline with Amplitude: managed quotas, user identity mapping, event schema, dashboard guidelines, and internal onboarding.
 
 <div class="work-experience-header">
   <div>Software engineer, <i>ActionPower Corp.</i> - Korea</div>
@@ -43,8 +48,8 @@ subclass: 'post page'
 - Built a stable and scalable Speech-To-Text (STT) pipeline.
   - Achieved high availability by orchestrating multiple kubernetes clusters consisting of on-premise Airflow and Google Cloud Composer.
   - Increased inference throughput by leveraging NVIDIA Triton for parallel execution.
-  - 📚 [Airflow](https://airflow.apache.org/), [Microk8s](https://microk8s.io/), [NVIDIA Triton](https://developer.nvidia.com/nvidia-triton-inference-server)
-  - ☁ GCP - [Composer](https://cloud.google.com/composer), Kubernetes, [GKE](https://cloud.google.com/kubernetes-engine)
+  - 📚 [Airflow](https://airflow.apache.org/), [Microk8s](https://microk8s.io/), [NVIDIA Triton](https://developer.nvidia.com/nvidia-triton-inference-server), Kubernetes, Python, GCSFuse
+  - ☁ GCP - [Composer](https://cloud.google.com/composer), [GKE](https://cloud.google.com/kubernetes-engine), GCS
 - Designed and implemented a real-time streaming STT service.
   - 📚 Spring boot, RxJava, Kafka stream, Redis, [Vosk](https://github.com/alphacep/vosk-api), [Kaldi](https://kaldi-asr.org/)
 - Developed the back-end of [Daglo](https://daglo.ai/) that is B2C/B2B/B2G service providing STT.
@@ -68,16 +73,17 @@ subclass: 'post page'
   - Implemented features including read-only chatroom, adult-only chatroom, abusive user detection and so on.
   - Improved the performance of LINE app by introducing conditional chat prefetching, which reduced total blocking time.
   - Reduced Elasticsearch get/search latency by 2x through query and cluster optimization.
+  - Contributed to [Armeria](https://github.com/line/armeria/pulls?q=is%3Apr+author%3Ahexoul) to expose internal metrics for server monitoring. And integrated Prometheus-compatible metrics and built Grafana dashboards for service observability.
+  - Identified and resolved performance bottlenecks using profiling tools such as heatmaps, thread dumps, and heap dumps.
   - Manually upgraded Elasticsearch from version 5.0 to 6.3 across two clusters (active-standby configuration).
   - Built a fault-tolerant Kafka producer with logging-based recovery to minimize message loss.
   - Developed a back-office Content Management System (CMS) for internal operations.
-  - 📚 Spring, Java, RxJava, MySQL, Redis, Elasticsearch, HBase, Kafka, Zookeeper, [Armeria](https://github.com/line/armeria), [Central Dogma](https://github.com/line/centraldogma), Retrofit, Thrift, Protobuf
+  - 📚 Spring, Java, RxJava, MySQL, Redis, Elasticsearch, HBase, Kafka, Zookeeper, [Armeria](https://github.com/line/armeria), [Central Dogma](https://github.com/line/centraldogma), Retrofit, Thrift, Protobuf, Jenkins, Ansible, [Zipkin](https://zipkin.io), [JMH](https://github.com/openjdk/jmh), Prometheus, Micrometer, Dropwizard
 - Developed CI/CD pipelines and automation processes.
   - Implemented and stabilized end-to-end (E2E) tests to verify behavior and server push on [SPDY called LEGY](https://engineering.linecorp.com/ko/blog/LINT-newtork-modernization-http2-tls).
   - Built a periodic ranking/trending data generation system using Elasticsearch.
   - Developed custom load-testing programs using Gatling to simulate high-load conditions.
-  - Identified and resolved performance bottlenecks using profiling tools such as heatmaps, thread dumps, and heap dumps.
-  - 📚 Java, Python, Kotlin, Spring Batch, Flask, Jenkins, Ansible, [Zipkin](https://zipkin.io), [JMH](https://github.com/openjdk/jmh), [Gatling](https://gatling.io), Prometheus, Micrometer, Dropwizard
+  - 📚 Spring Batch, Flask, [Gatling](https://gatling.io), Java, Python, Kotlin, Scala
 
 <div class="work-experience-header">
   <div>Senior researcher, <i>Coinplug Inc.</i> - Korea</div>
@@ -88,12 +94,13 @@ subclass: 'post page'
   - Enhanced bidding API performance by 200x through architectural redesign.
   - Implemented KYC (Know Your Customer) authentication system.
   - Developed deposit and withdrawal processing for KRW and cryptocurrencies.
+  - Continuously integrated newly listed cryptocurrencies into the exchange platform, ensuring timely support and smooth trading operations.
   - 📚 Spring, MySQL, RabbitMQ
   - ☁ AWS - EC2, MQ
-- Built a [Ethereum proxy](https://github.com/hexoul/aws-lambda-eth-proxy) as delegator of transactions.
+- Designed and deployed [an Ethereum proxy server](https://github.com/hexoul/aws-lambda-eth-proxy) that delegates user transactions to the blockchain network.
   - 📚 Go, Ethereum
   - ☁ AWS - Lambda, API Gateway
-- Introduced [decentralized applications (DApp)](https://github.com/hexoul?tab=repositories&q=dapp)s interacting [smart contract](https://github.com/hexoul/governance-contract) through [web3](https://github.com/hexoul/meta-web3).
+- Developed [decentralized applications (DApps)](https://github.com/hexoul?tab=repositories&q=dapp) that interact with [smart contracts](https://github.com/hexoul/governance-contract) via [Web3](https://github.com/hexoul/meta-web3).
   - 📚 Solidity, Ethereum, IPFS, React
 - Implemented [API clients](https://github.com/hexoul?tab=repositories&q=api-client) for trading and [monitoring](https://github.com/hexoul/coinmarketcap-react-chart) the tendency.
   - 📚 Go, React
@@ -110,8 +117,8 @@ subclass: 'post page'
 
 ### Projects
 - Open source
-  - [Armeria](https://github.com/line/armeria/pulls?q=is%3Apr+author%3Ahexoul+is%3Aclosed) - a microservice framework to easily build any type of technologies including gRPC, Thrift, Retrofit and so on.
-  - [Python client for Central Dogma](https://github.com/line/centraldogma-python/pulls?q=is%3Apr+author%3Ahexoul+is%3Aclosed) - a Python client for Central Dogma that is highly-available version-controlled service configuration repository based on Git, ZooKeeper and HTTP/2.
+  - [Armeria](https://github.com/line/armeria/pulls?q=is%3Apr+author%3Ahexoul) - a microservice framework to easily build any type of technologies including gRPC, Thrift, Retrofit and so on.
+  - [Python client for Central Dogma](https://github.com/line/centraldogma-python/pulls?q=is%3Apr+author%3Ahexoul) - a Python client for Central Dogma that is highly-available version-controlled service configuration repository based on Git, ZooKeeper and HTTP/2.
 - Individual
   - Chewing Diet - [iOS](https://apps.apple.com/app/id6444375180), [Android](https://play.google.com/store/apps/details?id=hexoul.chewing.diet), [Web](https://chewingdietweb.vercel.app/)
     - 📚 Flutter, Firebase, Next.js, Tailwind CSS
@@ -139,8 +146,8 @@ subclass: 'post page'
 
 ### Skills
 - Programming language
-  - **Java, TypeScript, Python, Go, Dart, SQL**
-  - Assembly, C, C++, C#, Kotlin, MATLAB, ML, Objective-C, Ocaml, Painless, PHP, Scala, Solidity, Tcl/Tk
+  - **Java, TypeScript, Python, Go, Dart**
+  - Assembly, C, C++, C#, Kotlin, Scala, MATLAB, ML, Objective-C, Ocaml, Painless, PHP, Scala, Solidity, Tcl/Tk
 - Platform & Framework
   - Reactive
     - **RxJava, RxJS**
