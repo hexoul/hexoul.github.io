@@ -197,9 +197,13 @@ subclass: 'post page'
 - Best paper award, Korea Computer Congress (KCC), 2017
 
 ### Publications
-- Kyoung-Soo We, Seunggon Kim, Wonseok Lee, and Chang-Gun Lee, **Functionally and Temporally Correct Simulation of Cyber-Systems for Automotive Systems**, in IEEE Real-Time Systems Symposium (RTSS), Dec. 2017
-- Wonseok Lee, Kyoung-Soo We, Seunggon Kim, Sangyoun Paik, Jonathon Soulis, and and Chang-Gun Lee, **An ECU-Close Design/Verification Tool for Automotive Systems**, in IEEE Real-Time Systems Symposium (RTSS@Work), Paris, France, Dec. 2017
-- Hyejin Joo, Kyoung-Soo We, Seunggon Kim, and Chang-Gun Lee, **An End-to-End Tool for Developing CPSs from Design to Implementation**, in The First International Workshop on Verification and Validation of Cyber-Physical Systems (V2CPS), Reykjavik University, Iceland, June 2016
+- Kyoung-Soo We, Seunggon Kim, Wonseok Lee, and Chang-Gun Lee, **Functionally and Temporally Correct Simulation of Cyber-Systems for Automotive Systems**, in IEEE Real-Time Systems Symposium (RTSS), 2017
+- Wonseok Lee, Kyoung-Soo We, Seunggon Kim, Sangyoun Paik, Jonathon Soulis, and and Chang-Gun Lee, **An ECU-Close Design/Verification Tool for Automotive Systems**, in IEEE Real-Time Systems Symposium (RTSS@Work), France, 2017
+- Hyejin Joo, Kyoung-Soo We, Seunggon Kim, and Chang-Gun Lee, **An End-to-End Tool for Developing CPSs from Design to Implementation**, in The First International Workshop on Verification and Validation of Cyber-Physical Systems (V2CPS), Iceland, 2016
+- Seunggon Kim, Youngeun Cho, Sangyoun Paik, Chang-Gun Lee, **PC-based Estimation of ECU Dynamic Memory**, Korea Computer Congress, Korea, 2017
+- Wonseok Lee, Kyoung-Soo We, Seunggon Kim, Chang-Gun Lee, **Simulator Structure for Lockstep ECU**, Korea Computer Congress, Korea, 2017
+- Seunggon Kim, Kyoung-Soo We, Chang-Gun Lee, **MATLAB Model-based ECU Code Auto-Generation Technique**, KIISE, Korea, 2016
+- Seunggon Kim, Kyoung-Soo We, Chang-Gun Lee, **Two-level Offset Technique for Verifying Reconstruction and Simulation**, KIISE, Korea, 2015
 - ...
 
 ### Languages
