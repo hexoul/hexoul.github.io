@@ -30,6 +30,7 @@ subclass: 'post page'
   - Designed and implemented a community server to post, comment, respond and search. The feature-rich post includes link preview, poll, image/video upload, and tagging.
   - Built a search engine on top of Elasticsearch with support for initial consonant search, phoneme-level matching, synonym expansion, typo correction, and trend-aware scoring.
   - Developed a metadata collection system combining crawling and third-party API integration to enrich internal datasets.
+  - Implemented a point system that rewards user actions and enables event participation, including supporting modules for winning probability calculation, aggregation, and redemption tracking.
   - 📚 NestJS, RxJS, TypeORM, GraphQL w/ federation, Elasticsearch, Redis, Amplitude, Datadog, Sentry
   - ☁ AWS - RDS, Elasticache, OpenSearch, MQ, MSK, Fargate, ECS, SNS, SMS, SQS, Lambda, Batch, EventBridge, WAF, Route53, CloudFront, S3, MediaConvert, CloudWatch
 - Improved SEO to increase monthly Google search clicks from 250K to 800K through technical optimizations and content restructuring.
@@ -78,11 +79,12 @@ subclass: 'post page'
   - Manually upgraded Elasticsearch from version 5.0 to 6.3 across two clusters (active-standby configuration).
   - Built a fault-tolerant Kafka producer with logging-based recovery to minimize message loss.
   - Developed a back-office Content Management System (CMS) for internal operations.
-  - 📚 Spring, Java, RxJava, MySQL, Redis, Elasticsearch, HBase, Kafka, Zookeeper, [Armeria](https://github.com/line/armeria), [Central Dogma](https://github.com/line/centraldogma), Retrofit, Thrift, Protobuf, Jenkins, Ansible, [Zipkin](https://zipkin.io), [JMH](https://github.com/openjdk/jmh), Prometheus, Micrometer, Dropwizard
+  - 📚 Spring, Java, RxJava, MySQL, Redis, Elasticsearch, HBase, Kafka, Zookeeper, [Armeria](https://github.com/line/armeria), [Central Dogma](https://github.com/line/centraldogma), Retrofit, Thrift, Protobuf, Jenkins, Ansible, [Zipkin](https://zipkin.io), [JMH](https://github.com/openjdk/jmh), Grafana, Prometheus, Micrometer, Dropwizard
 - Developed CI/CD pipelines and automation processes.
   - Implemented and stabilized end-to-end (E2E) tests to verify behavior and server push on [SPDY called LEGY](https://engineering.linecorp.com/ko/blog/LINT-newtork-modernization-http2-tls).
   - Built a periodic ranking/trending data generation system using Elasticsearch.
   - Developed custom load-testing programs using Gatling to simulate high-load conditions.
+  - Built a dedicated monitoring server to handle complex conditions not expressible in PromQL, with alerting bots integrated into Line Messenger and Slack.
   - 📚 Spring Batch, Flask, [Gatling](https://gatling.io), Java, Python, Kotlin, Scala
 
 <div class="work-experience-header">
@@ -119,8 +121,9 @@ subclass: 'post page'
 - Open source
   - [Armeria](https://github.com/line/armeria/pulls?q=is%3Apr+author%3Ahexoul) - a microservice framework to easily build any type of technologies including gRPC, Thrift, Retrofit and so on.
   - [Python client for Central Dogma](https://github.com/line/centraldogma-python/pulls?q=is%3Apr+author%3Ahexoul) - a Python client for Central Dogma that is highly-available version-controlled service configuration repository based on Git, ZooKeeper and HTTP/2.
-- Individual
-  - Chewing Diet - [iOS](https://apps.apple.com/app/id6444375180), [Android](https://play.google.com/store/apps/details?id=hexoul.chewing.diet), [Web](https://chewingdietweb.vercel.app/)
+- Solo
+  - **Chewing Diet** - [iOS](https://apps.apple.com/app/id6444375180), [Android](https://play.google.com/store/apps/details?id=hexoul.chewing.diet), [Web](https://chewingdietweb.vercel.app/)
+    - ~10K total downloads and ~1K MAU.
     - 📚 Flutter, Firebase, Next.js, Tailwind CSS
   - 오늘부터 전공면접 IT - [iOS](https://apps.apple.com/app/id1526993862), [Android](https://play.google.com/store/apps/details?id=com.whatseries.prepareinterview), [Web](https://hexoul.github.io/prepare-interview-data)
     - a MCQ-based (Multiple Choice Question) study helper for IT interview.
