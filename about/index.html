@@ -179,6 +179,7 @@ into the {body} of the default.hbs template -->
       <li>Designed and implemented a community server to post, comment, respond and search. The feature-rich post includes link preview, poll, image/video upload, and tagging.</li>
       <li>Built a search engine on top of Elasticsearch with support for initial consonant search, phoneme-level matching, synonym expansion, typo correction, and trend-aware scoring.</li>
       <li>Developed a metadata collection system combining crawling and third-party API integration to enrich internal datasets.</li>
+      <li>Implemented a point system that rewards user actions and enables event participation, including supporting modules for winning probability calculation, aggregation, and redemption tracking.</li>
       <li>📚 NestJS, RxJS, TypeORM, GraphQL w/ federation, Elasticsearch, Redis, Amplitude, Datadog, Sentry</li>
       <li>☁ AWS - RDS, Elasticache, OpenSearch, MQ, MSK, Fargate, ECS, SNS, SMS, SQS, Lambda, Batch, EventBridge, WAF, Route53, CloudFront, S3, MediaConvert, CloudWatch</li>
     </ul>
@@ -252,7 +253,7 @@ into the {body} of the default.hbs template -->
       <li>Manually upgraded Elasticsearch from version 5.0 to 6.3 across two clusters (active-standby configuration).</li>
       <li>Built a fault-tolerant Kafka producer with logging-based recovery to minimize message loss.</li>
       <li>Developed a back-office Content Management System (CMS) for internal operations.</li>
-      <li>📚 Spring, Java, RxJava, MySQL, Redis, Elasticsearch, HBase, Kafka, Zookeeper, <a href="https://github.com/line/armeria">Armeria</a>, <a href="https://github.com/line/centraldogma">Central Dogma</a>, Retrofit, Thrift, Protobuf, Jenkins, Ansible, <a href="https://zipkin.io">Zipkin</a>, <a href="https://github.com/openjdk/jmh">JMH</a>, Prometheus, Micrometer, Dropwizard</li>
+      <li>📚 Spring, Java, RxJava, MySQL, Redis, Elasticsearch, HBase, Kafka, Zookeeper, <a href="https://github.com/line/armeria">Armeria</a>, <a href="https://github.com/line/centraldogma">Central Dogma</a>, Retrofit, Thrift, Protobuf, Jenkins, Ansible, <a href="https://zipkin.io">Zipkin</a>, <a href="https://github.com/openjdk/jmh">JMH</a>, Grafana, Prometheus, Micrometer, Dropwizard</li>
     </ul>
   </li>
   <li>Developed CI/CD pipelines and automation processes.
@@ -260,6 +261,7 @@ into the {body} of the default.hbs template -->
       <li>Implemented and stabilized end-to-end (E2E) tests to verify behavior and server push on <a href="https://engineering.linecorp.com/ko/blog/LINT-newtork-modernization-http2-tls">SPDY called LEGY</a>.</li>
       <li>Built a periodic ranking/trending data generation system using Elasticsearch.</li>
       <li>Developed custom load-testing programs using Gatling to simulate high-load conditions.</li>
+      <li>Built a dedicated monitoring server to handle complex conditions not expressible in PromQL, with alerting bots integrated into Line Messenger and Slack.</li>
       <li>📚 Spring Batch, Flask, <a href="https://gatling.io">Gatling</a>, Java, Python, Kotlin, Scala</li>
     </ul>
   </li>
@@ -322,10 +324,11 @@ into the {body} of the default.hbs template -->
       <li><a href="https://github.com/line/centraldogma-python/pulls?q=is%3Apr+author%3Ahexoul">Python client for Central Dogma</a> - a Python client for Central Dogma that is highly-available version-controlled service configuration repository based on Git, ZooKeeper and HTTP/2.</li>
     </ul>
   </li>
-  <li>Individual
+  <li>Solo
     <ul>
-      <li>Chewing Diet - <a href="https://apps.apple.com/app/id6444375180">iOS</a>, <a href="https://play.google.com/store/apps/details?id=hexoul.chewing.diet">Android</a>, <a href="https://chewingdietweb.vercel.app/">Web</a>
+      <li><strong>Chewing Diet</strong> - <a href="https://apps.apple.com/app/id6444375180">iOS</a>, <a href="https://play.google.com/store/apps/details?id=hexoul.chewing.diet">Android</a>, <a href="https://chewingdietweb.vercel.app/">Web</a>
         <ul>
+          <li>~10K total downloads and ~1K MAU.</li>
           <li>📚 Flutter, Firebase, Next.js, Tailwind CSS</li>
         </ul>
       </li>
@@ -451,9 +454,13 @@ into the {body} of the default.hbs template -->
 
 <h3 id="publications">Publications</h3>
 <ul>
-  <li>Kyoung-Soo We, Seunggon Kim, Wonseok Lee, and Chang-Gun Lee, <strong>Functionally and Temporally Correct Simulation of Cyber-Systems for Automotive Systems</strong>, in IEEE Real-Time Systems Symposium (RTSS), Dec. 2017</li>
-  <li>Wonseok Lee, Kyoung-Soo We, Seunggon Kim, Sangyoun Paik, Jonathon Soulis, and and Chang-Gun Lee, <strong>An ECU-Close Design/Verification Tool for Automotive Systems</strong>, in IEEE Real-Time Systems Symposium (RTSS@Work), Paris, France, Dec. 2017</li>
-  <li>Hyejin Joo, Kyoung-Soo We, Seunggon Kim, and Chang-Gun Lee, <strong>An End-to-End Tool for Developing CPSs from Design to Implementation</strong>, in The First International Workshop on Verification and Validation of Cyber-Physical Systems (V2CPS), Reykjavik University, Iceland, June 2016</li>
+  <li>Kyoung-Soo We, Seunggon Kim, Wonseok Lee, and Chang-Gun Lee, <strong>Functionally and Temporally Correct Simulation of Cyber-Systems for Automotive Systems</strong>, in IEEE Real-Time Systems Symposium (RTSS), 2017</li>
+  <li>Wonseok Lee, Kyoung-Soo We, Seunggon Kim, Sangyoun Paik, Jonathon Soulis, and and Chang-Gun Lee, <strong>An ECU-Close Design/Verification Tool for Automotive Systems</strong>, in IEEE Real-Time Systems Symposium (RTSS@Work), France, 2017</li>
+  <li>Hyejin Joo, Kyoung-Soo We, Seunggon Kim, and Chang-Gun Lee, <strong>An End-to-End Tool for Developing CPSs from Design to Implementation</strong>, in The First International Workshop on Verification and Validation of Cyber-Physical Systems (V2CPS), Iceland, 2016</li>
+  <li>Seunggon Kim, Youngeun Cho, Sangyoun Paik, Chang-Gun Lee, <strong>PC-based Estimation of ECU Dynamic Memory</strong>, Korea Computer Congress, Korea, 2017</li>
+  <li>Wonseok Lee, Kyoung-Soo We, Seunggon Kim, Chang-Gun Lee, <strong>Simulator Structure for Lockstep ECU</strong>, Korea Computer Congress, Korea, 2017</li>
+  <li>Seunggon Kim, Kyoung-Soo We, Chang-Gun Lee, <strong>MATLAB Model-based ECU Code Auto-Generation Technique</strong>, KIISE, Korea, 2016</li>
+  <li>Seunggon Kim, Kyoung-Soo We, Chang-Gun Lee, <strong>Two-level Offset Technique for Verifying Reconstruction and Simulation</strong>, KIISE, Korea, 2015</li>
   <li>…</li>
 </ul>
 
