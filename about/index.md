@@ -31,8 +31,8 @@ subclass: 'post page'
   - Built a search engine on top of Elasticsearch with support for initial consonant search, phoneme-level matching, synonym expansion, typo correction, and trend-aware scoring.
   - Developed a metadata collection system combining crawling and third-party API integration to enrich internal datasets.
   - Implemented a point system that rewards user actions and enables event participation, including supporting modules for winning probability calculation, aggregation, and redemption tracking.
-  - 📚 NestJS, RxJS, TypeORM, GraphQL w/ federation, Elasticsearch, Redis, Amplitude, Datadog, Sentry
-  - ☁ AWS - RDS, Elasticache, OpenSearch, MQ, MSK, Fargate, ECS, SNS, SMS, SQS, Lambda, Batch, EventBridge, WAF, Route53, CloudFront, S3, MediaConvert, CloudWatch
+  - 📚 NestJS, RxJS, TypeORM, GraphQL, MySQL, Elasticsearch, Redis, Kafka, RabbitMQ, BullMQ, Amplitude, Datadog, Sentry
+  - ☁ AWS - RDS, ElastiCache, OpenSearch, MQ, MSK, Fargate, ECS, SQS, SNS, SES, Lambda, Batch, EventBridge, WAF, Route53, CloudFront, S3, MediaConvert, CloudWatch
 - Improved SEO to increase monthly Google search clicks from 250K to 800K through technical optimizations and content restructuring.
 - Gradually modernized a legacy mobile application through a phased transformation.
   - Consolidated separate Android and iOS web apps into a single Flutter-based web app, reducing maintenance costs and improving rendering performance.
