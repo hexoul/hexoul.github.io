@@ -13,7 +13,7 @@ subclass: 'post page'
   <div>📭: <a href="mailto:crosien@gmail.com">crosien@gmail.com</a></div>
 </div>
 
-> I'm passionate about software engineering for SOTA architecture, programming and theory also. 
+> Rather than shifting fields, my career reflects a consistent pursuit of building end-to-end problem-solving skills—from solid CS fundamentals, through embedded systems, to deep expertise in my current field.
 
 ## Contents
 [Work experience](#work-experience) | [Education](#education) | [Projects](#projects) | [Skills](#skills) | [Awards](#awards) | [Publications](#publications) | [Languages](#languages)
