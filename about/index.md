@@ -109,6 +109,15 @@ subclass: 'post page'
   - 📚 Go, React
 - Researched blockchain technologies and security issues on all sides such as platform, smart contract, GDPR and so on.
 
+<div class="work-experience-header">
+  <div>Research engineer, <i>Hyundai Motor Company</i> - Korea</div>
+  <div>Mar. 2014 - Sep. 2017</div>
+</div>
+
+- Researched and implemented an RM/EDF-based task scheduling simulator incorporating CAN, CAN-FD and FlexRay networks.
+- Developed automated code generation workflows from MATLAB/Simulink models to embedded boards for various ECUs (e.g., Infineon).
+- Extended generated code deployment to AUTOSAR and ODIN platforms through additional R&D efforts.
+
 ---
 
 ### Education
@@ -208,7 +217,6 @@ subclass: 'post page'
 - Wonseok Lee, Kyoung-Soo We, Seunggon Kim, Chang-Gun Lee, **Simulator Structure for Lockstep ECU**, Korea Computer Congress, Korea, 2017
 - Seunggon Kim, Kyoung-Soo We, Chang-Gun Lee, **MATLAB Model-based ECU Code Auto-Generation Technique**, KIISE, Korea, 2016
 - Seunggon Kim, Kyoung-Soo We, Chang-Gun Lee, **Two-level Offset Technique for Verifying Reconstruction and Simulation**, KIISE, Korea, 2015
-- ...
 
 ### Languages
 
