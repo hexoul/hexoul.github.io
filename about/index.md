@@ -34,6 +34,7 @@ subclass: 'post page'
   - 📚 NestJS, RxJS, TypeORM, GraphQL, MySQL, Elasticsearch, Redis, Kafka, RabbitMQ, BullMQ, Amplitude, Datadog, Sentry
   - ☁ AWS - RDS, ElastiCache, OpenSearch, MQ, MSK, Fargate, ECS, SQS, SNS, SES, Lambda, Batch, EventBridge, WAF, Route53, CloudFront, S3, MediaConvert, CloudWatch
 - Improved SEO to increase monthly Google search clicks from 250K to 800K through technical optimizations and content restructuring.
+  - <img width=200 src="../assets/images/seo.png" style="display:block; margin-left:0; margin-right:auto;">
 - Gradually modernized a legacy mobile application through a phased transformation.
   - Consolidated separate Android and iOS web apps into a single Flutter-based web app, reducing maintenance costs and improving rendering performance.
   - Further evolved the application into a full-featured native app using Expo and React Native to enhance cross-platform capability and user experience.

@@ -12,7 +12,7 @@ baseurl: /
 title: Seunggon Kim
 description: The creative needs diverse points of view and insight.
 cover: assets/images/blog-cover.jpg
-# logo: assets/images/blog-icon.png
+# logo: assets/images/favicon.png
 logo_dark: assets/images/favicon.png
 favicon: assets/images/favicon.png
 CNAME: #add cname for website to be created
