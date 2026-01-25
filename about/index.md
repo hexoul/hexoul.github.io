@@ -21,6 +21,14 @@ subclass: 'post page'
 ### Work experience
 
 <div class="work-experience-header">
+  <div>Staff back-end engineer, <i>Coupang Inc.</i> - Korea</div>
+  <div>Dec. 2025 - Present</div>
+</div>
+
+- Developed the back-end of [Coupang Eats](https://www.coupangeats.com/) and [Rocket Now](https://www.rocketnow.co.jp/).
+  - 📚 Spring, Java, MySQL, Cassandra, Redis, Kafka, Grafana, Sentry
+
+<div class="work-experience-header">
   <div>Tech lead, <i>Kinolights Inc.</i> - Korea</div>
   <div>Mar. 2022 - Present</div>
 </div>
@@ -33,8 +41,10 @@ subclass: 'post page'
   - Implemented a point system that rewards user actions and enables event participation, including supporting modules for winning probability calculation, aggregation, and redemption tracking.
   - 📚 NestJS, RxJS, TypeORM, GraphQL, MySQL, Elasticsearch, Redis, Kafka, RabbitMQ, BullMQ, Amplitude, Datadog, Sentry
   - ☁ AWS - RDS, ElastiCache, OpenSearch, MQ, MSK, Fargate, ECS, SQS, SNS, SES, Lambda, Batch, EventBridge, WAF, Route53, CloudFront, S3, MediaConvert, CloudWatch
-- Improved SEO to increase monthly Google search clicks from 250K to 800K through technical optimizations and content restructuring.
-  - <img width=200 src="../assets/images/seo.png" style="display:block; margin-left:0; margin-right:auto;">
+- <details>
+  <summary>Improved SEO to increase monthly Google search clicks from 250K to 800K through technical optimizations and content restructuring.</summary>
+  <ul><img width="250" src="../assets/images/seo.png" style="display:block; margin-left:0; margin-right:auto;"></ul>
+  </details>
 - Gradually modernized a legacy mobile application through a phased transformation.
   - Consolidated separate Android and iOS web apps into a single Flutter-based web app, reducing maintenance costs and improving rendering performance.
   - Further evolved the application into a full-featured native app using Expo and React Native to enhance cross-platform capability and user experience.
