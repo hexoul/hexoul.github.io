@@ -30,7 +30,7 @@ subclass: 'post page'
 
 <div class="work-experience-header">
   <div>Tech lead, <i>Kinolights Inc.</i> - Korea</div>
-  <div>Mar. 2022 - Present</div>
+  <div>Mar. 2022 - Nov. 2025</div>
 </div>
 
 - Developed the back-end of [Kinolights](https://kinolights.com/).
