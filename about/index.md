@@ -25,8 +25,10 @@ subclass: 'post page'
   <div>Dec. 2025 - Present</div>
 </div>
 
-- Developed the back-end of [Coupang Eats](https://www.coupangeats.com/) and [Rocket Now](https://www.rocketnow.co.jp/).
-  - 📚 Spring, Java, MySQL, Cassandra, Redis, Kafka, Grafana, Sentry
+- Architected and scaled the backend infrastructure for [Coupang Eats](https://www.coupangeats.com/) and [Rocket Now](https://www.rocketnow.co.jp/), supporting high-concurrency food delivery traffic.
+- Executed zero-to-one market entry for the Japanese market, establishing a flexible system foundation for rapid regional expansion.
+- Optimized service sustainability by architecting automated systems for service-integrity policies and streamlined recovery flows.
+- 📚 Spring, Java, MySQL, Cassandra, Redis, Kafka, Grafana, Sentry
 
 <div class="work-experience-header">
   <div>Tech lead, <i>Kinolights Inc.</i> - Korea</div>
